@@ -3,7 +3,7 @@ title: "Clustered supernovae drive powerful galactic winds after superbubble bre
 collection: publications
 permalink: /publication/Fielding18_ClusteredSNe
 excerpt: 'Clustered supernovae drive powerful galactic winds after superbubble breakout.'
-date: 2018-12
+date: 2018-12-01
 venue: 'MNRAS'
 paperurl: 'http://academicpages.github.io/files/paper1.pdf'
 citation: 'Fielding, D. (2018). &quot;Clustered supernovae drive powerful galactic winds after superbubble breakout.&quot; <i>MNRAS</i>. 481(3):3325–3347. Dec 2018.'
