@@ -12,4 +12,6 @@ We use three-dimensional hydrodynamic simulations of vertically stratified patch
 
 [Download paper here](http://dfielding14.github.io/files/Fielding18_ClusteredSNe.pdf)
 
-Recommended citation: Drummond Fielding, Eliot Quataert, and Davide Martizzi. Clustered supernovae drive powerful galactic winds after superbubble breakout. MNRAS, [481(3):3325–3347](https://academic.oup.com/mnras/article/481/3/3325/5092623), Dec 2018
+[Watch movies of superbubbles expanding and breaking out here]()
+
+Drummond Fielding, Eliot Quataert, and Davide Martizzi. Clustered supernovae drive powerful galactic winds after superbubble breakout. MNRAS, [481(3):3325–3347](https://academic.oup.com/mnras/article/481/3/3325/5092623), Dec 2018
