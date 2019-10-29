@@ -11,22 +11,20 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* Ph.D in Astrophysics, University of California, Berkeley, 2018
+  * Advisor: Eliot Quataert
+  * Thesis: Interplay of Galactic Winds and Circumgalactic Media
+* M.S. in Astrophysics, University of California, Berkeley, 2014
+* B.A. in Physics, Johns Hopkins University, 2012
+* B.A. in Math, Johns Hopkins University, 2012
+
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Flatiron Research Fellow
+  * Center for Computational Astrophysics
+  * Collaborators: Greg Bryan, Eve Ostriker, Jonathan Stern, Rachel Somerville, Claude-Andre Faucher-Giguere, Eliot Quataert, Stephanie Tonnenson, 
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
 Skills
 ======
 * Skill 1
