@@ -21,8 +21,7 @@ Education
 
 Work experience
 ======
-* Flatiron Research Fellow
-  * Center for Computational Astrophysics
+* Flatiron Research Fellow, Post-doc, Center for Computational Astrophysics, Flatiron Institute, Simons Foundations
   * Collaborators: Greg Bryan, Eve Ostriker, Jonathan Stern, Rachel Somerville, Claude-Andre Faucher-Giguere, Eliot Quataert, Stephanie Tonnenson, 
 
 Skills
