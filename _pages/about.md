@@ -1,17 +1,17 @@
 ---
 permalink: /
-title: "About me"
-excerpt: "About me"
+title: "Welcome"
+excerpt: "Welcome"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-Bio
+About me
 ======
 
-I am a Flatiron Research Fellow at the [Center for Computational Astrophysics](https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/) in the [Flatiron Institute](https://www.simonsfoundation.org/flatiron/). 
+I am a computational astrophysicists mostly working on the theory of galaxy formation. I am currently a Flatiron Research Fellow at the [Center for Computational Astrophysics](https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/) in the [Flatiron Institute](https://www.simonsfoundation.org/flatiron/). I received my Ph.D. from UC Berkeley where I worked with [Eliot Quataert](http://w.astro.berkeley.edu/~eliot/). Before going to Berkeley, I studied physics and math at Johns Hopkins University. I was born in New York City and grew up nearby in the town of Montclair, NJ.
 
 Research
 ======
