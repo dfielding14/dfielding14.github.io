@@ -11,7 +11,7 @@ redirect_from:
 About me
 ======
 
-I am a computational astrophysicists mostly working on the theory of galaxy formation. I am currently a Flatiron Research Fellow at the [Center for Computational Astrophysics](https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/) in the [Flatiron Institute](https://www.simonsfoundation.org/flatiron/). I received my Ph.D. from UC Berkeley where I worked with [Eliot Quataert](http://w.astro.berkeley.edu/~eliot/). Before going to Berkeley, I studied physics and math at Johns Hopkins University. I was born in New York City and grew up nearby in the town of Montclair, NJ.
+I am a theoretical astrophysicists primarily interested in how galaxies form. I specifally think a lot about how stars form within galaxies, what happens when those stars explode as supernovae,  I am currently a Flatiron Research Fellow at the [Center for Computational Astrophysics](https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/) in the [Flatiron Institute](https://www.simonsfoundation.org/flatiron/). I received my Ph.D. from UC Berkeley where I worked with [Eliot Quataert](http://w.astro.berkeley.edu/~eliot/). Before going to Berkeley, I studied physics and math at Johns Hopkins University. I was born in New York City and grew up nearby in the town of Montclair, NJ.
 
 Research
 ======
