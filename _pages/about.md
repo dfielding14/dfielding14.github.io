@@ -23,6 +23,10 @@ Broadly speaking I study how galaxies form. To understand how galaxies grow and 
 
 ![galactic_gas_cycle_analogy](/images/WaterCycleCartoon.png){:class="img-responsive"}
 
+<figure>
+  <img src="/images/WaterCycleCartoon.png">
+  <figcaption>This is a figure caption.</figcaption>
+</figure>
 
 I like to use the water cycle here on earth as an analogy for how I look at galaxy formation. In the water cycle water is heated and evaporates, then condenses in the form of clouds, and then it precipitates back down to earth where it nourishes and fuels living creatures before being evaporated all over again. In galaxies we can replace water with gas (mostly hydrogen and helium) and see that it is quite similar. Gas in the CGM condenses into clouds, which under certain conditions precipitates down to the galaxy. When this gas reaches the galaxy it is pure star fuel! Out of the freshly precipitated star fuel new young stars form. These stars release lots of energy and some of them explode as supernovae, which can launch gas back out of the galaxy and up into CGM. In this way what I work on---galactic gas cycle---can be seen as the galactic version of terrestrial hydrology! 
 
