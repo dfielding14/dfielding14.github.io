@@ -14,7 +14,10 @@ About me
 ======
 
 
-![image-right](/images/Me.jpg){: .align-right}
+<figure style="width: 300px" class="align-right">
+  <img src="/images/Me.jpg" alt="">
+  <figcaption>It's me!</figcaption>
+</figure> 
 
 I am a theoretical astrophysicists primarily interested in how galaxies form and what goes on in the circumgalactic medium. In all of my work I use controlled numerical experiments in combination with analytic modeling to develop intuitive pictures for the key physical processes controlling the problem at hand. I am currently a Flatiron Research Fellow at the [Center for Computational Astrophysics](https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/) in the [Flatiron Institute](https://www.simonsfoundation.org/flatiron/). I received my Ph.D. from UC Berkeley where I worked with [Eliot Quataert](http://w.astro.berkeley.edu/~eliot/). Before going to Berkeley, I studied physics and math at Johns Hopkins University. I was born in New York City and grew up nearby in the town of Montclair, NJ.
 
@@ -46,8 +49,6 @@ In line with the nature of the CGM my work on the CGM has focused on many scales
   <figcaption>Slices of density and temperature at 4 times through the CGM of halos with different masses. This is from Fielding et al. (2017).</figcaption>
 </figure>
 
-![Global_CGM_image](/images/CGM_feedback_MultiPanel_n_T_2rvir_ref_9Gyr.png){:class="img-responsive"}
-
 Galactic Winds and Feedback
 ===
 
@@ -57,7 +58,7 @@ In order to isolate these crucial processes my collaborators (Eliot Quataert, Cl
 
 <figure>
   <img src="/images/Clustered_SNe_mixed_strip_4panel_Sig30_Mcl45_1pc_3_3_23Myr_zoom_panel.png">
-  <figcaption>Slices of density and temperature at 4 times through the CGM of halos with different masses. This is from Fielding et al. (2017).</figcaption>
+  <figcaption>Slices of temperature, density, velocity, and cooling rate at 2 times through the ISM of a galaxy with a massive cluster of SNe in the process of going off and launching a wind. This is from Fielding et al. (2018).</figcaption>
 </figure>
 
 
@@ -66,7 +67,12 @@ Protoplanetary Disks
 
 The Kepler mission found many Jupiter mass planets with very short orbital periods (P<10 days). How these "hot Jupiters" migrated to such close-in orbits is debated. Observations of non-zero stellar obliquity---the angle between the host star's spin axis and the hot Jupiter's orbital axis---seemed to favor orbital angular momentum loss due to tidal dissipation from the star-planet interaction during close periastron passages induced by torques from a distant third body (Fabrycky and Tremain 2007). However, using hydrodynamic and magnetohydrodynamic simulations of protostar formation, I demonstrated that a wide range of stellar obliquities may be produced as a byproduct of forming a star within a turbulent environment. I developed a simple semi-analytic model that reveals this connection between the turbulent motions and the orientation of a star and its disk. Our results are consistent with the observed obliquity distribution of hot Jupiters implying that the misaligned hot Jupiters may have instead migration due to tidal dissipation in the disk (Goldreich and Tremaine 1980). We have also applied this same concept to explain the observed misalignment of protostellar binaries outflows (Offner et al. 2016).
 
-![misaligned_protoplanetary_disk](/images/threepanel_misaligned_MHD_disk.png){:class="img-responsive"}
+<figure>
+  <img src="/images/threepanel_misaligned_MHD_disk.png">
+  <figcaption>Three views of the density of a protostellar disk that formed around a protostar in an MHD simulation. The line shows the direction of the star's angular momentum, which is misaligned from the disk's. This is from Fielding et al. (2015).</figcaption>
+</figure>
+
+
 
 
 <!-- 
