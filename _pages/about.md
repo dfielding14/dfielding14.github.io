@@ -44,6 +44,9 @@ When a star explodes as a supernova (SN) within the interstellar medium (ISM) of
 
 In order to isolate these crucial processes my collaborators (Eliot Quataert, Claude-Andre Faucher-Giguere, and Davide Martizzi) and I have simulated the collective effect of numerous SNe going off in patches of the ISM and in entire galaxies. We have found that by taking into account the natural clustering of SNe due to the clustered nature of star formation the efficiency of SN feedback is greatly enhanced. The winds that result from clustered SNe can be very strong, carrying nearly as much mass out as is turned into stars and carrying nearly all of the energy ejected out into the surrounding circumgalactic medium. The implications of the large energy flux into the inner CGM has not been fully explored yet but points to a picture in which galactic winds primarily impact galaxy evolution by preventing future accretion, as opposed to ejecting gas out of the galaxy that has already accreted (although both are certianly at play).
 
+![Clustered_SNe_image](/images/Clustered_SNe_mixed_strip_4panel_Sig30_Mcl45_1pc_3_3_23Myr_zoom_panel.png){:class="img-responsive"}
+
+
 Protoplanetary Disks
 ===
 
