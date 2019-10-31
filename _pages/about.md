@@ -24,6 +24,8 @@ I like to use the water cycle here on earth as an analogy for how I look at gala
 
 An interesting part of the galactic gas cycle is the way that it self-regulates similar to a thermostat in a heating system. The more the CGM can cool and form clouds, the more gas makes its way to the galaxy, and the more stars form. As more stars form, more of them explode as SNe, which combine together to drive a wind out into the CGM. This wind will heat the CGM and prevent new clouds from forming, which limits the supply of star fuel and thereby weakens the wind until clouds can form and the process stars over again!
 
+![galactic_gas_cycle_analogy](/images/WaterCycleCartoon.png){:class="img-responsive"}
+
 
 Circumgalactic Medium 
 ===
