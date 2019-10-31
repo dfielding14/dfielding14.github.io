@@ -13,7 +13,7 @@ As of 31 Oct 2019 this page is still under construction.
 About me
 ======
 
-I am a theoretical astrophysicists primarily interested in how galaxies form and what goes on in the circumgalactic medium. I am currently a Flatiron Research Fellow at the [Center for Computational Astrophysics](https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/) in the [Flatiron Institute](https://www.simonsfoundation.org/flatiron/). I received my Ph.D. from UC Berkeley where I worked with [Eliot Quataert](http://w.astro.berkeley.edu/~eliot/). Before going to Berkeley, I studied physics and math at Johns Hopkins University. I was born in New York City and grew up nearby in the town of Montclair, NJ.
+I am a theoretical astrophysicists primarily interested in how galaxies form and what goes on in the circumgalactic medium. In all of my work I use controlled numerical experiments in combination with analytic modeling to develop intuitive pictures for the key physical processes controlling the problem at hand. I am currently a Flatiron Research Fellow at the [Center for Computational Astrophysics](https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/) in the [Flatiron Institute](https://www.simonsfoundation.org/flatiron/). I received my Ph.D. from UC Berkeley where I worked with [Eliot Quataert](http://w.astro.berkeley.edu/~eliot/). Before going to Berkeley, I studied physics and math at Johns Hopkins University. I was born in New York City and grew up nearby in the town of Montclair, NJ.
 
 Research
 ======
@@ -28,6 +28,12 @@ An interesting part of the galactic gas cycle is the way that it self-regulates 
 Circumgalactic Medium 
 ===
 
+Galaxies grow by accreting new gas. This gas must come from the massive reservoir of material that surrounds all galaxies--the CGM. The CGM is where many competing forces meet. Gas from outside a galaxies dark matter halo feeds the CGM from without either smoothly, in filaments, or in the form of smaller galaxies. Gas from inside the galaxy is violently ejected into the CGM in the form of winds. These flows interact with the gas already present in the CGM that would otherwise cool and fuel the galaxy and can lead to the CGM being a dynamic, turbulent environemnt. 
+
+Although the CGM plays such an important role in galaxy formation it is exceedingly hard to study. Observationally, it is nearly impossible to detect the CGM because of its low densities and high temperatures. Ground breaking recent work has begun to map out the CGM of other galaxies one pencil beam at a time using absorption by cold CGM gas in the spectra of distant bright objects like galaxies and quasars. In the (near?) future new telescopes may enable the CGM to be directly measured in emission, which would teach us much more. Theoretically, the CGM is also hard to study because of the incredible range of scales involved. On the largest scales the CGM of a single galaxy roughly the size of the Milky Way can extend to Mega-parsec scales. However, the dynamics of the whole system can be set by the processes by which cold and hot gas mix and cool, which takes place on the scale of parsecs or less. This means that there at least six orders of magnitude in scale at play in the CGM! 
+
+In line with the nature of the CGM my work on the CGM has focused on many scales. On the largest I study how the bulk properties of the CGM are determined by winds, and cosmological accretion, and how this regulates galaxy growth. On intermediate scales I study individual patches on the CGM and how turbulence, magnetic fields, and cooling set the temperature distribution and ionization state. On the smallest scales I study how individual cold clumps mix as they move through the hot ambient medium.
+
 
 Galactic Winds and Feedback
 ===
@@ -35,6 +41,12 @@ Galactic Winds and Feedback
 When a star explodes as a supernova (SN) within the interstellar medium (ISM) of a galaxy it releases prodigious amounts of energy into its surroundings. On the scale of a whole galaxy the energy released by the collective explosions of many SNe is responsible for energizing the ISM and for driving galactic winds. The stirring and ejecting of ISM gas by SNe is believed to play the dominant role in determining the relative inefficiency with which galaxies up to the mass of our own Milky Way turn gas into stars. It is therefore essential for any theory of galaxy formation to explain how energy is deposited into the ISM in the form of heat and turbulent motions (and cosmic rays), and to explain how mass and energy are sent flying out of the galaxy. 
 
 In order to isolate these crucial processes my collaborators (Eliot Quataert, Claude-Andre Faucher-Giguere, and Davide Martizzi) and I have simulated the collective effect of numerous SNe going off in patches of the ISM and in entire galaxies. We have found that by taking into account the natural clustering of SNe due to the clustered nature of star formation the efficiency of SN feedback is greatly enhanced. The winds that result from clustered SNe can be very strong, carrying nearly as much mass out as is turned into stars and carrying nearly all of the energy ejected out into the surrounding circumgalactic medium. The implications of the large energy flux into the inner CGM has not been fully explored yet but points to a picture in which galactic winds primarily impact galaxy evolution by preventing future accretion, as opposed to ejecting gas out of the galaxy that has already accreted (although both are certianly at play).
+
+Protoplanetary Disks
+===
+
+The Kepler mission found many Jupiter mass planets with very short orbital periods (P<10 days). How these "hot Jupiters" migrated to such close-in orbits is debated. Observations of non-zero stellar obliquity---the angle between the host star's spin axis and the hot Jupiter's orbital axis---seemed to favor orbital angular momentum loss due to tidal dissipation from the star-planet interaction during close periastron passages induced by torques from a distant third body (Fabrycky and Tremain 2007). However, using hydrodynamic and magnetohydrodynamic simulations of protostar formation, I demonstrated that a wide range of stellar obliquities may be produced as a byproduct of forming a star within a turbulent environment. I developed a simple semi-analytic model that reveals this connection between the turbulent motions and the orientation of a star and its disk. Our results are consistent with the observed obliquity distribution of hot Jupiters implying that the misaligned hot Jupiters may have instead migration due to tidal dissipation in the disk (Goldreich and Tremaine 1980). We have also applied this same concept to explain the observed misalignment of protostellar binaries outflows (Offner et al. 2016).
+
 
 
 <!-- 
