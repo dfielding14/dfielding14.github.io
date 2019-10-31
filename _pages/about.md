@@ -8,6 +8,8 @@ redirect_from:
   - /about.html
 ---
 
+As of 31 Oct 2019 this page is still under construction.
+
 About me
 ======
 
