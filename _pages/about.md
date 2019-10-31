@@ -37,6 +37,8 @@ Although the CGM plays such an important role in galaxy formation it is exceedin
 In line with the nature of the CGM my work on the CGM has focused on many scales. On the largest I study how the bulk properties of the CGM are determined by winds, and cosmological accretion, and how this regulates galaxy growth. On intermediate scales I study individual patches on the CGM and how turbulence, magnetic fields, and cooling set the temperature distribution and ionization state. On the smallest scales I study how individual cold clumps mix as they move through the hot ambient medium.
 
 
+![Global_CGM_image](/images/CGM_feedback_MultiPanel_n_T_2rvir_ref_9Gyr.png){:class="img-responsive"}
+
 Galactic Winds and Feedback
 ===
 
