@@ -13,6 +13,9 @@ As of 31 Oct 2019 this page is still under construction.
 About me
 ======
 
+
+![image-right](/images/Me.jpg){: .align-right}
+
 I am a theoretical astrophysicists primarily interested in how galaxies form and what goes on in the circumgalactic medium. In all of my work I use controlled numerical experiments in combination with analytic modeling to develop intuitive pictures for the key physical processes controlling the problem at hand. I am currently a Flatiron Research Fellow at the [Center for Computational Astrophysics](https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/) in the [Flatiron Institute](https://www.simonsfoundation.org/flatiron/). I received my Ph.D. from UC Berkeley where I worked with [Eliot Quataert](http://w.astro.berkeley.edu/~eliot/). Before going to Berkeley, I studied physics and math at Johns Hopkins University. I was born in New York City and grew up nearby in the town of Montclair, NJ.
 
 Research
@@ -20,12 +23,9 @@ Research
 
 Broadly speaking I study how galaxies form. To understand how galaxies grow and evolve I study how they acquire and eject gas. These flows into and out of galaxies regulate their evolution. There are two crucial components to understanding these flows and they comprise the majority of my research focus. Within the galaxies we must understand the feedback that arises from the formation and subsequent explosion of stars, which can drive vigorous turbulence within the galaxy and powerful winds out of the galaxy. While on the outside of galaxies we must understand the dilute reservoir of material that surrounds galaxies, known as the circumgalactic medium (CGM), which is 10s to 100s of times the size of the galaxy, fills the dark matter halo, and contains as much or more material as is within the galaxy itself. Within the CGM fresh material accreted from the cosmic web interacts with galactic wind ejecta and the balance of cooling and heating determines the how much gas is able to make it down to the galaxy. This balance therefore determines how much fuel is available for ongoing star formation within the galaxy.
 
-
-![galactic_gas_cycle_analogy](/images/WaterCycleCartoon.png){:class="img-responsive"}
-
 <figure>
   <img src="/images/WaterCycleCartoon.png">
-  <figcaption>This is a figure caption.</figcaption>
+  <figcaption>Comparison of the hydrological cycle on earth and the gas cycle in/around galaxies.</figcaption>
 </figure>
 
 I like to use the water cycle here on earth as an analogy for how I look at galaxy formation. In the water cycle water is heated and evaporates, then condenses in the form of clouds, and then it precipitates back down to earth where it nourishes and fuels living creatures before being evaporated all over again. In galaxies we can replace water with gas (mostly hydrogen and helium) and see that it is quite similar. Gas in the CGM condenses into clouds, which under certain conditions precipitates down to the galaxy. When this gas reaches the galaxy it is pure star fuel! Out of the freshly precipitated star fuel new young stars form. These stars release lots of energy and some of them explode as supernovae, which can launch gas back out of the galaxy and up into CGM. In this way what I work on---galactic gas cycle---can be seen as the galactic version of terrestrial hydrology! 
@@ -41,6 +41,10 @@ Although the CGM plays such an important role in galaxy formation it is exceedin
 
 In line with the nature of the CGM my work on the CGM has focused on many scales. On the largest I study how the bulk properties of the CGM are determined by winds, and cosmological accretion, and how this regulates galaxy growth. On intermediate scales I study individual patches on the CGM and how turbulence, magnetic fields, and cooling set the temperature distribution and ionization state. On the smallest scales I study how individual cold clumps mix as they move through the hot ambient medium.
 
+<figure>
+  <img src="/images/CGM_feedback_MultiPanel_n_T_2rvir_ref_9Gyr.png">
+  <figcaption>Slices of density and temperature at 4 times through the CGM of halos with different masses. This is from Fielding et al. (2017).</figcaption>
+</figure>
 
 ![Global_CGM_image](/images/CGM_feedback_MultiPanel_n_T_2rvir_ref_9Gyr.png){:class="img-responsive"}
 
@@ -51,7 +55,10 @@ When a star explodes as a supernova (SN) within the interstellar medium (ISM) of
 
 In order to isolate these crucial processes my collaborators (Eliot Quataert, Claude-Andre Faucher-Giguere, and Davide Martizzi) and I have simulated the collective effect of numerous SNe going off in patches of the ISM and in entire galaxies. We have found that by taking into account the natural clustering of SNe due to the clustered nature of star formation the efficiency of SN feedback is greatly enhanced. The winds that result from clustered SNe can be very strong, carrying nearly as much mass out as is turned into stars and carrying nearly all of the energy ejected out into the surrounding circumgalactic medium. The implications of the large energy flux into the inner CGM has not been fully explored yet but points to a picture in which galactic winds primarily impact galaxy evolution by preventing future accretion, as opposed to ejecting gas out of the galaxy that has already accreted (although both are certianly at play).
 
-![Clustered_SNe_image](/images/Clustered_SNe_mixed_strip_4panel_Sig30_Mcl45_1pc_3_3_23Myr_zoom_panel.png){:class="img-responsive"}
+<figure>
+  <img src="/images/Clustered_SNe_mixed_strip_4panel_Sig30_Mcl45_1pc_3_3_23Myr_zoom_panel.png">
+  <figcaption>Slices of density and temperature at 4 times through the CGM of halos with different masses. This is from Fielding et al. (2017).</figcaption>
+</figure>
 
 
 Protoplanetary Disks
