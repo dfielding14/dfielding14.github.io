@@ -16,6 +16,18 @@ I am a theoretical astrophysicists primarily interested in how galaxies form and
 Research
 ======
 
+Broadly speaking I study how galaxies form. To understand how galaxies grow and evolve I study how they acquire and eject gas. These flows into and out of galaxies regulate their evolution. There are two crucial components to understanding these flows and they comprise the majority of my research focus. Within the galaxies we must understand the feedback that arises from the formation and subsequent explosion of stars, which can drive vigorous turbulence within the galaxy and powerful winds out of the galaxy. While on the outside of galaxies we must understand the dilute reservoir of material that surrounds galaxies, known as the circumgalactic medium (CGM), which is 10s to 100s of times the size of the galaxy, fills the dark matter halo, and contains as much or more material as is within the galaxy itself. Within the CGM fresh material accreted from the cosmic web interacts with galactic wind ejecta and the balance of cooling and heating determines the how much gas is able to make it down to the galaxy. This balance therefore determines how much fuel is available for ongoing star formation within the galaxy.
+
+Galactic Winds and Feedback
+====
+
+When a star explodes as a supernova (SN) within the interstellar medium (ISM) of a galaxy it releases prodigious amounts of energy into its surroundings. On the scale of a whole galaxy the energy released by the collective explosions of many SNe is responsible for energizing the ISM and for driving galactic winds. The stirring and ejecting of ISM gas by SNe is believed to play the dominant role in determining the relative inefficiency with which galaxies up to the mass of our own Milky Way turn gas into stars. It is therefore essential for any theory of galaxy formation to explain how energy is deposited into the ISM in the form of heat and turbulent motions (and cosmic rays), and to explain how mass and energy are sent flying out of the galaxy. 
+
+In order to isolate these crucial processes my collaborators (Eliot Quataert, Claude-Andre Faucher-Giguere, and Davide Martizzi) and I have simulated the collective effect of numerous SNe going off 
+
+Circumgalactic Medium 
+====
+
 
 <!-- 
 This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
