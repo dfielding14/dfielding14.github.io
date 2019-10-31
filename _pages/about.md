@@ -20,15 +20,21 @@ Research
 
 Broadly speaking I study how galaxies form. To understand how galaxies grow and evolve I study how they acquire and eject gas. These flows into and out of galaxies regulate their evolution. There are two crucial components to understanding these flows and they comprise the majority of my research focus. Within the galaxies we must understand the feedback that arises from the formation and subsequent explosion of stars, which can drive vigorous turbulence within the galaxy and powerful winds out of the galaxy. While on the outside of galaxies we must understand the dilute reservoir of material that surrounds galaxies, known as the circumgalactic medium (CGM), which is 10s to 100s of times the size of the galaxy, fills the dark matter halo, and contains as much or more material as is within the galaxy itself. Within the CGM fresh material accreted from the cosmic web interacts with galactic wind ejecta and the balance of cooling and heating determines the how much gas is able to make it down to the galaxy. This balance therefore determines how much fuel is available for ongoing star formation within the galaxy.
 
+I like to use the water cycle here on earth as an analogy for how I look at galaxy formation. In the water cycle water is heated and evaporates, then condenses in the form of clouds, and then it precipitates back down to earth where it nourishes and fuels living creatures before being evaporated all over again. In galaxies we can replace water with gas (mostly hydrogen and helium) and see that it is quite similar. Gas in the CGM condenses into clouds, which under certain conditions precipitates down to the galaxy. When this gas reaches the galaxy it is pure star fuel! Out of the freshly precipitated star fuel new young stars form. These stars release lots of energy and some of them explode as supernovae, which can launch gas back out of the galaxy and up into CGM. In this way what I work on---galactic gas cycle---can be seen as the galactic version of terrestrial hydrology! 
+
+An interesting part of the galactic gas cycle is the way that it self-regulates similar to a thermostat in a heating system. The more the CGM can cool and form clouds, the more gas makes its way to the galaxy, and the more stars form. As more stars form, more of them explode as SNe, which combine together to drive a wind out into the CGM. This wind will heat the CGM and prevent new clouds from forming, which limits the supply of star fuel and thereby weakens the wind until clouds can form and the process stars over again!
+
+
+Circumgalactic Medium 
+===
+
+
 Galactic Winds and Feedback
-====
+===
 
 When a star explodes as a supernova (SN) within the interstellar medium (ISM) of a galaxy it releases prodigious amounts of energy into its surroundings. On the scale of a whole galaxy the energy released by the collective explosions of many SNe is responsible for energizing the ISM and for driving galactic winds. The stirring and ejecting of ISM gas by SNe is believed to play the dominant role in determining the relative inefficiency with which galaxies up to the mass of our own Milky Way turn gas into stars. It is therefore essential for any theory of galaxy formation to explain how energy is deposited into the ISM in the form of heat and turbulent motions (and cosmic rays), and to explain how mass and energy are sent flying out of the galaxy. 
 
-In order to isolate these crucial processes my collaborators (Eliot Quataert, Claude-Andre Faucher-Giguere, and Davide Martizzi) and I have simulated the collective effect of numerous SNe going off 
-
-Circumgalactic Medium 
-====
+In order to isolate these crucial processes my collaborators (Eliot Quataert, Claude-Andre Faucher-Giguere, and Davide Martizzi) and I have simulated the collective effect of numerous SNe going off in patches of the ISM and in entire galaxies. We have found that by taking into account the natural clustering of SNe due to the clustered nature of star formation the efficiency of SN feedback is greatly enhanced. The winds that result from clustered SNe can be very strong, carrying nearly as much mass out as is turned into stars and carrying nearly all of the energy ejected out into the surrounding circumgalactic medium. The implications of the large energy flux into the inner CGM has not been fully explored yet but points to a picture in which galactic winds primarily impact galaxy evolution by preventing future accretion, as opposed to ejecting gas out of the galaxy that has already accreted (although both are certianly at play).
 
 
 <!-- 
