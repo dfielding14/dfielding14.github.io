@@ -15,7 +15,7 @@ About me
 
 
 <figure style="width: 300px" class="align-right">
-  <img src="/images/Me_alt.jpg" alt="">
+  <img src="/images/Me_alt.JPG" alt="">
   <figcaption>It's me!</figcaption>
 </figure> 
 
