@@ -15,14 +15,16 @@ First Author
 ===
 {% for post in site.publications reversed %}
     {% if {{ post.authorrank }} == "first" %}
-  {% include archive-single.html %}
+      {% include archive-single.html %}
+    {% endif %}
 {% endfor %}
 
 Second Author
 ===
 {% for post in site.publications reversed %}
     {% if {{ post.authorrank }} == "second" %}
-  {% include archive-single.html %}
+      {% include archive-single.html %}
+    {% endif %}
 {% endfor %}
 
 
@@ -30,6 +32,7 @@ N-th Author
 ===
 {% for post in site.publications reversed %}
     {% if {{ post.authorrank }} == "nth" %}
-  {% include archive-single.html %}
+      {% include archive-single.html %}
+    {% endif %}
 {% endfor %}
 
