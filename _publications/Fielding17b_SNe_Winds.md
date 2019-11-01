@@ -7,7 +7,7 @@ date: 2017-09-01
 venue: 'MNRAS'
 paperurl: 'http://dfielding14.github.io/files/Fielding17b_SNe_Winds.pdf'
 citation: 'Fielding, D., Quataert, E., Martizzi, D., and Faucher-Giguère, C.A., (2017). &quot;How supernovae launch galactic winds.&quot; <i>MNRAS</i>. 450(3), 3306-3318. May 2015.'
-authorrank:"first"
+authorrank: "first"
 ---
 We use idealized three-dimensional hydrodynamic simulations of global galactic discs to study the launching of galactic winds by supernovae (SNe). The simulations resolve the cooling radii of the majority of supernova remnants (SNRs) and thus self-consistently capture how SNe drive galactic winds. We find that SNe launch highly supersonic winds with properties that agree reasonably well with expectations from analytic models. The energy loading (η _E= \dot{E}_wind/ \dot{E}_SN) of the winds in our simulations are well converged with spatial resolution while the wind mass loading (η _M= \dot{M}_wind/\dot{M}_\star) decreases with resolution at the resolutions we achieve. We present a simple analytic model based on the concept that SNRs with cooling radii greater than the local scaleheight break out of the disc and power the wind. This model successfully explains the dependence (or lack thereof) of ηE (and by extension ηM) on the gas surface density, star formation efficiency, disc radius and the clustering of SNe. The winds our simulations are weaker than expected in reality, likely due to the fact that we seed SNe preferentially at density peaks. Clustering SNe in time and space substantially increases the wind power.
 

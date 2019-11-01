@@ -14,14 +14,14 @@ author_profile: true
 First Author
 ===
 {% for post in site.publications reversed %}
-    {% if post.authorrank == 'first' %}
+    {% if post.authorrank == "first" %}
   {% include archive-single.html %}
 {% endfor %}
 
 Second Author
 ===
 {% for post in site.publications reversed %}
-    {% if post.authorrank == 'second' %}
+    {% if post.authorrank == "second" %}
   {% include archive-single.html %}
 {% endfor %}
 
@@ -29,7 +29,7 @@ Second Author
 N-th Author
 ===
 {% for post in site.publications reversed %}
-    {% if post.authorrank == 'nth' %}
+    {% if post.authorrank == "nth" %}
   {% include archive-single.html %}
 {% endfor %}
 
