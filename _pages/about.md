@@ -7,17 +7,15 @@ redirect_from:
   - /about/
   - /about.html
 ---
+<figure style="width: 300px" class="align-right">
+  <img src="/images/Me_alt.JPG" alt="">
+  <figcaption>It's me!</figcaption>
+</figure> 
 
 As of 31 Oct 2019 this page is still under construction.
 
 About me
 ======
-
-
-<figure style="width: 300px" class="align-right">
-  <img src="/images/Me_alt.JPG" alt="">
-  <figcaption>It's me!</figcaption>
-</figure> 
 
 I am a theoretical astrophysicists primarily interested in how galaxies form and what goes on in the circumgalactic medium. In all of my work I use controlled numerical experiments in combination with analytic modeling to develop intuitive pictures for the key physical processes controlling the problem at hand. I am currently a Flatiron Research Fellow at the [Center for Computational Astrophysics](https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/) in the [Flatiron Institute](https://www.simonsfoundation.org/flatiron/). I received my Ph.D. from UC Berkeley where I worked with [Eliot Quataert](http://w.astro.berkeley.edu/~eliot/). Before going to Berkeley, I studied physics and math at Johns Hopkins University. I was born in New York City and grew up nearby in the town of Montclair, NJ.
 
