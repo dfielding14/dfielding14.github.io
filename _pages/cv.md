@@ -13,21 +13,21 @@ A pdf version of my CV can be found [here](http://dfielding14.github.io/files/DB
 
 Education
 ======
-* Ph.D in Astrophysics, University of California, Berkeley, 2018
+* Ph.D in Astrophysics, University of California, Berkeley, [2018]{style="float:right"}
   * Advisor: Eliot Quataert
   * Thesis: Interplay of Galactic Winds and Circumgalactic Media
-* M.S. in Astrophysics, University of California, Berkeley, 2014
-* B.A. in Physics, Johns Hopkins University, 2012
-* B.A. in Math, Johns Hopkins University, 2012
+* M.S. in Astrophysics, University of California, Berkeley, [2014]{style="float:right"}
+* B.A. in Physics, Johns Hopkins University, [2012]{style="float:right"}
+* B.A. in Math, Johns Hopkins University, [2012]{style="float:right"}
 
 
 Work experience
 ======
-* Flatiron Research Fellow, Post-doc, Center for Computational Astrophysics, Flatiron Institute, Simons Foundation since 2018
+* Flatiron Research Fellow, Post-doc, Center for Computational Astrophysics, Flatiron Institute, Simons Foundation [since 2018]{style="float:right"}
   * Collaborators: Greg Bryan, Eve Ostriker, Jonathan Stern, Rachel Somerville, Claude-Andre Faucher-Giguere, Eliot Quataert, Stephanie Tonnenson, Iryna Butsky, Viraj Pandya, Miao Li, Kung-Yi Su, Adam Jermyn, and more.
-* NSF Graduate Research Fellow 2014-2017
-* Visiting Researcher IISc with Prateek Sharma 2016
-* Berkeley Fellow for Graduate Study 2012-2014
+* Visiting Researcher IISc with Prateek Sharma [2016]{style="float:right"}
+* NSF Graduate Research Fellow [2014-2017]{style="float:right"}
+* Berkeley Fellow for Graduate Study [2012-2014]{style="float:right"}
 
 
 Publications
