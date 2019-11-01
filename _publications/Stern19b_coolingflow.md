@@ -1,0 +1,19 @@
+---
+title: "The maximum accretion rate of hot gas in dark matter halos"
+collection: publications
+permalink: /publication/Stern19b_coolingflow
+excerpt: 'The maximum accretion rate of hot gas in dark matter halos.'
+date: 2019-09-02
+venue: 'MNRAS'
+paperurl: 'http://dfielding14.github.io/files/Stern19b_coolingflow.pdf'
+citation: 'Stern, J., Fielding, D., Faucher-Giguère, C.-A., and Quataert, E. (2019). &quot;The maximum accretion rate of hot gas in dark matter halos.&quot; <i>MNRAS Submitted</i>.'
+authorrank: "second"
+---
+We revisit the question of 'hot mode' versus 'cold mode' accretion onto galaxies using steady-state cooling flow solutions and idealized 3D hydrodynamic simulations. We demonstrate that for the hot accretion mode to exist, the cooling time is required to be longer than the free-fall time near the radius where the gas is rotationally-supported, R_circ, ie the existence of the hot mode depends on physical conditions at the galaxy scale rather than on physical conditions at the halo scale. When allowing for the depletion of the halo baryon fraction relative to the cosmic mean, the longer cooling times imply that a virialized gaseous halo may form in halo masses below the threshold of~ 10^12 M_sun derived for baryon-complete halos. We show that for any halo mass there is a maximum accretion rate for which the gas is virialized throughout the halo and can accrete via the hot mode of Mdot_crit~ 0.7 (v_c/100 km/s)^ 5.4 (R_circ/10 kpc)(Z/Z_sun)^-0.9 M_sun/yr, where Z and v_c are the metallicity and circular velocity measured at R_circ. For accretion rates>~ Mdot_crit the volume-filling gas phase can in principle betransonic'--virialized in the outer halo but cool and free-falling near the galaxy. We compare Mdot_crit to the average star formation rate (SFR) in halos at 0< z< 10 implied by the stellar-mass halo-mass relation. For a plausible metallicity evolution with redshift, we find that SFR<~ Mdot_crit at most masses and redshifts, suggesting that the SFR of galaxies could be primarily sustained by the hot mode in halo masses well below the classic threshold of~ 10^ 12 M_sun.
+
+
+[Download paper here](http://dfielding14.github.io/files/Stern19b_coolingflow.pdf)
+
+[Watch movies of superbubbles expanding and breaking out here]()
+
+Jonathan Stern, Drummond Fielding, Claude-André Faucher-Giguère, Eliot Quataert. The maximum accretion rate of hot gas in dark matter halos. MNRAS, [Submitted](https://arxiv.org/abs/1909.07402), Sep 2019
