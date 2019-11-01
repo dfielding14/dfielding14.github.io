@@ -6,7 +6,7 @@ excerpt: 'The impact of star formation feedback on the circumgalactic medium.'
 date: 2017-04-01
 venue: 'MNRAS'
 paperurl: 'http://dfielding14.github.io/files/Fielding17a_CGM.pdf'
-citation: '**Fielding, D.**, Quataert, E., McCourt, M., and Thompson, T. (2017). &quot;The impact of star formation feedback on the circumgalactic medium
+citation: 'Fielding, D., Quataert, E., McCourt, M., and Thompson, T. (2017). &quot;The impact of star formation feedback on the circumgalactic medium
 .&quot; <i>MNRAS</i>. 481(3):3325–3347. Dec 2018.'
 authorrank: "first"
 ---
