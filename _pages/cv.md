@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+A pdf version of my CV can be found [here](http://dfielding14.github.io/files/DBF_CV.pdf), which was last updated 1 Nov 2019.
+
 Education
 ======
 * Ph.D in Astrophysics, University of California, Berkeley, 2018
@@ -21,24 +23,40 @@ Education
 
 Work experience
 ======
-* Flatiron Research Fellow, Post-doc, Center for Computational Astrophysics, Flatiron Institute, Simons Foundations
-  * Collaborators: Greg Bryan, Eve Ostriker, Jonathan Stern, Rachel Somerville, Claude-Andre Faucher-Giguere, Eliot Quataert, Stephanie Tonnenson, 
+* Flatiron Research Fellow, Post-doc, Center for Computational Astrophysics, Flatiron Institute, Simons Foundation since 2018
+  * Collaborators: Greg Bryan, Eve Ostriker, Jonathan Stern, Rachel Somerville, Claude-Andre Faucher-Giguere, Eliot Quataert, Stephanie Tonnenson, Iryna Butsky, Viraj Pandya, Miao Li, Kung-Yi Su, Adam Jermyn, and more.
+* NSF Graduate Research Fellow 2014-2017
+* Visiting Researcher IISc with Prateek Sharma 2016
+* Berkeley Fellow for Graduate Study 2012-2014
 
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
 
 Publications
 ======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
+A full list of publications can be found [here](https://ui.adsabs.harvard.edu/user/libraries/xhnvsk6JRsC7Ljzg8ToqVQ).
+
+### First Author
+{% for post in site.publications reversed %}
+    {% if post.authorrank == "first" %}
+      {% include archive-single.html %}
+    {% endif %}
+{% endfor %}
+
+### Second Author
+{% for post in site.publications reversed %}
+    {% if post.authorrank == "second" %}
+      {% include archive-single.html %}
+    {% endif %}
+{% endfor %}
+
+
+### N-th Author
+{% for post in site.publications reversed %}
+    {% if post.authorrank == "nth" %}
+      {% include archive-single.html %}
+    {% endif %}
+{% endfor %}
+
+
 Talks
 ======
   <ul>{% for post in site.talks %}
@@ -53,4 +71,8 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Graduate student mentor for the Flatiron Pre-Doctoral Program (Iryna Butsky) 2019
+* Referee: ApJ, ApJL, MNRAS since 2016
+* Graduate Student Instructor: Astro C12, Astro 7A
+
+Science 

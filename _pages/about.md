@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-<figure style="width: 300px" class="align-right">
+<figure style="width: 350px" class="align-right">
   <img src="/images/Me_alt.JPG" alt="">
   <figcaption>It's me!</figcaption>
 </figure> 
