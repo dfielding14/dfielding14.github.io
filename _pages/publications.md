@@ -5,9 +5,10 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if author.orcid %}
-  You can also find my articles on <u><a href="{{author.orcid}}">my orcid profile</a>.</u>
+{% if site.author.orcid %}
+  You can also find my articles on <u><a href="{{site.author.orcid}}">my orcid profile</a>.</u>
 {% endif %}
+
 
 {% include base_path %}
 
