@@ -9,6 +9,10 @@ author_profile: true
   You can also find my articles on <u><a href="{{site.author.orcid}}">my orcid profile</a>.</u>
 {% endif %}
 
+{% if site.author.googlescholar %}
+  Or, if you prefer, you can find my articles on <u><a href="{{site.author.googlescholar}}">my google scholar profile</a>.</u>
+{% endif %}
+
 
 {% include base_path %}
 
@@ -20,6 +24,8 @@ First Author
     {% endif %}
 {% endfor %}
 
+
+
 Second Author
 ====
 {% for post in site.publications reversed %}
@@ -27,6 +33,8 @@ Second Author
       {% include archive-single.html %}
     {% endif %}
 {% endfor %}
+
+
 
 
 N-th Author
