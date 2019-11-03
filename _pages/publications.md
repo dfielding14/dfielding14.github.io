@@ -12,14 +12,16 @@ author_profile: true
 
 {% include base_path %}
 
-### First Author
+First Author
+====
 {% for post in site.publications reversed %}
     {% if post.authorrank == "first" %}
       {% include archive-single.html %}
     {% endif %}
 {% endfor %}
 
-### Second Author
+Second Author
+====
 {% for post in site.publications reversed %}
     {% if post.authorrank == "second" %}
       {% include archive-single.html %}
@@ -27,7 +29,8 @@ author_profile: true
 {% endfor %}
 
 
-### N-th Author
+N-th Author
+====
 {% for post in site.publications reversed %}
     {% if post.authorrank == "nth" %}
       {% include archive-single.html %}
