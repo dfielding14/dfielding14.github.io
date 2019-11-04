@@ -5,6 +5,10 @@ title: "Movies"
 author_profile: true
 ---
 
+Here is a movie of my radiative turbulent mixing layers that will be publishes shortly!
+{% include video id="370896076" provider="vimeo" %}
+
+<!-- 
 {% include base_path %}
 {% capture written_year %}'None'{% endcapture %}
 {% for post in site.posts %}
@@ -15,3 +19,4 @@ author_profile: true
   {% endif %}
   {% include archive-single.html %}
 {% endfor %}
+ -->
