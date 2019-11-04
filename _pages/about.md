@@ -6,6 +6,8 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
+header:
+  image: /images/TurkishMarbledPaper.jpg
 ---
 As of 1 Nov 2019 this page is still under construction.
 
