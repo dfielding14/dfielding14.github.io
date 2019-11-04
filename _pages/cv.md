@@ -75,4 +75,12 @@ Service and leadership
 * Referee: ApJ, ApJL, MNRAS since 2016
 * Graduate Student Instructor: Astro C12, Astro 7A
 
-Science 
+Outreach
+======
+*  Taught a series of astronomy classes to 2nd and 3rd grade students 2017
+   *  North Oakland Community Charter School
+*  Undergrad mentor UC Berkeley Astronomy 2016-2017
+*  UC Berkeley Astronomy Department Public Liason 2015
+*  East Bay Astronomical Society Public Lecture 2014
+   *  Chabot Space and Science Center
+*  The Berkeley Compass Project Summer Evening Instructor 2013
