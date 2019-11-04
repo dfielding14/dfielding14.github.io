@@ -4,6 +4,7 @@ permalink: /movies/
 title: "Movies"
 author_profile: true
 ---
+{% include base_path %}
 
 Here is a movie of my radiative turbulent mixing layers that will be publishes shortly!
 {% include video id="370896076" provider="vimeo" %}
