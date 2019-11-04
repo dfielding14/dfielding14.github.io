@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 header:
-  image: /images/image-alignment-1200x4002.jpg
+  image: TurkishMarbledPaper.jpg
 ---
 As of 1 Nov 2019 this page is still under construction.
 
