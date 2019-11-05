@@ -4,7 +4,7 @@ permalink: /movies/
 title: "Movies"
 author_profile: true
 header:
-  overlay_image: marbled_5.jpeg
+  overlay_image: marbled_5.jpg
 ---
 {% include base_path %}
 
