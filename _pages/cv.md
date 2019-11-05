@@ -5,6 +5,8 @@ permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
+header:
+  overlay_image: marbled_3.jpeg
 ---
 
 {% include base_path %}
