@@ -58,20 +58,6 @@ A full list of publications can be found [here](https://ui.adsabs.harvard.edu/us
     {% endif %}
 {% endfor %}
 
-<!-- 
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-   -->
-
 
 Service and leadership
 ======
@@ -88,3 +74,22 @@ Outreach
 *  East Bay Astronomical Society Public Lecture 2014
    *  Chabot Space and Science Center
 *  The Berkeley Compass Project Summer Evening Instructor 2013
+
+
+
+
+
+
+<!-- 
+Talks
+======
+  <ul>{% for post in site.talks %}
+    {% include archive-single-talk-cv.html %}
+  {% endfor %}</ul>
+  
+Teaching
+======
+  <ul>{% for post in site.teaching %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+   -->
