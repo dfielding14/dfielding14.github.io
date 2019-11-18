@@ -58,7 +58,7 @@ A full list of publications can be found [here](https://ui.adsabs.harvard.edu/us
     {% endif %}
 {% endfor %}
 
-
+<!-- 
 Talks
 ======
   <ul>{% for post in site.talks %}
@@ -70,7 +70,7 @@ Teaching
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
+   -->
 Service and leadership
 ======
 * Graduate student mentor for the Flatiron Pre-Doctoral Program (Iryna Butsky) 2019
