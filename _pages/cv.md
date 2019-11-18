@@ -26,7 +26,7 @@ Education
 Work experience
 ======
 * Flatiron Research Fellow, Post-doc, Center for Computational Astrophysics, Flatiron Institute, Simons Foundation since 2018
-  * Collaborators: Greg Bryan, Eve Ostriker, Jonathan Stern, Rachel Somerville, Claude-Andre Faucher-Giguere, Eliot Quataert, Stephanie Tonnenson, Iryna Butsky, Viraj Pandya, Miao Li, Kung-Yi Su, Adam Jermyn, and more.
+  <!-- * Collaborators: Greg Bryan, Eve Ostriker, Jonathan Stern, Rachel Somerville, Claude-Andre Faucher-Giguere, Eliot Quataert, Stephanie Tonnenson, Iryna Butsky, Viraj Pandya, Miao Li, Kung-Yi Su, Adam Jermyn, and more. -->
 * NSF Graduate Research Fellow 2014-2017
 * Visiting Researcher IISc with Prateek Sharma 2016
 * Berkeley Fellow for Graduate Study 2012-2014
