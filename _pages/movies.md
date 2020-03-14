@@ -8,10 +8,15 @@ header:
 ---
 {% include base_path %}
 
-### Radiative Kelvin Helmholtz
+### Radiative Turbulent Mixing Layers
 
-Here is a movie of my radiative turbulent mixing layers that will be published shortly!
-{% include video id="370896076" provider="vimeo" %}
+Here are some movies of my radiative turbulent mixing layers that will be published shortly!
+
+Rapidly cooling simulation
+{% include video id="397632983" provider="vimeo" %}
+
+Mildly cooling simulation
+{% include video id="397632971" provider="vimeo" %}
 
 ### Clustered SNe Driving Galactic Winds
 
