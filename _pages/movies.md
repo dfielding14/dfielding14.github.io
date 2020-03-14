@@ -8,7 +8,7 @@ header:
 ---
 {% include base_path %}
 
-You can find many of my movies <u><a href=https://vimeo.com/user104775348>here</a>.</u> 
+You can find many of my movies <u><a href="https://vimeo.com/user104775348">here</a>.</u> 
 
 ### Radiative Turbulent Mixing Layers
 
