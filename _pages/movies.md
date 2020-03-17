@@ -18,7 +18,7 @@ Rapidly cooling simulation
 {% include video id="397632983" provider="vimeo" %}
 
 Here is a visualization of the fractal surface where cooling takes place in a rapid cooling simulations
-{% include video id="397632983" provider="vimeo" %}
+{% include video id="398055547" provider="vimeo" %}
 
 Mildly cooling simulation
 {% include video id="397632971" provider="vimeo" %}
