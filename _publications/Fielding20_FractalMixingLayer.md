@@ -5,7 +5,7 @@ permalink: /publication/Fielding18_ClusteredSNe
 excerpt: 'Multiphase Gas and the Fractal Nature of Radiative Turbulent Mixing Layers.'
 date: 2020-05-01
 venue: 'ApJ'
-paperurl: 'http://dfielding14.github.io/files/Fielding18_ClusteredSNe.pdf'
+paperurl: 'http://dfielding14.github.io/files/Fielding20_FractalMixingLayer.pdf'
 citation: 'Fielding, D., Ostriker, E., Bryan, G., and Jermyn, A. (2020). &quot;Multiphase Gas and the Fractal Nature of Radiative Turbulent Mixing Layers.&quot; <i>ApJ</i>. 894, L24. May 2020.'
 authorrank: "first"
 ---
