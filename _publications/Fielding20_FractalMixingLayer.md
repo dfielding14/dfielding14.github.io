@@ -13,6 +13,11 @@ A common situation in galactic and intergalactic gas involves cold dense gas in 
 
 [Download paper here](http://dfielding14.github.io/files/Fielding20_FractalMixingLayer.pdf)
 
+<figure>
+  <img src="/images/multi_slice_Fielding2020_FractalMixingLayer.png" alt="">
+  <figcaption>A multipanel view of one of the simulations used in this paper showing two dimensional slices through the three dimensional simulations.</figcaption>
+</figure> 
+
 
 ### Press
 AAS Nova featured this work in it's Research Highlights section, which can be found [here](https://aasnova.org/2020/06/08/featured-image-fractals-in-cosmic-gas/)
