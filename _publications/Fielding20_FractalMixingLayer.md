@@ -1,7 +1,7 @@
 ---
 title: "Multiphase Gas and the Fractal Nature of Radiative Turbulent Mixing Layers"
 collection: publications
-permalink: /publication/Fielding18_ClusteredSNe
+permalink: /publication/Fielding20_FractalMixingLayer
 excerpt: 'Multiphase Gas and the Fractal Nature of Radiative Turbulent Mixing Layers.'
 date: 2020-05-01
 venue: 'ApJ'
