@@ -9,12 +9,11 @@ redirect_from:
 header:
   overlay_image: TurkishMarbledPaper.jpg
 ---
-As of 9 July 2020 this page is still under construction.
-
+<!-- 
 <figure style="width: 350px" class="align-right">
   <img src="/images/Me_alt.JPG" alt="">
   <figcaption>It's me!</figcaption>
-</figure> 
+</figure>  -->
 
 ### About me
 
