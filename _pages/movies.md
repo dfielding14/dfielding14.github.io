@@ -12,7 +12,7 @@ You can find many of my movies <u><a href="https://vimeo.com/user104775348">here
 
 ### Radiative Turbulent Mixing Layers
 
-Here are some movies of my radiative turbulent mixing layers that will be published shortly!
+Here are some movies of my radiative turbulent mixing layers!
 
 Rapidly cooling simulation
 {% include video id="397632983" provider="vimeo" %}
@@ -22,6 +22,14 @@ Here is a visualization of the fractal surface where cooling takes place in a ra
 
 Mildly cooling simulation
 {% include video id="397632971" provider="vimeo" %}
+
+### High-$\beta$ Plasmoids
+
+Here are some movies of Plasmoids forming in high-$\beta$ systems!
+
+Zoom in
+{% include video id="482820624" provider="vimeo" %}
+
 
 ### Clustered SNe Driving Galactic Winds
 
