@@ -13,13 +13,6 @@ header:
 
 A pdf version of my CV can be found [here](http://dfielding14.github.io/files/DBF_CV.pdf){:target="_blank"}, which was last updated 24 Dec 2020.
 
-
-<object data="http://dfielding14.github.io/files/DBF_CV.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="http://dfielding14.github.io/files/DBF_CV.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://dfielding14.github.io/files/DBF_CV.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
-
 <!-- 
 Education
 ======
