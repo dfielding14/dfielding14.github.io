@@ -11,7 +11,7 @@ header:
 
 {% include base_path %}
 
-A pdf version of my CV can be found [here](http://dfielding14.github.io/files/DBF_CV.pdf), which was last updated 1 Nov 2019.
+A pdf version of my CV can be found [here](http://dfielding14.github.io/files/DBF_CV.pdf){:target="_blank"}, which was last updated 1 Nov 2019.
 
 Education
 ======
