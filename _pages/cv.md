@@ -11,22 +11,29 @@ header:
 
 {% include base_path %}
 
-A pdf version of my CV can be found [here](http://dfielding14.github.io/files/DBF_CV.pdf){:target="_blank"}, which was last updated 1 Nov 2019.
+A pdf version of my CV can be found [here](http://dfielding14.github.io/files/DBF_CV.pdf){:target="_blank"}, which was last updated 24 Dec 2020.
 
+
+<object data="http://dfielding14.github.io/files/DBF_CV.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="http://dfielding14.github.io/files/DBF_CV.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://dfielding14.github.io/files/DBF_CV.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+<!-- 
 Education
 ======
 * Ph.D in Astrophysics, University of California, Berkeley, 2018
   * Advisor: Eliot Quataert
   * Thesis: Interplay of Galactic Winds and Circumgalactic Media
 * M.S. in Astrophysics, University of California, Berkeley, 2014
-* B.A. in Physics, Johns Hopkins University, 2012
+* B.S. in Physics, Johns Hopkins University, 2012
 * B.A. in Math, Johns Hopkins University, 2012
 
 
 Work experience
 ======
 * Flatiron Research Fellow, Post-doc, Center for Computational Astrophysics, Flatiron Institute, Simons Foundation since 2018
-  <!-- * Collaborators: Greg Bryan, Eve Ostriker, Jonathan Stern, Rachel Somerville, Claude-Andre Faucher-Giguere, Eliot Quataert, Stephanie Tonnenson, Iryna Butsky, Viraj Pandya, Miao Li, Kung-Yi Su, Adam Jermyn, and more. -->
 * NSF Graduate Research Fellow 2014-2017
 * Visiting Researcher IISc with Prateek Sharma 2016
 * Berkeley Fellow for Graduate Study 2012-2014
@@ -49,7 +56,6 @@ A full list of publications can be found [here](https://ui.adsabs.harvard.edu/us
       {% include archive-single.html %}
     {% endif %}
 {% endfor %}
-
 
 ### N-th Author
 {% for post in site.publications reversed %}
@@ -76,8 +82,7 @@ Outreach
 *  The Berkeley Compass Project Summer Evening Instructor 2013
 
 
-
-
+ -->
 
 
 <!-- 
