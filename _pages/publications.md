@@ -28,6 +28,15 @@ First Author
 
 
 
+Papers led by students I mentored
+====
+{% for post in site.publications reversed %}
+    {% if post.authorrank == "student" %}
+      {% include archive-single.html %}
+    {% endif %}
+{% endfor %}
+
+
 Second Author
 ====
 {% for post in site.publications reversed %}

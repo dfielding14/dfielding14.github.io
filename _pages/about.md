@@ -21,7 +21,6 @@ I am a theoretical astrophysicist primarily interested in how galaxies form and 
 
 
 ### Research
-
 <figure>
   <figcaption>Overview of my research program: Visualizations show the temperature in three of my simulations on spatial scales ranging from sub-pc to 100 kpc. The projects color coded in green are related to multiphase gas mixing, which is depicted in the left image. The central image depicts the launching of a galactic wind and is related to the projects color coded in orange. The projects labeled in purple are connected to the CGM, which is shown on the right.</figcaption>
   <img src="/images/ResearchStatementGraphic_final_LR_bigger_text_with_galaxy_blended.JPG">
