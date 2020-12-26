@@ -1,4 +1,4 @@
----
+        ---
 title: "First results from SMAUG: Uncovering the Origin of the Multiphase Circumgalactic Medium with a Comparative Analysis of Idealized and Cosmological Simulations"
 collection: publications
 permalink: /publication/Fielding20_SMAUG_CGM
@@ -19,4 +19,4 @@ We examine the properties of the circumgalactic medium (CGM) at low redshift in 
 </figure> 
 
 
-Drummond B. Fielding, Stephanie Tonnesen, Daniel DeFelippis,  Miao Li,  Kung-Yi Su, Greg L. Bryan, Chang-Goo Kim, John C. Forbes, Rachel S. Somerville, Nicholas Battaglia, Evan E. Schneider, Yuan Li, Ena Choi, Christopher C. Hayward, and Hernquist, Lars (2020). &quot;First results from SMAUG: Uncovering the Origin of the Multiphase Circumgalactic Medium with a Comparative Analysis of Idealized and Cosmological Simulations.&quot; <i>ApJ</i>. [June 2020](https://ui.adsabs.harvard.edu/abs/2020arXiv200616316F/abstract).
+Drummond B. Fielding, Stephanie Tonnesen, Daniel DeFelippis,  Miao Li,  Kung-Yi Su, Greg L. Bryan, Chang-Goo Kim, John C. Forbes, Rachel S. Somerville, Nicholas Battaglia, Evan E. Schneider, Yuan Li, Ena Choi, Christopher C. Hayward, and Hernquist, Lars (2020). &quot;First results from SMAUG: Uncovering the Origin of the Multiphase Circumgalactic Medium with a Comparative Analysis of Idealized and Cosmological Simulations.&quot; <i>ApJ</i>. [903, 32](https://ui.adsabs.harvard.edu/abs/2020arXiv200616316F/abstract), June 2020.
