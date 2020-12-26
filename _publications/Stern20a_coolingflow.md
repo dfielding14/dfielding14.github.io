@@ -14,6 +14,4 @@ We revisit the question of 'hot mode' versus 'cold mode' accretion onto galaxies
 
 [Download paper here](http://dfielding14.github.io/files/Stern20a_coolingflow.pdf)
 
-[Watch movies of superbubbles expanding and breaking out here]()
-
-Jonathan Stern, Drummond Fielding, Claude-André Faucher-Giguère, Eliot Quataert. The maximum accretion rate of hot gas in dark matter halos. MNRAS, [Submitted](https://arxiv.org/abs/1909.07402), Sep 2019
+Jonathan Stern, Drummond Fielding, Claude-André Faucher-Giguère, Eliot Quataert. The maximum accretion rate of hot gas in dark matter halos. MNRAS, [492, 6042](https://arxiv.org/abs/1909.07402), Mar 2020
