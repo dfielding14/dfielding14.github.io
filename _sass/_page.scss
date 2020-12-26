@@ -45,6 +45,7 @@
 
 .page__lead {
   font-family: $global-font-family;
+  font-weight: $global-font-weight;
   font-size: $type-size-4;
 }
 
@@ -174,6 +175,7 @@
   padding: 2px 5px;
   color: #fff;
   font-family: $caption-font-family;
+  font-weight: $caption-font-weight;
   font-size: $type-size-7;
   background: #000;
   text-align: right;
