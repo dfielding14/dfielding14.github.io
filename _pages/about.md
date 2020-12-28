@@ -15,11 +15,11 @@ header:
   <figcaption>It's me!</figcaption>
 </figure>  -->
 
-### About me
+## About me
 I am a theoretical astrophysicist primarily interested in how galaxies form and what goes on in the circumgalactic medium. In all of my work I seek to use controlled numerical experiments in combination with analytic modeling to develop an intuitive understanding of the key physical processes controlling the problems I am studying. Since November 2018, I have been a Flatiron Research Fellow at the [Center for Computational Astrophysics](https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/) in the [Flatiron Institute](https://www.simonsfoundation.org/flatiron/). I received my Ph.D. from UC Berkeley where I worked with [Eliot Quataert](http://w.astro.berkeley.edu/~eliot/). Before going to Berkeley, I studied physics and math at Johns Hopkins University. I was born in New York City and grew up nearby in the town of Montclair, NJ.
 
 
-### Research
+## Research
 <figure>
   <figcaption>Overview of my research program: Visualizations show the temperature in three of my simulations on spatial scales ranging from sub-pc to 100 kpc. The projects color coded in green are related to multiphase gas mixing, which is depicted in the left image. The central image depicts the launching of a galactic wind and is related to the projects color coded in orange. The projects labeled in purple are connected to the CGM, which is shown on the right.</figcaption>
   <img src="/images/ResearchStatementGraphic_final_LR_bigger_text_with_galaxy_blended.JPG">
