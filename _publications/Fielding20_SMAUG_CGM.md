@@ -1,4 +1,4 @@
-        ---
+---
 title: "First results from SMAUG: Uncovering the Origin of the Multiphase Circumgalactic Medium with a Comparative Analysis of Idealized and Cosmological Simulations"
 collection: publications
 permalink: /publication/Fielding20_SMAUG_CGM
