@@ -28,10 +28,9 @@ An interesting part of the galactic gas cycle is the way that it self-regulates 
 
 ### Multiphase Galactic Winds
 
-
 <figure>
   <img src="/images/Multiphase_Winds_Schematic.png">
-  <figcaption> Schematic overview of Multiphase Galactic Winds from Fielding & Bryan (2021). A high res pdf can be found [here](http://dfielding14.github.io/images/Multiphase_Winds_Schematic.pdf){:target="_blank"}</figcaption>
+  <figcaption> Schematic overview of Multiphase Galactic Winds from Fielding & Bryan (2021). A high res pdf can be found [here](http://dfielding14.github.io/images/Multiphase_Winds_Schematic.pdf){:target="_blank"}. This graphic was made in collaboration with Lucy Reading-Ikkanda.</figcaption>
 </figure> 
 
 
