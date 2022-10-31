@@ -46,6 +46,8 @@ In line with the nature of the CGM my work on the CGM has focused on many scales
   <figcaption>Slices of density and temperature at 4 times through the CGM of halos with different masses. This is from Fielding et al. (2017).</figcaption>
 </figure>
 
+
+
 ### Galactic Winds and Feedback
 When a star explodes as a supernova (SN) within the interstellar medium (ISM) of a galaxy it releases prodigious amounts of energy into its surroundings. On the scale of a whole galaxy the energy released by the collective explosions of many SNe is responsible for energizing the ISM and for driving galactic winds. The stirring and ejecting of ISM gas by SNe is believed to play the dominant role in determining the relative inefficiency with which galaxies up to the mass of our own Milky Way turn gas into stars. It is therefore essential for any theory of galaxy formation to explain how energy is deposited into the ISM in the form of heat and turbulent motions (and cosmic rays), and to explain how mass and energy are sent flying out of the galaxy. 
 
@@ -54,6 +56,12 @@ In order to isolate these crucial processes my collaborators (Eliot Quataert, Cl
 <figure>
   <img src="/images/Clustered_SNe_mixed_strip_4panel_Sig30_Mcl45_1pc_3_3_23Myr_zoom_panel.png">
   <figcaption>Slices of temperature, density, velocity, and cooling rate at 2 times through the ISM of a galaxy with a massive cluster of SNe in the process of going off and launching a wind. This is from Fielding et al. (2018).</figcaption>
+</figure>
+
+### Plasmoid Mediated Magnetic Reconnection in the ISM
+<figure>
+  <img src="/images/ISM_Plasmoid.png">
+  <figcaption>Volume rendering of the temperature and magnetic fields in a patch of the turbulent, thermally unstable ISM. The magnetic fields commonly exhibit clear helical patterns, which are signs of the plasmoid instability and the associated fast magnetic reconnection. This is from Fielding et al. (2022b).</figcaption>
 </figure>
 
 

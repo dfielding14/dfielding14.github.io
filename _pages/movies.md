@@ -8,7 +8,7 @@ header:
 ---
 {% include base_path %}
 
-You can find many of my movies <u><a href="https://vimeo.com/user104775348">here</a>.</u> 
+You can find many of my movies <u><a href="https://vimeo.com/user104775348">here</a></u> and <u><a href="https://www.youtube.com/channel/UCVBtjNpelIuhdwarTfSQtow">here</a>.</u>
 
 ### Radiative Turbulent Mixing Layers
 
@@ -21,9 +21,9 @@ Here is a visualization of the fractal surface where cooling takes place in a ra
 {% include video id="398055547" provider="vimeo" %}
 
 Mildly cooling simulation
-{% include video id="397632971" provider="vimeo" %}
+{% include video id="lm0DQqdLVVs" provider="youtube" %}
 
-### High-$\beta$ Plasmoids
+### Plasmoid Instability
 
 Here are some movies of Plasmoids forming in high-$\beta$ systems!
 
