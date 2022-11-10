@@ -35,6 +35,9 @@ Zoom in
 
 Here are some movies of my radiative turbulent mixing layers!
 
+Volume rendering of a mixing layer. Color shows the turbulent velocity and the opacity follows temperature, with hot transparent and cold opaque.
+{% include video id="zmNq5tjuF88" provider="youtube" %}
+
 Rapidly cooling simulation
 {% include video id="397632983" provider="vimeo" %}
 
