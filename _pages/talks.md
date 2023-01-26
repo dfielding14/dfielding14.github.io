@@ -9,4 +9,6 @@ header:
 
 {% include base_path %}
 
-The slides for my KITP keynote talk on "Why are gaseous halos often multiphase?" [here](http://dfielding14.github.io/Multiphase_Keynote_KITP_Fielding_LR/index.html){:target="_blank"}
+Below is a recording of my keynote talk at the KITP workshop on Fundamentals of gaseous halos. My presentation is centered around answering "Why are gaseous halos often multiphase?" The slides can be found [here](http://dfielding14.github.io/Multiphase_Keynote_KITP_Fielding_LR/index.html){:target="_blank"}. 
+
+{% include video id="dQ2NAg7dFJE" provider="youtube" %}
