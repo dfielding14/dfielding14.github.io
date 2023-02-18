@@ -11,7 +11,7 @@ header:
 ---
 <!-- 
 <figure style="width: 350px" class="align-right">
-  <img src="/images/Me_alt.JPG" alt="">
+  <img src="/images/DrummondFieldingPhoto.JPG" alt="">
   <figcaption>It's me!</figcaption>
 </figure>  -->
 
