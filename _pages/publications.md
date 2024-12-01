@@ -19,9 +19,9 @@ Or, if those aren't to you liking then you can find my articles on <u><a href="h
 
 {% include base_path %}
 
-A full list of my publications can be found [here](http://dfielding14.github.io/files/DBF_CV-Publist.pdf){:target="_blank"}, which was last updated 12 Nov 2023.
+A full list of my publications can be found [here](http://dfielding14.github.io/files/DBF_CV-Publist.pdf){:target="_blank"}, which was last updated 30 Nov 2024.
 
-<!-- 
+<!--
 
 First Author
 ====
