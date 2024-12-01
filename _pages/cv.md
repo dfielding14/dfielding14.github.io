@@ -11,9 +11,9 @@ header:
 
 {% include base_path %}
 
-A pdf version of my CV can be found [here](http://dfielding14.github.io/files/DBF_CV.pdf){:target="_blank"}, a version without publications can be found [here](http://dfielding14.github.io/files/DBF_CV_nopubs.pdf){:target="_blank"}, and a separate list of my publications can be found [here](http://dfielding14.github.io/files/DBF_CV-Publist.pdf){:target="_blank"}, which was last updated 12 Nov 2023.
+A pdf version of my CV can be found [here](http://dfielding14.github.io/files/DBF_CV.pdf){:target="_blank"}, a version without publications can be found [here](http://dfielding14.github.io/files/DBF_CV_nopubs.pdf){:target="_blank"}, and a separate list of my publications can be found [here](http://dfielding14.github.io/files/DBF_CV-Publist.pdf){:target="_blank"}, which was last updated 30 Nov 2024.
 
-<!-- 
+<!--
 Education
 ======
 * Ph.D in Astrophysics, University of California, Berkeley, 2018
@@ -78,13 +78,13 @@ Outreach
  -->
 
 
-<!-- 
+<!--
 Talks
 ======
   <ul>{% for post in site.talks %}
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
-  
+
 Teaching
 ======
   <ul>{% for post in site.teaching %}
