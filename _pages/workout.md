@@ -426,6 +426,31 @@ h3 {
   <p>Dynamic lunge-rotation combo hitting hips, T-spine, ankles. <a href="https://www.self.com/story/worlds-greatest-stretch-benefits">Overview</a></p>
 </div>
 
+<div id="hip-cars" class="glossary-item">
+  <h3>Hip CARs</h3>
+  <p>Controlled Articular Rotations for the hip joint — stand tall or in quadruped and move hip slowly through its full range to maintain mobility and joint health.</p>
+</div>
+
+<div id="figure4-lumbar-twist" class="glossary-item">
+  <h3>Figure-4 &amp; Lumbar Twist</h3>
+  <p>Lie on back, cross ankle over opposite knee (figure-4) then gently pull legs toward chest while rotating knees across body for a combined glute and lower-back stretch.</p>
+</div>
+
+<div id="reverse-lunge-knee-drive" class="glossary-item">
+  <h3>Reverse Lunge → Knee-Drive</h3>
+  <p>Step back into a reverse lunge then drive the rear knee forward and up explosively. Emphasizes single-leg power, balance, and hip flexor strength.</p>
+</div>
+
+<div id="adductor-rockback-9090-flow" class="glossary-item">
+  <h3>Adductor Rock-Backs + 90-90 Flow</h3>
+  <p>Kneel with one leg extended sideways (adductor rock-back) and rock hips backward to stretch groin, then flow into 90-90 hip rotations for internal/external mobility.</p>
+</div>
+
+<div id="hollow-body-leg-drop" class="glossary-item">
+  <h3>Hollow-Body Leg Drop</h3>
+  <p>Start in hollow-body hold (lower back pressed into floor), lower straight legs toward ground with control, then raise back without losing core tension.</p>
+</div>
+
 </div>
 
 *Last updated: {{ site.time | date: "%B %d, %Y" }}*
