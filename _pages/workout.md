@@ -1,24 +1,20 @@
 ---
 layout: page
 title: "Daily Workout Routine"
-permalink: /assets/workout-hub-42/   # ← pick your own secret slug
+permalink: /assets/workout-hub-42/
 nav_exclude: true
 sitemap: false
 robots: noindex
 ---
 
 <style>
-/* Base Styling & Typography */
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  line-height: 1.6;
-  color: #333;
-}
-
-.page__content {
+/* Base styling */
+.workout-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
 }
 
 /* Headings */
@@ -27,54 +23,81 @@ h1 {
   text-align: center;
   margin-bottom: 2rem;
   font-size: 2.5rem;
-  font-weight: 700;
 }
 
 h2 {
   color: #34495e;
-  margin: 3rem 0 1.5rem 0;
-  padding: 1rem 0 0.5rem 0;
+  margin: 2.5rem 0 1rem 0;
+  padding-bottom: 0.5rem;
   border-bottom: 3px solid #3498db;
   font-size: 1.75rem;
-  font-weight: 600;
 }
 
-h3 {
-  color: #2c3e50;
-  margin: 2rem 0 1rem 0;
-  font-size: 1.25rem;
-  font-weight: 600;
+/* Special sections */
+.calendar-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 2rem 0;
 }
+
+.calendar-section h2 {
+  color: white;
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+  margin-top: 0;
+}
+
+.activation-section {
+  background: #f8f9fa;
+  border-left: 5px solid #28a745;
+  padding: 1.5rem;
+  border-radius: 5px;
+  margin: 2rem 0;
+}
+
+.activation-section h2 {
+  color: #28a745;
+  border-bottom-color: #28a745;
+  margin-top: 0;
+}
+
+/* Day sections */
+.day-section {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.monday { border-left: 5px solid #e74c3c; }
+.tuesday { border-left: 5px solid #f39c12; }
+.wednesday { border-left: 5px solid #2ecc71; }
+.thursday { border-left: 5px solid #9b59b6; }
+.friday { border-left: 5px solid #3498db; }
+.saturday { border-left: 5px solid #e67e22; }
+.sunday { border-left: 5px solid #1abc9c; }
 
 /* Tables */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin: 1.5rem 0;
-  background: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-thead {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  margin: 1rem 0;
+  background: white;
 }
 
 th {
-  padding: 1rem;
+  background: #f8f9fa;
+  padding: 12px;
   text-align: left;
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  font-size: 0.875rem;
+  border-bottom: 2px solid #dee2e6;
 }
 
 td {
-  padding: 0.875rem 1rem;
-  border-bottom: 1px solid #e0e6ed;
-  vertical-align: top;
+  padding: 10px 12px;
+  border-bottom: 1px solid #dee2e6;
 }
 
 tbody tr:nth-child(even) {
@@ -83,209 +106,58 @@ tbody tr:nth-child(even) {
 
 tbody tr:hover {
   background: #e3f2fd;
-  transition: background-color 0.3s ease;
 }
 
-/* Day-specific styling */
-.day-monday { border-left: 5px solid #e74c3c; }
-.day-tuesday { border-left: 5px solid #f39c12; }
-.day-wednesday { border-left: 5px solid #2ecc71; }
-.day-thursday { border-left: 5px solid #9b59b6; }
-.day-friday { border-left: 5px solid #3498db; }
-.day-saturday { border-left: 5px solid #e67e22; }
-.day-sunday { border-left: 5px solid #1abc9c; }
-
-/* Quick Calendar Styling */
-.quick-calendar {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  border-radius: 15px;
-  padding: 2rem;
-  margin: 2rem 0;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-}
-
-.quick-calendar h2 {
-  color: white;
-  border-bottom: 3px solid rgba(255, 255, 255, 0.3);
-  margin-top: 0;
-}
-
-.quick-calendar table {
-  box-shadow: none;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.quick-calendar thead {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.quick-calendar tbody tr:nth-child(even) {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.quick-calendar tbody tr:hover {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-/* Daily Activation Box */
-.daily-activation {
-  background: #f8f9fa;
-  border: 2px solid #dee2e6;
-  border-radius: 15px;
-  padding: 2rem;
-  margin: 2rem 0;
-  border-left: 6px solid #28a745;
-}
-
-.daily-activation h2 {
-  color: #28a745;
-  margin-top: 0;
-  border-bottom-color: #28a745;
-}
-
-/* Exercise Links */
-a[href^="#"] {
+/* Links */
+a {
   color: #3498db;
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
 }
 
-a[href^="#"]:hover {
+a:hover {
   color: #2980b9;
   text-decoration: underline;
 }
 
-/* Notes and Tips */
-.notes {
-  background: #fff3cd;
-  border: 1px solid #ffeaa7;
-  border-radius: 8px;
-  padding: 1rem;
-  margin: 1rem 0;
-  border-left: 4px solid #f39c12;
-}
-
-/* Glossary Styling */
+/* Glossary */
 .glossary {
   background: #f8f9fa;
-  border-radius: 15px;
   padding: 2rem;
-  margin: 3rem 0;
-}
-
-.glossary h2 {
-  color: #2c3e50;
-  border-bottom-color: #95a5a6;
-  margin-top: 0;
-}
-
-.glossary h3 {
-  color: #34495e;
-  border-bottom: 1px solid #dee2e6;
-  padding-bottom: 0.5rem;
-}
-
-.exercise-description {
-  background: white;
-  padding: 1.5rem;
-  margin: 1rem 0;
   border-radius: 10px;
+  margin: 2rem 0;
+}
+
+.exercise-def {
+  background: white;
+  padding: 1rem;
+  margin: 1rem 0;
   border-left: 4px solid #3498db;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
 }
 
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 768px) {
-  .page__content {
-    padding: 0 15px;
+  .workout-container {
+    padding: 15px;
   }
   
-  h1 {
-    font-size: 2rem;
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  
+  .calendar-section,
+  .activation-section,
+  .day-section {
+    padding: 1rem;
   }
   
-  h2 {
-    font-size: 1.5rem;
-    margin: 2rem 0 1rem 0;
-  }
-  
-  table {
-    font-size: 0.875rem;
-  }
-  
-  th, td {
-    padding: 0.75rem 0.5rem;
-  }
-  
-  .quick-calendar,
-  .daily-activation,
-  .glossary {
-    padding: 1.5rem;
-    margin: 1.5rem 0;
-  }
-  
-  /* Stack table cells on very small screens */
-  @media (max-width: 480px) {
-    table, thead, tbody, th, td, tr {
-      display: block;
-    }
-    
-    thead tr {
-      position: absolute;
-      top: -9999px;
-      left: -9999px;
-    }
-    
-    tr {
-      border: 1px solid #ccc;
-      margin-bottom: 10px;
-      border-radius: 8px;
-      padding: 10px;
-      background: white;
-    }
-    
-    td {
-      border: none;
-      position: relative;
-      padding: 10px 10px 10px 35%;
-      text-align: left;
-    }
-    
-    td:before {
-      content: attr(data-label) ": ";
-      position: absolute;
-      left: 10px;
-      width: 30%;
-      font-weight: bold;
-      color: #666;
-    }
-  }
-}
-
-/* Print Styles */
-@media print {
-  .page__content {
-    max-width: none;
-    padding: 0;
-  }
-  
-  table {
-    box-shadow: none;
-    border: 1px solid #000;
-  }
-  
-  .quick-calendar {
-    background: none;
-    color: black;
-    border: 2px solid #000;
-  }
+  table { font-size: 0.9rem; }
+  th, td { padding: 8px; }
 }
 </style>
 
-<div class="quick-calendar">
+<div class="workout-container">
+
+<div class="calendar-section">
 
 ## Quick-Look Calendar
 
@@ -301,7 +173,7 @@ a[href^="#"]:hover {
 
 </div>
 
-<div class="daily-activation">
+<div class="activation-section">
 
 ## 5-Minute Daily Activation (1–2 rounds)
 
@@ -314,8 +186,9 @@ a[href^="#"]:hover {
 
 </div>
 
+<div class="day-section monday">
+
 ## Monday – Glute & Hip Strength
-<div class="day-monday">
 
 | **Exercise** | **Sets × Reps** | **Notes** |
 |--------------|------------------|-----------|
@@ -328,8 +201,9 @@ a[href^="#"]:hover {
 
 </div>
 
+<div class="day-section tuesday">
+
 ## Tuesday – Upper Pull & Core
-<div class="day-tuesday">
 
 | **Exercise** | **Sets × Reps** | **Notes** |
 |--------------|------------------|-----------|
@@ -342,8 +216,9 @@ a[href^="#"]:hover {
 
 </div>
 
+<div class="day-section wednesday">
+
 ## Wednesday – Mobility / Recovery
-<div class="day-wednesday">
 
 | **Exercise** | **Duration/Reps** | **Notes** |
 |--------------|-------------------|-----------|
@@ -356,8 +231,9 @@ a[href^="#"]:hover {
 
 </div>
 
+<div class="day-section thursday">
+
 ## Thursday – Power & Lateral Movement
-<div class="day-thursday">
 
 | **Exercise** | **Sets × Reps** | **Notes** |
 |--------------|------------------|-----------|
@@ -369,8 +245,9 @@ a[href^="#"]:hover {
 
 </div>
 
+<div class="day-section friday">
+
 ## Friday – Upper Push & Posterior Chain
-<div class="day-friday">
 
 | **Exercise** | **Sets × Reps** | **Notes** |
 |--------------|------------------|-----------|
@@ -383,8 +260,9 @@ a[href^="#"]:hover {
 
 </div>
 
+<div class="day-section saturday">
+
 ## Saturday – Agility & Conditioning (Apt-Safe)
-<div class="day-saturday">
 
 | **Drill** | **Work : Rest** | **Rounds** | **Notes** |
 |-----------|-----------------|------------|-----------|
@@ -395,8 +273,9 @@ a[href^="#"]:hover {
 
 </div>
 
+<div class="day-section sunday">
+
 ## Sunday – Long Mobility Flow
-<div class="day-sunday">
 
 | **Activity** | **Duration** | **Notes** |
 |--------------|--------------|-----------|
@@ -412,136 +291,100 @@ a[href^="#"]:hover {
 
 ## Glossary / Exercise Guide
 
-<div class="exercise-description">
-
-### Glute Bridge {#glute-bridge}
-Hip-extension move that targets glute max and hamstrings. Press through heels, rib-cage down, avoid arching lower back. Detailed guide: [Healthline](https://www.healthline.com/health/fitness-exercise/glute-bridge-variations).
-
+<div class="exercise-def">
+<strong>Glute Bridge</strong> {#glute-bridge}<br>
+Hip-extension move that targets glute max and hamstrings. Press through heels, rib-cage down, avoid arching lower back. <a href="https://www.healthline.com/health/fitness-exercise/glute-bridge-variations">Detailed guide</a>
 </div>
 
-<div class="exercise-description">
-
-### Side-Lying Band Abduction {#side-lying-band-abduction}
-Lie on side, band around ankles; lift top leg slightly behind mid-line to hit glute med/min. Video demo: [YouTube](https://www.youtube.com/watch?v=5wUk8wQNUT8).
-
+<div class="exercise-def">
+<strong>Side-Lying Band Abduction</strong> {#side-lying-band-abduction}<br>
+Lie on side, band around ankles; lift top leg slightly behind mid-line to hit glute med/min. <a href="https://www.youtube.com/watch?v=5wUk8wQNUT8">Video demo</a>
 </div>
 
-<div class="exercise-description">
-
-### Standing Band Hip-Flexor March {#standing-band-hip-flexor-march}
+<div class="exercise-def">
+<strong>Standing Band Hip-Flexor March</strong> {#standing-band-hip-flexor-march}<br>
 Loop band under both feet; alternate high-knee drives keeping torso tall. Anti-rotation core bonus.
-
 </div>
 
-<div class="exercise-description">
-
-### Dead-Bug {#dead-bug}
-Supine core drill—opposite arm/leg extend while lumbar stays flat. How-to: [Verywell Fit](https://www.verywellfit.com/how-to-do-the-dead-bug-exercise-4685852).
-
+<div class="exercise-def">
+<strong>Dead-Bug</strong> {#dead-bug}<br>
+Supine core drill—opposite arm/leg extend while lumbar stays flat. <a href="https://www.verywellfit.com/how-to-do-the-dead-bug-exercise-4685852">How-to guide</a>
 </div>
 
-<div class="exercise-description">
-
-### Single-Leg Hip-Thrust {#single-leg-hip-thrust}
+<div class="exercise-def">
+<strong>Single-Leg Hip-Thrust</strong> {#single-leg-hip-thrust}<br>
 Upper back on couch, one foot planted. Drive hips until torso-thigh line is straight.
-
 </div>
 
-<div class="exercise-description">
-
-### Bulgarian Split Squat {#bulgarian-split-squat}
-Rear foot on chair; descend until front thigh parallel. Form tips: [ACE](https://www.acefitness.org).
-
+<div class="exercise-def">
+<strong>Bulgarian Split Squat</strong> {#bulgarian-split-squat}<br>
+Rear foot on chair; descend until front thigh parallel. <a href="https://www.acefitness.org">Form tips</a>
 </div>
 
-<div class="exercise-description">
-
-### Banded Crab Walk {#banded-crab-walk}
+<div class="exercise-def">
+<strong>Banded Crab Walk</strong> {#banded-crab-walk}<br>
 Mini-band above knees; maintain squat stance and step laterally.
-
 </div>
 
-<div class="exercise-description">
-
-### Bent-Over Dumbbell Row {#bent-over-dumbbell-row}
+<div class="exercise-def">
+<strong>Bent-Over Dumbbell Row</strong> {#bent-over-dumbbell-row}<br>
 Hip hinge to ~45°, pull DB to ribcage, pinch shoulder blades.
-
 </div>
 
-<div class="exercise-description">
-
-### Band Face-Pull-Apart {#band-face-pull-apart}
+<div class="exercise-def">
+<strong>Band Face-Pull-Apart</strong> {#band-face-pull-apart}<br>
 Anchor band eye-height; pull to face with external rotation emphasis.
-
 </div>
 
-<div class="exercise-description">
-
-### Pallof Press {#pallof-press}
-Anchor band chest-height, press arms straight resisting rotation. Quick demo: [YouTube](https://www.youtube.com/watch?v=Te5VAYXy0wQ).
-
+<div class="exercise-def">
+<strong>Pallof Press</strong> {#pallof-press}<br>
+Anchor band chest-height, press arms straight resisting rotation. <a href="https://www.youtube.com/watch?v=Te5VAYXy0wQ">Quick demo</a>
 </div>
 
-<div class="exercise-description">
-
-### Standing Band Wood-Chop {#standing-band-wood-chop}
+<div class="exercise-def">
+<strong>Standing Band Wood-Chop</strong> {#standing-band-wood-chop}<br>
 High-to-low diagonal press using anchored band. Keeps rotational power apartment-friendly.
-
 </div>
 
-<div class="exercise-description">
-
-### Kettlebell Swing {#kettlebell-swing}
-Hinge-driven hip snap—KB to chest height, arms relaxed. Step-by-step: [ACE Exercise Library](https://www.acefitness.org/resources/everyone/exercise-library/391/swing/).
-
+<div class="exercise-def">
+<strong>Kettlebell Swing</strong> {#kettlebell-swing}<br>
+Hinge-driven hip snap—KB to chest height, arms relaxed. <a href="https://www.acefitness.org/resources/everyone/exercise-library/391/swing/">Step-by-step guide</a>
 </div>
 
-<div class="exercise-description">
-
-### Lateral Goblet Lunge {#lateral-goblet-lunge}
+<div class="exercise-def">
+<strong>Lateral Goblet Lunge</strong> {#lateral-goblet-lunge}<br>
 Hold DB at chest; step sideways, sit back into hip, keep trail leg straight.
-
 </div>
 
-<div class="exercise-description">
-
-### Side-Plank Clamshell {#side-plank-clamshell}
+<div class="exercise-def">
+<strong>Side-Plank Clamshell</strong> {#side-plank-clamshell}<br>
 Side plank on forearm; top knee opens against band. Great for glute med/min.
-
 </div>
 
-<div class="exercise-description">
-
-### Single-Arm DB RDL {#single-arm-db-rdl}
-Hold DB in opposite hand; hinge until stretch in hamstring, keep hips level. Video: [YouTube](https://www.youtube.com/watch?v=47IZVhmhzOg).
-
+<div class="exercise-def">
+<strong>Single-Arm DB RDL</strong> {#single-arm-db-rdl}<br>
+Hold DB in opposite hand; hinge until stretch in hamstring, keep hips level. <a href="https://www.youtube.com/watch?v=47IZVhmhzOg">Video demo</a>
 </div>
 
-<div class="exercise-description">
-
-### Band-Resisted Lateral Shuffle {#band-resisted-lateral-shuffle}
+<div class="exercise-def">
+<strong>Band-Resisted Lateral Shuffle</strong> {#band-resisted-lateral-shuffle}<br>
 Loop long band around waist, anchor to door; shuffle sideways fast, stay low.
-
 </div>
 
-<div class="exercise-description">
-
-### Kettlebell Farmer Carry {#kettlebell-farmer-carry}
-Walk holding KB at side, ribs down, shoulders level. Benefits: grip, core, posture. Article: [Invictus Fitness](https://invictusfitness.com/blog/farmer-carries-super-beneficial-yet-widely-underused/).
-
+<div class="exercise-def">
+<strong>Kettlebell Farmer Carry</strong> {#kettlebell-farmer-carry}<br>
+Walk holding KB at side, ribs down, shoulders level. Benefits: grip, core, posture. <a href="https://invictusfitness.com/blog/farmer-carries-super-beneficial-yet-widely-underused/">Article</a>
 </div>
 
-<div class="exercise-description">
-
-### Bird-Dog {#bird-dog}
-Quadruped; extend opposite arm & leg, keep hips square. PT demo: [YouTube](https://www.youtube.com/watch?v=QQot16miua8).
-
+<div class="exercise-def">
+<strong>Bird-Dog</strong> {#bird-dog}<br>
+Quadruped; extend opposite arm & leg, keep hips square. <a href="https://www.youtube.com/watch?v=QQot16miua8">PT demo</a>
 </div>
 
-<div class="exercise-description">
-
-### World's Greatest Stretch {#worlds-greatest-stretch}
-Dynamic lunge-rotation combo hitting hips, T-spine, ankles. Overview: [SELF](https://www.self.com/story/worlds-greatest-stretch-benefits).
+<div class="exercise-def">
+<strong>World's Greatest Stretch</strong> {#worlds-greatest-stretch}<br>
+Dynamic lunge-rotation combo hitting hips, T-spine, ankles. <a href="https://www.self.com/story/worlds-greatest-stretch-benefits">Overview</a>
+</div>
 
 </div>
 
