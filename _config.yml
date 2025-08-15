@@ -1,5 +1,3 @@
-# Minimal Jekyll Configuration for Drummond B. Fielding
-
 # Site Settings
 title: Drummond B. Fielding
 email: dbf233@nyu.edu
@@ -11,37 +9,19 @@ url: "https://dfielding14.github.io"
 markdown: kramdown
 highlighter: rouge
 
-# Exclude files from build
+# Exclude files
 exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - CHANGELOG.md
-  - CONTRIBUTING.md
-  - LICENSE
-  - package.json
-  - package-lock.json
-  - node_modules
-  - _config_new.yml
-  - IMPLEMENTATION_PLAN.md
   - CLAUDE.md
-  - markdown_generator/
-  - _drafts/
-  - _site/
-  - .sass-cache/
-  - .jekyll-metadata
 
-# Sass settings
-sass:
-  sass_dir: _sass
-  style: compressed
-
-# Plugins (minimal set)
+# Plugins
 plugins:
   - jekyll-feed
   - jekyll-sitemap
 
-# Default values
+# Default layout
 defaults:
   - scope:
       path: ""
