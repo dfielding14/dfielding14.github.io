@@ -1,24 +1,74 @@
----
-layout: compress
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ '/assets/css/new-style.css' | relative_url }}">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/favicon/favicon-32x32.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/images/favicon/favicon-16x16.png' | relative_url }}">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="{{ '/' | relative_url }}">Drummond&nbsp;B.&nbsp;Fielding</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="{{ '/research' | relative_url }}" {% if page.url == '/research' %}class="active"{% endif %}>Research</a></li>
+                <li><a href="{{ '/publications' | relative_url }}" {% if page.url == '/publications' %}class="active"{% endif %}>Publications</a></li>
+                <li><a href="{{ '/talks' | relative_url }}" {% if page.url == '/talks' %}class="active"{% endif %}>Talks</a></li>
+                <li><a href="{{ '/teaching' | relative_url }}" {% if page.url == '/teaching' %}class="active"{% endif %}>Teaching</a></li>
+                <li class="dropdown">
+                    <a href="{{ '/group' | relative_url }}" {% if page.url == '/group' or page.url == '/opportunities' or page.url == '/getting-started' %}class="active"{% endif %}>Group&nbsp;▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ '/group' | relative_url }}">Members</a></li>
+                        <li><a href="{{ '/opportunities' | relative_url }}">Opportunities</a></li>
+                        <li><a href="{{ '/getting-started' | relative_url }}">Getting Started</a></li>
+                    </ul>
+                </li>
+                <li><a href="{{ '/cv' | relative_url }}" {% if page.url == '/cv' %}class="active"{% endif %}>CV</a></li>
+                <li><a href="{{ '/movies' | relative_url }}" {% if page.url == '/movies' %}class="active"{% endif %}>Movies</a></li>
+            </ul>
+        </div>
+    </nav>
 
-{% include base_path %}
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            {{ content }}
+        </div>
+    </main>
 
-<!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; {{ 'now' | date: '%Y' }} {{ site.title }}</p>
+        </div>
+    </footer>
 
-  <body>
-
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
-
-    {{ content }}
-
-    {% include scripts.html %}
-
-  </body>
+    <!-- JavaScript for mobile navigation -->
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    </script>
+</body>
 </html>
