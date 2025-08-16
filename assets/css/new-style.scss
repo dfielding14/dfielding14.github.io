@@ -453,9 +453,13 @@ a:hover::after {
 }
 
 .card > p,
-.card > ul,
 .card > div:not(:has(h3)) {
     padding-left: var(--space-lg);
+}
+
+.card > ul {
+    padding-left: var(--space-lg);
+    margin-left: var(--space-md);
 }
 
 /* Special bordered card */
