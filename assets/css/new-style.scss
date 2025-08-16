@@ -587,24 +587,56 @@ a:hover::after {
         transition: var(--transition-medium);
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
         border-top: 1px solid var(--color-border);
-        padding: var(--space-lg) 0;
+        padding: var(--space-sm) 0;
+        max-height: calc(100vh - var(--nav-height));
+        overflow-y: auto;
+        gap: 0;
+    }
+    
+    .nav-menu > li {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav-menu a {
+        padding: var(--space-sm) var(--space-md);
+        font-size: 1rem;
     }
     
     .nav-menu.active {
         left: 0;
     }
     
+    .dropdown {
+        display: block;
+    }
+    
+    .dropdown > a::after {
+        content: " ▾";
+        font-size: 0.8em;
+    }
+    
     .dropdown-menu {
         position: static;
-        display: block;
+        display: none;
         box-shadow: none;
         border: none;
-        background: transparent;
+        background: var(--color-border);
         padding: 0;
-        margin-top: 0;
+        margin: 0;
         animation: none;
         opacity: 1;
         transform: none;
+    }
+    
+    .dropdown.open .dropdown-menu {
+        display: block;
+    }
+    
+    .dropdown-menu a {
+        font-size: 0.9rem;
+        padding: var(--space-sm) var(--space-lg);
+        background: transparent;
     }
     
     .home-header {

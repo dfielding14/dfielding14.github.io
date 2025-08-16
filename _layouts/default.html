@@ -81,6 +81,17 @@
             document.querySelector('.nav-menu').classList.toggle('active');
             this.classList.toggle('active');
         });
+        
+        // Make dropdown collapsible on mobile
+        if (window.innerWidth <= 768) {
+            const dropdown = document.querySelector('.dropdown > a');
+            if (dropdown) {
+                dropdown.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    this.parentElement.classList.toggle('open');
+                });
+            }
+        }
     </script>
 </body>
 </html>
