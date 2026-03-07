@@ -7,44 +7,44 @@ institution: New York University
 description: Computational Astrophysicist | Assistant Professor at New York University
 profile_image: /images/profile-2024.jpg
 affiliation_lines:
-  - Assistant Professor
-  - Department of Physics
-  - New York University
+- Assistant Professor
+- Department of Physics
+- New York University
 contact_links:
-  - label: Email
-    url: mailto:dbf233@nyu.edu
-  - label: Google Scholar
-    url: https://scholar.google.com/citations?user=KaoZTt0AAAAJ&hl=en
-    external: true
-  - label: GitHub
-    url: https://github.com/dfielding14
-    external: true
-  - label: CV (PDF)
-    url: /files/DBF_CV.pdf
+- label: Email
+  url: mailto:dbf233@nyu.edu
+- label: Google Scholar
+  url: https://scholar.google.com/citations?user=KaoZTt0AAAAJ&hl=en
+  external: true
+- label: GitHub
+  url: https://github.com/dfielding14
+  external: true
+- label: CV (PDF)
+  url: /files/DBF_CV.pdf
 publication_profiles:
-  - label: ORCID Profile
-    url: https://orcid.org/0000-0003-3806-8548
-    external: true
-  - label: Google Scholar
-    url: https://scholar.google.com/citations?user=KaoZTt0AAAAJ&hl=en
-    external: true
-  - label: NASA ADS
-    url: https://ui.adsabs.harvard.edu/public-libraries/xhnvsk6JRsC7Ljzg8ToqVQ
-    external: true
+- label: ORCID Profile
+  url: https://orcid.org/0000-0003-3806-8548
+  external: true
+- label: Google Scholar
+  url: https://scholar.google.com/citations?user=KaoZTt0AAAAJ&hl=en
+  external: true
+- label: NASA ADS
+  url: https://ui.adsabs.harvard.edu/public-libraries/xhnvsk6JRsC7Ljzg8ToqVQ
+  external: true
 movie_channels:
-  - label: Vimeo
-    url: https://vimeo.com/user104775348
-    external: true
-  - label: YouTube
-    url: https://www.youtube.com/channel/UCVBtjNpelIuhdwarTfSQtow
-    external: true
+- label: Vimeo
+  url: https://vimeo.com/user104775348
+  external: true
+- label: YouTube
+  url: https://www.youtube.com/channel/UCVBtjNpelIuhdwarTfSQtow
+  external: true
 documents:
   cv: /files/DBF_CV.pdf
   cv_no_publications: /files/DBF_CV_nopubs.pdf
   publication_list: /files/DBF_CV-Publist.pdf
 last_updated:
-  publications: November 30, 2024
-  cv: November 30, 2024
+  publications: March 7, 2026
+  cv: March 7, 2026
 analytics:
   umami_website_id: 2481a206-847e-4663-a9e0-cc164830e70a
   clarity_project_id: svqlt1a0ei
