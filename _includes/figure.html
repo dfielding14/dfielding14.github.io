@@ -1,0 +1,12 @@
+{% assign wrapper_class = include.wrapper_class | default: 'figure-block' %}
+<figure class="{{ wrapper_class }}">
+  <img
+    src="{{ include.src | relative_url }}"
+    alt="{{ include.alt }}"
+    class="figure-block__image{% if include.image_class %} {{ include.image_class }}{% endif %}"
+    loading="{{ include.loading | default: 'lazy' }}"
+  >
+  {% if include.caption %}
+    <figcaption class="figure-block__caption{% if include.caption_class %} {{ include.caption_class }}{% endif %}">{{ include.caption }}</figcaption>
+  {% endif %}
+</figure>

@@ -1,0 +1,46 @@
+sections:
+  - title: Plasmoid Instability
+    items:
+      - title: Temperature Field Visualization
+        description: Rotating volume rendering of the temperature field of a patch of the turbulent, thermally unstable, magnetized interstellar medium. Blue is cold (10 K), yellow/orange is warm (10,000 K), and some magnetic field lines are shown as white tubes.
+        embed_url: https://www.youtube.com/embed/a9D70gIAOoU
+      - title: Multi-scale Temperature Visualization
+        description: A different rotating volume rendering of the temperature field of a patch of the turbulent, thermally unstable, magnetized interstellar medium. Blue is cold (10 K), yellow/orange is warm (10,000 K), and some magnetic field lines are shown as purple tubes. The orange, green, and blue boxes are subvolumes shown in the following movies.
+        embed_url: https://www.youtube.com/embed/mkP_gk_pcHQ
+      - title: Subvolume Visualizations
+        description: Subvolumes from the larger simulation shown above.
+        grid:
+          - title: Subvolume visualization 1
+            embed_url: https://www.youtube.com/embed/TyM1KWHR3Tc
+          - title: Subvolume visualization 2
+            embed_url: https://www.youtube.com/embed/ZP4gp84IXmU
+          - title: Subvolume visualization 3
+            embed_url: https://www.youtube.com/embed/DVcEmi10ap0
+      - title: 3D Resistive MHD Simulation
+        description: Step through along y axis of 3D Resistive MHD simulation of a turbulent thermally unstable medium. The left panel shows the electric current, the middle shows plasma beta, and the right shows the temperature.
+        embed_url: https://www.youtube.com/embed/CBT-VLfoBiI
+      - title: Z-axis Step Through
+        description: Step through along z axis of 3D Resistive MHD simulation of a turbulent thermally unstable medium.
+        embed_url: https://www.youtube.com/embed/lm0DQqdLVVs
+      - title: 2.5D Plasmoid Formation
+        description: Plasmoids forming in 2.5D simulations of high-beta systems.
+        embed_url: https://player.vimeo.com/video/482820624
+  - title: Radiative Turbulent Mixing Layers
+    items:
+      - title: Volume Rendering of Mixing Layer
+        description: Color shows the turbulent velocity and the opacity follows temperature, with hot transparent and cold opaque.
+        embed_url: https://www.youtube.com/embed/zmNq5tjuF88
+      - title: Rapidly Cooling Simulation
+        embed_url: https://player.vimeo.com/video/397632983
+      - title: Fractal Cooling Surface
+        description: Visualizations of the fractal surface where cooling takes place in rapid cooling simulations.
+        grid:
+          - title: Fractal cooling surface 1
+            embed_url: https://player.vimeo.com/video/398055547
+          - title: Fractal cooling surface 2
+            embed_url: https://player.vimeo.com/video/380596739
+  - title: Clustered SNe Driving Galactic Winds
+    items:
+      - title: Visualization of Clustered Supernovae Driving a Galactic Wind
+        description: Visualization of clustered supernovae driving a galactic wind.
+        embed_url: https://player.vimeo.com/video/371403722

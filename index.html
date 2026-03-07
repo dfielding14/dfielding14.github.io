@@ -1,38 +1,46 @@
 ---
-layout: default
+layout: home
 title: Home
+description: Overview of Drummond B. Fielding's research, affiliations, and current opportunities.
+section: home
 ---
 
+{% assign profile = site.data.site %}
 <div class="home-page">
 <div class="home-header">
     <div class="home-intro">
-        <h1>Drummond B. Fielding</h1>
-        <div class="subtitle">Computational Astrophysicist</div>
-        <div class="affiliation">Assistant Professor<br>Department of Physics<br>New York University</div>
+        <h1>{{ profile.name }}</h1>
+        <div class="subtitle">{{ profile.role }}</div>
+        <div class="affiliation">{% for line in profile.affiliation_lines %}{{ line }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</div>
         
         <div class="contact-info">
-            <a href="mailto:dbf233@nyu.edu">Email</a>
-            <a href="https://scholar.google.com/citations?user=KaoZTt0AAAAJ&hl=en" target="_blank">Google Scholar</a>
-            <a href="https://github.com/dfielding14" target="_blank">GitHub</a>
-            <a href="{{ '/files/DBF_CV.pdf' | relative_url }}">CV (PDF)</a>
+            {% for link in profile.contact_links %}
+                {% if link.external %}
+                    <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.label }}</a>
+                {% elsif link.url contains 'mailto:' %}
+                    <a href="{{ link.url }}">{{ link.label }}</a>
+                {% else %}
+                    <a href="{{ link.url | relative_url }}">{{ link.label }}</a>
+                {% endif %}
+            {% endfor %}
         </div>
     </div>
     
     <div>
-        <img src="{{ '/images/profile-2024.jpg' | relative_url }}" alt="Drummond B. Fielding" class="profile-image">
+        <img src="{{ profile.profile_image | relative_url }}" alt="{{ profile.name }}" class="profile-image">
     </div>
 </div>
 
 <section class="section">
     <h2 class="section-title">About</h2>
     <p>
-        I am an assistant professor in the <a href="https://as.nyu.edu/departments/physics.html" target="_blank">Department of Physics at New York University</a>.
+        I am an assistant professor in the <a href="https://cosmo.nyu.edu/" target="_blank" rel="noopener noreferrer">Center for Cosmology and Particle Physics</a> in the <a href="https://as.nyu.edu/departments/physics.html" target="_blank" rel="noopener noreferrer">Department of Physics</a> at <a href="https://www.nyu.edu/" target="_blank" rel="noopener noreferrer">New York University</a>.
     </p>
     <p>
         My research focuses on theoretical astrophysics, particularly the physics of magnetized turbulence, cosmic-ray transport, and multiphase gas in and around galaxies. I use a combination of large-scale numerical simulations, analytic modeling, and connections to observations.
     </p>
     <p>
-        Before joining NYU, I was a professor in the Astronomy Department at Cornell University (2023-2025) and a Flatiron Research Fellow at the <a href="https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/" target="_blank">Center for Computational Astrophysics</a> in the <a href="https://www.simonsfoundation.org/flatiron/" target="_blank">Flatiron Institute</a> (2018-2024). I earned my Ph.D. in Astrophysics from UC Berkeley under the mentorship of <a href="https://www.astro.princeton.edu/~quataert/" target="_blank">Eliot Quataert</a>.
+        Before joining NYU, I was a professor in the Astronomy Department at Cornell University (2024-2025) and a Flatiron Research Fellow at the <a href="https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/" target="_blank" rel="noopener noreferrer">Center for Computational Astrophysics</a> in the <a href="https://www.simonsfoundation.org/flatiron/" target="_blank" rel="noopener noreferrer">Flatiron Institute</a> (2018-2024). I earned my Ph.D. in Astrophysics from UC Berkeley, where I worked with <a href="https://www.astro.princeton.edu/~quataert/" target="_blank" rel="noopener noreferrer">Eliot Quataert</a>.
     </p>
 </section>
 

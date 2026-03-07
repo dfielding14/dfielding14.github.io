@@ -11,10 +11,15 @@ highlighter: rouge
 
 # Exclude files
 exclude:
+  - .ruby-version
   - Gemfile
   - Gemfile.lock
   - README.md
   - CLAUDE.md
+  - ANALYTICS_QUICKSTART.md
+  - ANALYTICS_SETUP.md
+  - scripts/
+  - solfege-flight/README.md
 
 # Plugins
 plugins:
@@ -26,4 +31,4 @@ defaults:
   - scope:
       path: ""
     values:
-      layout: "default"
+      layout: "page"

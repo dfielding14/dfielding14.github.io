@@ -1,53 +1,42 @@
 ---
-layout: default
+layout: page
 title: Publications
+description: Publication profiles, download links, and citation resources for Drummond B. Fielding.
+section: publications
 ---
 
-<h1>Publications</h1>
+{% assign profile = site.data.site %}
 
 <section class="section">
-    <div class="card card-bordered" style="text-align: center; padding: 3rem;">
-        <h2 style="margin-top: 0; margin-bottom: 2rem;">Find My Research</h2>
+    <div class="card card-bordered card-padded card-centered">
+        <h2 class="card-title-reset">Find My Research</h2>
         
-        <div style="margin-bottom: 2rem;">
-            <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+        <div>
+            <p class="section-copy section-copy--center">
                 You can find my articles on any of these platforms:
             </p>
             
-            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem;">
-                <a href="https://orcid.org/0000-0003-3806-8548" target="_blank" class="btn" style="min-width: 150px;">
-                    ORCID Profile
-                </a>
-                <a href="https://scholar.google.com/citations?user=KaoZTt0AAAAJ&hl=en" target="_blank" class="btn" style="min-width: 150px;">
-                    Google Scholar
-                </a>
-                <a href="https://ui.adsabs.harvard.edu/public-libraries/xhnvsk6JRsC7Ljzg8ToqVQ" target="_blank" class="btn" style="min-width: 150px;">
-                    NASA ADS
-                </a>
+            <div class="button-row button-row--center">
+                {% for resource in profile.publication_profiles %}
+                    <a href="{{ resource.url }}" target="_blank" rel="noopener noreferrer" class="btn">
+                        {{ resource.label }}
+                    </a>
+                {% endfor %}
             </div>
         </div>
         
-        <div style="border-top: 1px solid var(--color-border); padding-top: 2rem;">
-            <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+        <div class="divider-block">
+            <p class="section-copy section-copy--center">
                 Or download a complete PDF list of my publications:
             </p>
             
-            <a href="{{ '/files/DBF_CV-Publist.pdf' | relative_url }}" target="_blank" class="btn" style="background: var(--color-text); min-width: 200px;">
+            <a href="{{ profile.documents.publication_list | relative_url }}" target="_blank" rel="noopener" class="btn btn--secondary">
                 Full Publication List (PDF)
             </a>
             
-            <p style="margin-top: 1rem; color: var(--color-text-light); font-size: 0.9rem;">
-                Last updated: November 30, 2024
+            <p class="meta-text">
+                Last updated: {{ profile.last_updated.publications }}
             </p>
         </div>
-    </div>
-</section>
-
-<section class="section">
-    <h2 class="section-title">Publication Metrics</h2>
-    <div class="card">
-        <p>
-            For citation metrics and h-index, please refer to my <a href="https://scholar.google.com/citations?user=KaoZTt0AAAAJ&hl=en" target="_blank">Google Scholar</a> profile, which is automatically updated.
-        </p>
     </div>
 </section>

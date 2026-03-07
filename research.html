@@ -1,9 +1,17 @@
 ---
-layout: default
+layout: page
 title: Research
+description: Research overview, scientific themes, and selected visualizations from Drummond B. Fielding's work.
+section: research
 ---
 
-<h1>Research</h1>
+{% capture overview_caption %}Overview of my research program: Visualizations of my simulations on spatial scales ranging from sub-pc to Mpc. (Left) Cooling emissivity of a turbulent radiative mixing layer; (Middle) Temperature of a galactic wind launched by clustered supernovae; (Right) Density of a multiphase turbulent MW-like circumgalactic medium with satellite galaxies.{% endcapture %}
+{% capture gas_cycle_caption %}Comparison of the hydrological cycle on Earth and the gas cycle in/around galaxies.{% endcapture %}
+{% capture winds_caption %}Schematic overview of Multiphase Galactic Winds from Fielding &amp; Bryan (2021). A high-res PNG can be found <a href="{{ '/images/Multiphase_Winds_Schematic.png' | relative_url }}">here</a>. This graphic was made in collaboration with Lucy Reading-Ikkanda.{% endcapture %}
+{% capture cgm_caption %}Slices of density and temperature at 4 times through the CGM of halos with different masses. This is from Fielding et al. (2017).{% endcapture %}
+{% capture winds_feedback_caption %}Slices of temperature, density, velocity, and cooling rate at 2 times through the ISM of a galaxy with a massive cluster of SNe in the process of going off and launching a wind. This is from Fielding et al. (2018).{% endcapture %}
+{% capture plasmoid_caption %}Volume rendering of the temperature and magnetic fields in a patch of the turbulent, thermally unstable ISM. The magnetic fields commonly exhibit clear helical patterns, which are signs of the plasmoid instability and the associated fast magnetic reconnection. This is from Fielding et al. (2022b).{% endcapture %}
+{% capture disks_caption %}Three views of the density of a protostellar disk that formed around a protostar in an MHD simulation. The line shows the direction of the star's angular momentum, which is misaligned from the disk's. This is from Fielding et al. (2015).{% endcapture %}
 
 <section class="section">
     <h2 class="section-title">Overview</h2>
@@ -20,26 +28,16 @@ title: Research
     </p>
     
     <p>
-        Recently much of my work has focused on running exascale simulations of the magnetized turbulent interstellar medium (ISM) and circumgalactic medium (CGM) to understand the physics of cosmic ray scattering. You can see a recent press release about this work <a href="https://as.cornell.edu/news/astronomer-granted-600000-supercomputer-hours-doe" target="_blank">here</a>, and an article about it <a href="https://ascr-discovery.org/2025/02/untangling-the-cosmos/amp/" target="_blank">here</a>.
+        Recently much of my work has focused on running exascale simulations of the magnetized turbulent interstellar medium (ISM) and circumgalactic medium (CGM) to understand the physics of cosmic ray scattering. You can see a recent press release about this work <a href="https://as.cornell.edu/news/astronomer-granted-600000-supercomputer-hours-doe" target="_blank" rel="noopener noreferrer">here</a>, and an article about it <a href="https://ascr-discovery.org/2025/02/untangling-the-cosmos/amp/" target="_blank" rel="noopener noreferrer">here</a>.
     </p>
     
-    <figure style="margin: 3rem 0;">
-        <img src="{{ '/images/research_statement_graphic_tight_micromesomacro_2024.png' | relative_url }}" alt="Research Overview" style="width: 100%; border-radius: 8px;">
-        <figcaption style="margin-top: 1rem; text-align: center; color: var(--color-text-light); font-size: 0.9rem;">
-            Overview of my research program: Visualizations of my simulations on spatial scales ranging from sub-pc to Mpc. (Left) Cooling emissivity of a turbulent radiative mixing layer; (Middle) Temperature of a galactic wind launched by clustered supernovae; (Right) Density of a multiphase turbulent MW-like circumgalactic medium with satellite galaxies.
-        </figcaption>
-    </figure>
+    {% include figure.html src="/images/research_statement_graphic_tight_micromesomacro_2024.png" alt="Research Overview" caption=overview_caption loading="eager" %}
 </section>
 
 <section class="section">
     <h2 class="section-title">The Galactic Gas Cycle</h2>
     
-    <figure style="margin: 2rem 0;">
-        <img src="{{ '/images/WaterCycleCartoon.png' | relative_url }}" alt="Galactic Gas Cycle" style="width: 100%; border-radius: 8px;">
-        <figcaption style="margin-top: 1rem; text-align: center; color: var(--color-text-light); font-size: 0.9rem;">
-            Comparison of the hydrological cycle on Earth and the gas cycle in/around galaxies.
-        </figcaption>
-    </figure>
+    {% include figure.html src="/images/WaterCycleCartoon.png" alt="Galactic Gas Cycle" caption=gas_cycle_caption wrapper_class="figure-block figure-block--compact" %}
     
     <p>
         I like to use the water cycle here on Earth as an analogy for how I look at galaxy formation. In the water cycle water is heated and evaporates, then condenses in the form of clouds, and then it precipitates back down to Earth where it nourishes and fuels living creatures before being evaporated all over again. In galaxies we can replace water with gas (mostly hydrogen and helium) and see that it is quite similar. Gas in the CGM condenses into clouds, which under certain conditions precipitates down to the galaxy. When this gas reaches the galaxy it is pure star fuel! Out of the freshly precipitated star fuel new young stars form. These stars release lots of energy and some of them explode as supernovae, which can launch gas back out of the galaxy and up into CGM. In this way what I work on—the galactic gas cycle—can be seen as the galactic version of terrestrial hydrology!
@@ -55,12 +53,7 @@ title: Research
     
     <div class="card">
         <h3>Multiphase Galactic Winds</h3>
-        <figure style="margin: 1.5rem 0;">
-            <img src="{{ '/images/Multiphase_Winds_Schematic.png' | relative_url }}" alt="Multiphase Winds" style="width: 100%; border-radius: 8px;">
-            <figcaption style="margin-top: 0.5rem; text-align: center; color: var(--color-text-light); font-size: 0.85rem;">
-                Schematic overview of Multiphase Galactic Winds from Fielding & Bryan (2021). A high res pdf can be found <a href="{{ '/images/Multiphase_Winds_Schematic.pdf' | relative_url }}">here</a>. This graphic was made in collaboration with Lucy Reading-Ikkanda.
-            </figcaption>
-        </figure>
+        {% include figure.html src="/images/Multiphase_Winds_Schematic.png" alt="Multiphase Winds" caption=winds_caption wrapper_class="figure-block figure-block--card" caption_class="figure-block__caption figure-block__caption--small" %}
     </div>
     
     <div class="card">
@@ -68,12 +61,7 @@ title: Research
         <p>
             Galaxies grow by accreting new gas. This gas must come from the massive reservoir of material that surrounds all galaxies—the CGM. The CGM is where many competing forces meet. Gas from outside a galaxy's dark matter halo feeds the CGM from without either smoothly, in filaments, or in the form of smaller galaxies. Gas from inside the galaxy is violently ejected into the CGM in the form of winds. These flows interact with the gas already present in the CGM that would otherwise cool and fuel the galaxy and can lead to the CGM being a dynamic, turbulent environment.
         </p>
-        <figure style="margin: 1.5rem 0;">
-            <img src="{{ '/images/CGM_feedback_MultiPanel_n_T_2rvir_ref_9Gyr.png' | relative_url }}" alt="CGM Simulations" style="width: 100%; border-radius: 8px;">
-            <figcaption style="margin-top: 0.5rem; text-align: center; color: var(--color-text-light); font-size: 0.85rem;">
-                Slices of density and temperature at 4 times through the CGM of halos with different masses. This is from Fielding et al. (2017).
-            </figcaption>
-        </figure>
+        {% include figure.html src="/images/CGM_feedback_MultiPanel_n_T_2rvir_ref_9Gyr.png" alt="CGM Simulations" caption=cgm_caption wrapper_class="figure-block figure-block--card" caption_class="figure-block__caption figure-block__caption--small" %}
     </div>
     
     <div class="card">
@@ -81,22 +69,12 @@ title: Research
         <p>
             When a star explodes as a supernova (SN) within the interstellar medium (ISM) of a galaxy it releases prodigious amounts of energy into its surroundings. On the scale of a whole galaxy the energy released by the collective explosions of many SNe is responsible for energizing the ISM and for driving galactic winds. The stirring and ejecting of ISM gas by SNe is believed to play the dominant role in determining the relative inefficiency with which galaxies up to the mass of our own Milky Way turn gas into stars.
         </p>
-        <figure style="margin: 1.5rem 0;">
-            <img src="{{ '/images/Clustered_SNe_mixed_strip_4panel_Sig30_Mcl45_1pc_3_3_23Myr_zoom_panel.png' | relative_url }}" alt="Clustered SNe" style="width: 100%; border-radius: 8px;">
-            <figcaption style="margin-top: 0.5rem; text-align: center; color: var(--color-text-light); font-size: 0.85rem;">
-                Slices of temperature, density, velocity, and cooling rate at 2 times through the ISM of a galaxy with a massive cluster of SNe in the process of going off and launching a wind. This is from Fielding et al. (2018).
-            </figcaption>
-        </figure>
+        {% include figure.html src="/images/Clustered_SNe_mixed_strip_4panel_Sig30_Mcl45_1pc_3_3_23Myr_zoom_panel.png" alt="Clustered SNe" caption=winds_feedback_caption wrapper_class="figure-block figure-block--card" caption_class="figure-block__caption figure-block__caption--small" %}
     </div>
     
     <div class="card">
         <h3>Plasmoid Mediated Magnetic Reconnection in the ISM</h3>
-        <figure style="margin: 1.5rem 0;">
-            <img src="{{ '/images/ISM_Plasmoid.png' | relative_url }}" alt="ISM Plasmoid" style="width: 100%; border-radius: 8px;">
-            <figcaption style="margin-top: 0.5rem; text-align: center; color: var(--color-text-light); font-size: 0.85rem;">
-                Volume rendering of the temperature and magnetic fields in a patch of the turbulent, thermally unstable ISM. The magnetic fields commonly exhibit clear helical patterns, which are signs of the plasmoid instability and the associated fast magnetic reconnection. This is from Fielding et al. (2022b).
-            </figcaption>
-        </figure>
+        {% include figure.html src="/images/ISM_Plasmoid.png" alt="ISM Plasmoid" caption=plasmoid_caption wrapper_class="figure-block figure-block--card" caption_class="figure-block__caption figure-block__caption--small" %}
     </div>
     
     <div class="card">
@@ -104,11 +82,6 @@ title: Research
         <p>
             The Kepler mission found many Jupiter mass planets with very short orbital periods (P&lt;10 days). How these "hot Jupiters" migrated to such close-in orbits is debated. Using hydrodynamic and magnetohydrodynamic simulations of protostar formation, I demonstrated that a wide range of stellar obliquities may be produced as a byproduct of forming a star within a turbulent environment.
         </p>
-        <figure style="margin: 1.5rem 0;">
-            <img src="{{ '/images/threepanel_misaligned_MHD_disk.png' | relative_url }}" alt="Protoplanetary Disk" style="width: 100%; border-radius: 8px;">
-            <figcaption style="margin-top: 0.5rem; text-align: center; color: var(--color-text-light); font-size: 0.85rem;">
-                Three views of the density of a protostellar disk that formed around a protostar in an MHD simulation. The line shows the direction of the star's angular momentum, which is misaligned from the disk's. This is from Fielding et al. (2015).
-            </figcaption>
-        </figure>
+        {% include figure.html src="/images/threepanel_misaligned_MHD_disk.png" alt="Protoplanetary Disk" caption=disks_caption wrapper_class="figure-block figure-block--card" caption_class="figure-block__caption figure-block__caption--small" %}
     </div>
 </section>

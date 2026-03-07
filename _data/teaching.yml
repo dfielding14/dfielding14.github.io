@@ -1,0 +1,36 @@
+current_upcoming:
+  - institution: New York University
+    courses:
+      - title: "Graduate Seminar: Theory of Galaxy Formation"
+        term: Spring 2026
+        description: Advanced graduate seminar covering theoretical frameworks for understanding galaxy formation and evolution, including gas dynamics, feedback processes, and cosmological context.
+previous:
+  - institution: Cornell University
+    role: Assistant Professor
+    years: 2024-2025
+    courses:
+      - title: "ASTRO 1101: From New Worlds to Black Holes"
+        term: Fall 2024
+        description: An introduction to the universe, with emphasis on conceptual understanding of how the universe works and recent scientific discoveries.
+      - title: "ASTRO 6590: Galaxies"
+        term: Spring 2025
+        description: Graduate-level course covering galaxy formation, structure, dynamics, and evolution.
+  - institution: University of California, Berkeley
+    role: Graduate Student Instructor
+    courses:
+      - title: "Astronomy C12: The Planets"
+        description: An introduction to the study of the solar system with emphasis on the discoveries from space exploration. Topics include the origin of the solar system, planetary atmospheres, surfaces and interiors, comets and asteroids, and the search for life in the solar system.
+      - title: "Astronomy 7A: Introduction to Astrophysics"
+        description: An introduction to astrophysics including stellar structure and evolution, galaxies, and cosmology for students majoring in physical sciences.
+mentoring:
+  - Graduate student mentor for the Flatiron Pre-Doctoral Program (Iryna Butsky, 2019)
+  - Undergraduate mentor, UC Berkeley Astronomy (2016-2017)
+outreach:
+  - title: Astronomy Classes for Elementary Students (2017)
+    description: Taught a series of astronomy classes to 2nd and 3rd grade students at North Oakland Community Charter School.
+  - title: UC Berkeley Astronomy Department Public Liaison (2015)
+    description: Coordinated public outreach events and astronomy talks for the community.
+  - title: East Bay Astronomical Society Public Lecture (2014)
+    description: Delivered public lecture at Chabot Space and Science Center.
+  - title: The Berkeley Compass Project Summer Evening Instructor (2013)
+    description: Taught physics and astronomy to underrepresented students in STEM.

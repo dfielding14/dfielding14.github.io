@@ -1,0 +1,46 @@
+intro:
+  title: Open Positions
+  body_html: |
+    <p>
+      I am actively recruiting graduate students and postdocs to join my research group at NYU. There are also several routes for NYU undergraduates and external students to get involved in research.
+    </p>
+    <p>
+      Fellowship names, eligibility rules, and deadlines change regularly, so always check the current call on the official program page before applying.
+    </p>
+sections:
+  - title: Graduate Students
+    cards:
+      - title: Ph.D. Positions and Fellowships
+        body_html: |
+          <p>
+            Prospective Ph.D. students should apply through the <a href="https://physics.nyu.edu/department/PHD.html" target="_blank" rel="noopener noreferrer">NYU Physics Ph.D. program</a>. If your interests overlap with theoretical astrophysics, galaxy formation, plasma astrophysics, or related topics, feel free to get in touch.
+          </p>
+          <p>
+            External funding opportunities worth checking include the <a href="https://www.nyspacegrant.org/student-support-fellowship" target="_blank" rel="noopener noreferrer">NY Space Grant Student Support Fellowship</a>, the <a href="https://www.nsf.gov/funding/opportunities/grfp-nsf-graduate-research-fellowship-program" target="_blank" rel="noopener noreferrer">NSF Graduate Research Fellowship Program</a>, NASA graduate opportunities such as <a href="https://science.nasa.gov/learn/learner-opportunities/" target="_blank" rel="noopener noreferrer">FINESST</a>, and the <a href="https://www.krellinst.org/csgf/" target="_blank" rel="noopener noreferrer">DOE Computational Science Graduate Fellowship</a>.
+          </p>
+  - title: Postdoctoral Researchers
+    cards:
+      - title: Postdoctoral Fellowships
+        body_html: |
+          <p>
+            If you are interested in a postdoctoral position with me, feel free to get in touch. In addition to positions posted directly by departments or institutes, relevant fellowship routes include:
+          </p>
+          <ul>
+            <li><a href="https://www.stsci.edu/stsci-research/fellowships/nasa-hubble-fellowship-program/announcement-of-opportunity" target="_blank" rel="noopener noreferrer">NASA Hubble Fellowship Program</a> (the umbrella program for the Einstein, Hubble, and Sagan Fellowships)</li>
+            <li><a href="https://www.nsf.gov/funding/opportunities/aapf-nsf-astronomy-astrophysics-postdoctoral-fellowships" target="_blank" rel="noopener noreferrer">NSF Astronomy and Astrophysics Postdoctoral Fellowships</a></li>
+            <li><a href="https://science.nasa.gov/nasa-postdoc-program/" target="_blank" rel="noopener noreferrer">NASA Postdoctoral Program</a></li>
+            <li><a href="https://www.stsci.edu/stsci-research/fellowships/brinson-prize-fellowship-program" target="_blank" rel="noopener noreferrer">Brinson Prize Fellowship Program</a></li>
+            <li><a href="https://www.simonsfoundation.org/simons-society-of-fellows/" target="_blank" rel="noopener noreferrer">Simons Society of Fellows</a></li>
+            <li><a href="https://nserc-crsng.canada.ca/en/funding-opportunity/canada-postdoctoral-research-award-program" target="_blank" rel="noopener noreferrer">Canada Postdoctoral Research Award</a> for applicants using the Canadian federal postdoctoral system</li>
+            <li><a href="https://www.aas.org/jobregister" target="_blank" rel="noopener noreferrer">AAS Job Register</a> for broader astronomy and astrophysics postdoc searches</li>
+          </ul>
+  - title: Undergraduate Students
+    cards:
+      - title: Research and Summer Programs
+        body_html: |
+          <p>
+            <strong>NYU undergraduates:</strong> The main routes into research with me are NYU's <a href="https://cas.nyu.edu/undergraduate-research/summer-undergraduate-research-incubator.html" target="_blank" rel="noopener noreferrer">Summer Undergraduate Research Incubator (SURI)</a>, the <a href="https://cas.nyu.edu/undergraduate-research/deans-undergraduate-research-fund.html" target="_blank" rel="noopener noreferrer">Dean's Undergraduate Research Fund (DURF)</a>, and senior thesis projects. If you are interested in working with me, send a short note describing your background and interests.
+          </p>
+          <p>
+            <strong>Students looking for summer research programs:</strong> Good places to start include the <a href="https://www.nsf.gov/funding/initiatives/reu" target="_blank" rel="noopener noreferrer">NSF REU site directory</a>, the <a href="https://aas.org/careers/internships-summer-jobs" target="_blank" rel="noopener noreferrer">AAS internships and summer jobs page</a>, <a href="https://science.nasa.gov/learn/learner-opportunities/" target="_blank" rel="noopener noreferrer">NASA learner opportunities and internships</a>, Caltech <a href="https://sfp.caltech.edu/undergraduate-research/programs/surf" target="_blank" rel="noopener noreferrer">SURF</a>, STScI's <a href="https://www.stsci.edu/opportunities/space-astronomy-summer-program" target="_blank" rel="noopener noreferrer">Space Astronomy Summer Program</a>, and Harvard CfA's <a href="https://www.cfa.harvard.edu/opportunities/graduate-undergraduate-programs/spark" target="_blank" rel="noopener noreferrer">SPARK</a>. Eligibility varies by program, especially for citizenship and visa requirements.
+          </p>

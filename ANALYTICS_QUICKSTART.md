@@ -8,7 +8,7 @@
    - Name: "dfielding14.github.io"
    - Domain: "dfielding14.github.io"
 4. Copy your Website ID (looks like: "a1b2c3d4-e5f6-7890-abcd-ef1234567890")
-5. Replace "UMAMI_WEBSITE_ID" in _layouts/default.html (line 22)
+5. Replace the value of `analytics.umami_website_id` in `_data/site.yml`
 
 ### Option B: Deploy Your Own (Completely Free)
 1. Click here: https://vercel.com/new/clone?repository-url=https://github.com/umami-software/umami
@@ -17,7 +17,7 @@
 4. Visit your-app.vercel.app
 5. Login: admin/umami
 6. Add your website
-7. Get tracking code and replace line 22 in _layouts/default.html
+7. Get the tracking code values and replace `analytics.umami_website_id` in `_data/site.yml`
 
 ## Step 2: Microsoft Clarity (2 min)
 1. Go to: https://clarity.microsoft.com
@@ -26,12 +26,12 @@
    - Name: "dfielding14"
    - URL: "https://dfielding14.github.io"
 4. Get your Project ID (like "pq8xzfh5k7")
-5. Replace "CLARITY_ID" in _layouts/default.html (line 30)
+5. Replace the value of `analytics.clarity_project_id` in `_data/site.yml`
 
 ## Step 3: Deploy
 ```bash
 git add -A
-git commit -m "Add Umami and Clarity analytics"
+git commit -m "Update analytics configuration"
 git push origin master
 ```
 

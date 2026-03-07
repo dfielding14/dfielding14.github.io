@@ -1,6 +1,10 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.9"
+ruby "~> 3.3.0"
+
+gem "base64"
+gem "bigdecimal"
+gem "jekyll", "~> 3.10"
 gem "jekyll-feed"
 gem "jekyll-sitemap"
 gem "webrick"

@@ -10,7 +10,7 @@
    - Name: dfielding14.github.io
    - URL: https://dfielding14.github.io
 5. Copy your Project ID (looks like: "pq8xzfh5k7")
-6. Replace the ID in _layouts/default.html line 27
+6. Replace the ID in `_data/site.yml` under `analytics.clarity_project_id`
 
 **What you'll see:**
 - Heatmaps showing where people click
@@ -28,7 +28,7 @@
    - Name: Drummond Fielding
    - Domain: dfielding14.github.io
 4. Copy the tracking code
-5. Replace in _layouts/default.html line 31
+5. Replace the ID in `_data/site.yml` under `analytics.umami_website_id`
 
 ### Option B: Free Self-Hosted (Better)
 1. Go to: https://vercel.com
@@ -51,7 +51,7 @@
 ## 3. Quick Alternative: Counter.dev
 **Simplest option - no account needed**
 
-Just add this to _layouts/default.html:
+Set `analytics.umami_website_id` and `analytics.clarity_project_id` in `_data/site.yml`, or replace the shared analytics include logic with a different provider. For example:
 ```html
 <script src="https://cdn.counter.dev/script.js" data-id="YOUR_ID_HERE" data-utcoffset="-5"></script>
 ```

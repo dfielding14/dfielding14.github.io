@@ -1,0 +1,20 @@
+members:
+  - name: Brent Tan
+    role: Postdoctoral Researcher
+    url: https://zunyibrt.github.io/
+  - name: Hitesh Das
+    role: Postdoctoral Researcher
+    url: https://hiteshdas.org/
+  - name: Alex Pendris
+    role: PhD Student
+  - name: Nana Ama Darpaah
+    role: MS Student
+  - name: Lillion Shi
+    role: Undergrad Student
+join_copy: There are open positions for undergraduate students, graduate students, and postdocs to join my group. If you are interested in working together, please send me your CV and a short description of your research interests.
+research_areas:
+  - Multiphase gas dynamics in galaxies
+  - Magnetized turbulence and cosmic ray transport
+  - Circumgalactic and intergalactic media
+  - Galactic winds and feedback processes
+  - Numerical simulations and theoretical modeling

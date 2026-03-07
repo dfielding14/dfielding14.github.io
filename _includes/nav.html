@@ -1,0 +1,46 @@
+<nav class="top-nav">
+  <div class="nav-container">
+    <div class="nav-brand">
+      <a href="{{ '/' | relative_url }}">{{ site.data.site.short_name }}</a>
+    </div>
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-label="Toggle navigation"
+      aria-controls="primary-navigation"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-menu" id="primary-navigation">
+      {% for item in site.data.navigation %}
+        {% assign is_active = page.section == item.section %}
+        <li class="nav-item{% if item.children %} dropdown{% endif %}{% if is_active %} is-active{% endif %}">
+          {% if item.children %}
+            <div class="dropdown-trigger">
+              <a href="{{ item.url | relative_url }}"{% if is_active %} class="active" aria-current="page"{% endif %}>{{ item.label }}</a>
+              <button
+                class="dropdown-toggle"
+                type="button"
+                aria-label="Toggle {{ item.label }} submenu"
+                aria-controls="submenu-{{ item.section }}"
+                aria-expanded="false"
+              >
+                <span aria-hidden="true">▾</span>
+              </button>
+            </div>
+            <ul class="dropdown-menu" id="submenu-{{ item.section }}">
+              {% for child in item.children %}
+                <li><a href="{{ child.url | relative_url }}">{{ child.label }}</a></li>
+              {% endfor %}
+            </ul>
+          {% else %}
+            <a href="{{ item.url | relative_url }}"{% if is_active %} class="active" aria-current="page"{% endif %}>{{ item.label }}</a>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>

@@ -1,56 +1,52 @@
 ---
-layout: default
+layout: page
 title: Teaching
+description: Current teaching, prior courses, mentoring, and outreach activities.
+section: teaching
 ---
 
-<h1>Teaching</h1>
+{% assign teaching = site.data.teaching %}
 
 <section class="section">
     <h2 class="section-title">Current & Upcoming Courses</h2>
-    <div class="card">
-        <h3>New York University</h3>
-        
-        <h4 style="margin-top: 1rem;">Graduate Seminar: Theory of Galaxy Formation</h4>
-        <p><strong>Spring 2026</strong><br>
-        Advanced graduate seminar covering theoretical frameworks for understanding galaxy formation and evolution, including gas dynamics, feedback processes, and cosmological context.</p>
-    </div>
+    {% for institution in teaching.current_upcoming %}
+        <div class="card">
+            <h3>{{ institution.institution }}</h3>
+            {% for course in institution.courses %}
+                <h4>{{ course.title }}</h4>
+                <p><strong>{{ course.term }}</strong><br>
+                {{ course.description }}</p>
+            {% endfor %}
+        </div>
+    {% endfor %}
 </section>
 
 <section class="section">
     <h2 class="section-title">Previous Teaching</h2>
-    
-    <div class="card">
-        <h3>Cornell University</h3>
-        <p><strong>Assistant Professor</strong> (2023-2025)</p>
-        
-        <h4 style="margin-top: 1rem;">ASTRO 1101: From New Worlds to Black Holes</h4>
-        <p><strong>Fall 2024</strong><br>
-        An introduction to the universe, with emphasis on conceptual understanding of how the universe works and recent scientific discoveries.</p>
-        
-        <h4 style="margin-top: 1rem;">ASTRO 6590: Galaxies</h4>
-        <p><strong>Spring 2025</strong><br>
-        Graduate-level course covering galaxy formation, structure, dynamics, and evolution.</p>
-    </div>
-    
-    <div class="card">
-        <h3>University of California, Berkeley</h3>
-        <p><strong>Graduate Student Instructor</strong></p>
-        
-        <h4 style="margin-top: 1rem;">Astronomy C12: The Planets</h4>
-        <p>An introduction to the study of the solar system with emphasis on the discoveries from space exploration. Topics include the origin of the solar system, planetary atmospheres, surfaces and interiors, comets and asteroids, and the search for life in the solar system.</p>
-        
-        <h4 style="margin-top: 1rem;">Astronomy 7A: Introduction to Astrophysics</h4>
-        <p>An introduction to astrophysics including stellar structure and evolution, galaxies, and cosmology for students majoring in physical sciences.</p>
-    </div>
+
+    {% for institution in teaching.previous %}
+        <div class="card">
+            <h3>{{ institution.institution }}</h3>
+            {% if institution.role %}
+                <p><strong>{{ institution.role }}</strong>{% if institution.years %} ({{ institution.years }}){% endif %}</p>
+            {% endif %}
+            {% for course in institution.courses %}
+                <h4>{{ course.title }}</h4>
+                <p>{% if course.term %}<strong>{{ course.term }}</strong><br>{% endif %}
+                {{ course.description }}</p>
+            {% endfor %}
+        </div>
+    {% endfor %}
 </section>
 
 <section class="section">
     <h2 class="section-title">Mentoring</h2>
     <div class="card">
         <h3>Graduate Student Mentoring</h3>
-        <ul style="list-style: none; padding: 0;">
-            <li style="margin-bottom: 0.5rem;">• Graduate student mentor for the Flatiron Pre-Doctoral Program (Iryna Butsky, 2019)</li>
-            <li style="margin-bottom: 0.5rem;">• Undergraduate mentor, UC Berkeley Astronomy (2016-2017)</li>
+        <ul class="plain-list">
+            {% for item in teaching.mentoring %}
+                <li>{{ item }}</li>
+            {% endfor %}
         </ul>
     </div>
 </section>
@@ -58,23 +54,13 @@ title: Teaching
 <section class="section">
     <h2 class="section-title">Educational Outreach</h2>
     <div class="card">
-        <ul style="list-style: none; padding: 0;">
-            <li style="margin-bottom: 1rem;">
-                <strong>• Astronomy Classes for Elementary Students (2017)</strong><br>
-                <span style="color: var(--color-text-light);">Taught a series of astronomy classes to 2nd and 3rd grade students at North Oakland Community Charter School</span>
-            </li>
-            <li style="margin-bottom: 1rem;">
-                <strong>• UC Berkeley Astronomy Department Public Liaison (2015)</strong><br>
-                <span style="color: var(--color-text-light);">Coordinated public outreach events and astronomy talks for the community</span>
-            </li>
-            <li style="margin-bottom: 1rem;">
-                <strong>• East Bay Astronomical Society Public Lecture (2014)</strong><br>
-                <span style="color: var(--color-text-light);">Delivered public lecture at Chabot Space and Science Center</span>
-            </li>
-            <li style="margin-bottom: 1rem;">
-                <strong>• The Berkeley Compass Project Summer Evening Instructor (2013)</strong><br>
-                <span style="color: var(--color-text-light);">Taught physics and astronomy to underrepresented students in STEM</span>
-            </li>
+        <ul class="detail-list">
+            {% for item in teaching.outreach %}
+                <li>
+                    <strong>{{ item.title }}</strong><br>
+                    <span class="text-muted">{{ item.description }}</span>
+                </li>
+            {% endfor %}
         </ul>
     </div>
 </section>
