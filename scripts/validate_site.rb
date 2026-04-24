@@ -6,6 +6,7 @@ require 'pathname'
 ROOT = Pathname(__dir__).join('..').realpath
 SOURCE_FILES = Dir[
   ROOT.join('*.html').to_s,
+  ROOT.join('wagers/*.html').to_s,
   ROOT.join('solfege-flight/*.html').to_s
 ].sort.freeze
 PUBLISHED_DOCS = %w[

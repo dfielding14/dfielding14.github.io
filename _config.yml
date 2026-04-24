@@ -18,6 +18,7 @@ exclude:
   - CLAUDE.md
   - ANALYTICS_QUICKSTART.md
   - ANALYTICS_SETUP.md
+  - dfielding14.github.io_old/
   - scripts/
   - solfege-flight/README.md
 

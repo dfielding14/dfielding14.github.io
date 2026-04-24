@@ -1,0 +1,4 @@
+# Public Supabase config only. Do not put invite or admin codes here.
+app_name: "The Ledger"
+supabase_url: "https://uaxwxlhvmwrffgkzaclj.supabase.co"
+supabase_anon_key: "sb_publishable_qstRvTfxJInP9Aj7njsQKw_DP0RDR42"

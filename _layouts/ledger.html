@@ -1,0 +1,31 @@
+---
+---
+{% assign ledger = site.data.ledger %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="{{ page.robots | default: 'noindex,nofollow' }}">
+  <meta name="description" content="{{ page.description | default: 'A private wager ledger.' }}">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/ledger.css?v=20260424c' | relative_url }}">
+  <link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | relative_url }}">
+  <script>
+    window.LEDGER_CONFIG = {
+      appName: {{ ledger.app_name | default: 'The Ledger' | jsonify }},
+      supabaseUrl: {{ ledger.supabase_url | default: '' | jsonify }},
+      supabaseAnonKey: {{ ledger.supabase_anon_key | default: '' | jsonify }}
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script defer src="{{ '/assets/js/ledger.js?v=20260424e' | relative_url }}"></script>
+</head>
+<body class="ledger-body">
+  {{ content }}
+</body>
+</html>

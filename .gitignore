@@ -7,3 +7,4 @@ vendor/bundle/
 .DS_Store
 *.swp
 *~
+ledger_invites.txt

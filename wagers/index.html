@@ -1,0 +1,311 @@
+---
+layout: ledger
+title: The Ledger
+description: A private friend-group wager ledger for claims, stakes, receipts, and settlements.
+sitemap: false
+robots: noindex,nofollow
+permalink: /wagers/
+---
+
+<main class="ledger-app" data-ledger-app>
+  <section class="ledger-gate" data-view="gate">
+    <div class="ledger-gate__panel">
+      <p class="ledger-kicker">Private wagers. Public receipts.</p>
+      <h1>The Ledger</h1>
+      <p class="ledger-gate__copy">
+        A hidden record of claims, stakes, counterparties, and eventual consequences.
+      </p>
+
+      <form class="ledger-form ledger-gate__form" data-form="access">
+        <label>
+          <span>Invite code</span>
+          <input type="password" name="inviteCode" autocomplete="off" required>
+        </label>
+        <button type="submit">Enter</button>
+      </form>
+
+      <p class="ledger-message" data-message="gate" role="status"></p>
+      <p class="ledger-setup-note" data-setup-note hidden>
+        Supabase is not configured yet. This page will run in local demo mode until
+        <code>_data/ledger.yml</code> has a project URL and anon key.
+      </p>
+    </div>
+  </section>
+
+  <section class="ledger-gate" data-view="identity" hidden>
+    <div class="ledger-gate__panel">
+      <p class="ledger-kicker">Name the defendant</p>
+      <h1>Who is posting?</h1>
+      <p class="ledger-gate__copy">
+        This name belongs to the invite code you just used. You can rename it later without changing identity.
+      </p>
+
+      <form class="ledger-form ledger-gate__form" data-form="identity">
+        <label>
+          <span>Display name</span>
+          <input type="text" name="displayName" autocomplete="name" maxlength="80" required>
+        </label>
+        <button type="submit">Continue</button>
+      </form>
+
+      <p class="ledger-message" data-message="identity" role="status"></p>
+    </div>
+  </section>
+
+  <section class="ledger-shell" data-view="app" hidden>
+    <header class="ledger-header">
+      <div>
+        <p class="ledger-kicker">The Ledger</p>
+        <h1>Wagers</h1>
+      </div>
+      <div class="ledger-session">
+        <button type="button" class="ledger-identity-button" data-action="open-settings" aria-label="Open account settings">
+          <span data-current-epithet></span>
+          <strong data-current-user></strong>
+        </button>
+      </div>
+    </header>
+
+    <section class="ledger-stats" aria-label="Wager summary">
+      <button type="button" class="ledger-stat-card" data-stat-filter="open" aria-pressed="false">
+        <span data-stat="open">0</span>
+        <p>Open</p>
+      </button>
+      <button type="button" class="ledger-stat-card" data-stat-filter="agreed" aria-pressed="false">
+        <span data-stat="agreed">0</span>
+        <p>Agreed</p>
+      </button>
+      <button type="button" class="ledger-stat-card" data-stat-filter="settled" aria-pressed="false">
+        <span data-stat="settled">0</span>
+        <p>Settled</p>
+      </button>
+      <div class="ledger-stat-card ledger-stat-card--static" aria-label="Recorded stake">
+        <span data-stat="totalStake">$0</span>
+        <p>Recorded stake</p>
+      </div>
+    </section>
+
+    <section class="ledger-board">
+      <aside class="ledger-panel ledger-compose" aria-label="Create a wager">
+        <div class="ledger-panel__heading">
+          <h2>New entry</h2>
+          <p>Make the claim legible before anyone can pretend they meant something else.</p>
+        </div>
+
+        <form class="ledger-form ledger-form--stacked" data-form="wager">
+          <label>
+            <span>Template</span>
+            <select name="templateType" data-template-select required>
+              <option value="binary">Binary event</option>
+              <option value="multiple_choice">Multiple choice</option>
+              <option value="metric">Metric threshold or range</option>
+              <option value="date">Date or duration condition</option>
+              <option value="custom">Custom contract</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Title</span>
+            <input type="text" name="title" maxlength="140" placeholder="S&P drawdown before September" required>
+          </label>
+
+          <label>
+            <span>Terms</span>
+            <textarea name="terms" rows="5" data-template-terms required></textarea>
+          </label>
+
+          <div class="ledger-field-grid">
+            <label>
+              <span>Source of truth</span>
+              <input type="text" name="sourceOfTruth" placeholder="FRED, closing price, arbiter, etc.">
+            </label>
+            <label>
+              <span>Close date</span>
+              <input type="date" name="closeDate">
+            </label>
+            <label>
+              <span>Resolution date</span>
+              <input type="date" name="resolutionDate">
+            </label>
+            <label>
+              <span>Mode</span>
+              <select name="positionMode">
+                <option value="open">Open position</option>
+                <option value="proposal">Formal proposal</option>
+              </select>
+            </label>
+          </div>
+
+          <fieldset>
+            <legend>Initial position</legend>
+            <label>
+              <span>Claim or side</span>
+              <input type="text" name="claim" placeholder="It drops 20% before the close date">
+            </label>
+            <div class="ledger-field-grid">
+              <label>
+                <span>Stake</span>
+                <input type="number" name="stakeAmount" min="0" step="0.01" placeholder="10">
+              </label>
+              <label>
+                <span>Odds / payout text</span>
+                <input type="text" name="oddsText" placeholder="Even money, 2:1, dinner, etc.">
+              </label>
+              <label>
+                <span>Counterparty</span>
+                <input type="text" name="counterparty" placeholder="Open, Danny, Drummond">
+              </label>
+              <label>
+                <span>Notes</span>
+                <input type="text" name="positionNotes" placeholder="Optional poison pill">
+              </label>
+            </div>
+          </fieldset>
+
+          <button type="submit">Post to The Ledger</button>
+          <p class="ledger-message" data-message="wager" role="status"></p>
+        </form>
+      </aside>
+
+      <section class="ledger-panel ledger-feed" aria-label="Wager board">
+        <div class="ledger-toolbar">
+          <label>
+            <span>Status</span>
+            <select data-filter="status">
+              <option value="all">All</option>
+              <option value="open">Open</option>
+              <option value="agreed">Agreed</option>
+              <option value="settled">Settled</option>
+              <option value="voided">Voided</option>
+            </select>
+          </label>
+          <label>
+            <span>Template</span>
+            <select data-filter="template">
+              <option value="all">All</option>
+              <option value="binary">Binary</option>
+              <option value="multiple_choice">Multiple choice</option>
+              <option value="metric">Metric</option>
+              <option value="date">Date</option>
+              <option value="custom">Custom</option>
+            </select>
+          </label>
+          <label class="ledger-search">
+            <span>Search</span>
+            <input type="search" data-filter="search" placeholder="Person, claim, term">
+          </label>
+        </div>
+
+        <div class="ledger-empty" data-empty-state hidden>
+          <h2>No entries yet</h2>
+          <p>Post the first claim and make the future answer in writing.</p>
+        </div>
+
+        <div class="ledger-list" data-wager-list></div>
+      </section>
+    </section>
+  </section>
+
+  <dialog class="ledger-dialog" data-dialog="position">
+    <form method="dialog" class="ledger-dialog__close">
+      <button type="submit" aria-label="Close">Close</button>
+    </form>
+    <form class="ledger-form ledger-form--stacked" data-form="position">
+      <h2>Add position</h2>
+      <input type="hidden" name="wagerId">
+      <label>
+        <span>Claim or side</span>
+        <input type="text" name="claim" required>
+      </label>
+      <div class="ledger-field-grid">
+        <label>
+          <span>Stake</span>
+          <input type="number" name="stakeAmount" min="0" step="0.01">
+        </label>
+        <label>
+          <span>Odds / payout text</span>
+          <input type="text" name="oddsText">
+        </label>
+        <label>
+          <span>Counterparty</span>
+          <input type="text" name="counterparty">
+        </label>
+        <label>
+          <span>State</span>
+          <select name="state">
+            <option value="open">Open position</option>
+            <option value="proposed">Formal proposal</option>
+            <option value="accepted">Already agreed</option>
+          </select>
+        </label>
+      </div>
+      <label>
+        <span>Notes</span>
+        <textarea name="notes" rows="3"></textarea>
+      </label>
+      <button type="submit">Add position</button>
+      <p class="ledger-message" data-message="position" role="status"></p>
+    </form>
+  </dialog>
+
+  <dialog class="ledger-dialog" data-dialog="settlement">
+    <form method="dialog" class="ledger-dialog__close">
+      <button type="submit" aria-label="Close">Close</button>
+    </form>
+    <form class="ledger-form ledger-form--stacked" data-form="settlement">
+      <h2>Settle entry</h2>
+      <input type="hidden" name="wagerId">
+      <label>
+        <span>Admin code</span>
+        <input type="password" name="adminCode" autocomplete="off" required>
+      </label>
+      <label>
+        <span>Status</span>
+        <select name="status" required>
+          <option value="settled">Settled</option>
+          <option value="voided">Voided</option>
+        </select>
+      </label>
+      <label>
+        <span>Outcome</span>
+        <input type="text" name="outcome" placeholder="Resolved yes, no, void, push, etc.">
+      </label>
+      <label>
+        <span>Settlement notes</span>
+        <textarea name="settlementNotes" rows="4"></textarea>
+      </label>
+      <label>
+        <span>Payment status</span>
+        <select name="paymentStatus">
+          <option value="unpaid">Unpaid</option>
+          <option value="partially_paid">Partially paid</option>
+          <option value="paid">Paid</option>
+          <option value="not_applicable">Not applicable</option>
+        </select>
+      </label>
+      <button type="submit">Record settlement</button>
+      <p class="ledger-message" data-message="settlement" role="status"></p>
+    </form>
+  </dialog>
+
+  <dialog class="ledger-dialog" data-dialog="settings">
+    <form method="dialog" class="ledger-dialog__close">
+      <button type="submit" aria-label="Close">Close</button>
+    </form>
+    <form class="ledger-form ledger-form--stacked" data-form="settings">
+      <h2>Settings</h2>
+      <p class="ledger-dialog__copy">
+        Your invite code is your identity. Renaming yourself updates the name attached to your existing ledger history.
+      </p>
+      <label>
+        <span>Display name</span>
+        <input type="text" name="displayName" autocomplete="name" maxlength="80" required>
+      </label>
+      <div class="ledger-settings-actions">
+        <button type="submit">Save name</button>
+        <button type="button" class="ledger-button-muted" data-action="sign-out">Sign out</button>
+      </div>
+      <p class="ledger-message" data-message="settings" role="status"></p>
+    </form>
+  </dialog>
+</main>
