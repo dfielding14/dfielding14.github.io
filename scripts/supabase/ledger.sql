@@ -56,10 +56,17 @@ create table if not exists public.ledger_wagers (
   settled_at timestamptz,
   constraint ledger_wagers_title_not_blank check (length(trim(title)) > 0),
   constraint ledger_wagers_terms_not_blank check (length(trim(terms)) > 0),
-  constraint ledger_wagers_template_type check (template_type in ('binary', 'multiple_choice', 'metric', 'date', 'custom')),
+  constraint ledger_wagers_template_type check (template_type in ('binary', 'pooled_binary', 'multiple_choice', 'metric', 'date', 'custom')),
   constraint ledger_wagers_status check (status in ('open', 'agreed', 'settled', 'voided')),
   constraint ledger_wagers_payment_status check (payment_status in ('unpaid', 'partially_paid', 'paid', 'not_applicable'))
 );
+
+alter table public.ledger_wagers
+  drop constraint if exists ledger_wagers_template_type;
+
+alter table public.ledger_wagers
+  add constraint ledger_wagers_template_type
+  check (template_type in ('binary', 'pooled_binary', 'multiple_choice', 'metric', 'date', 'custom'));
 
 create table if not exists public.ledger_positions (
   id uuid primary key default gen_random_uuid(),

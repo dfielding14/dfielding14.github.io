@@ -7,6 +7,7 @@
 
   const templateHelp = {
     binary: 'Example: This event happens by the close date. Resolution is yes/no using the source of truth below.',
+    pooled_binary: 'Example: Yes and No backers each add their own stake. The winning side splits the losing pool in proportion to each winner\'s stake.',
     multiple_choice: 'Example: Outcome is one of A, B, C, or D. Define how ties, delays, and ambiguous results resolve.',
     metric: 'Example: The measured value crosses, stays above, stays below, or lands inside a range by the close date.',
     date: 'Example: The condition remains true until a date, happens before a date, or lasts for a defined duration.',
@@ -15,6 +16,7 @@
 
   const labels = {
     binary: 'Binary',
+    pooled_binary: 'Pooled yes/no',
     multiple_choice: 'Multiple choice',
     metric: 'Metric',
     date: 'Date',
@@ -168,6 +170,53 @@
   const toNumber = (value) => {
     const parsed = Number(value);
     return Number.isFinite(parsed) ? parsed : 0;
+  };
+
+  const isPoolTemplate = (templateType) => templateType === 'pooled_binary';
+
+  const normalizePoolSide = (value) => {
+    const side = normalizeKey(value);
+    if (['yes', 'y', 'will', 'true'].includes(side)) {
+      return 'yes';
+    }
+
+    if (['no', 'n', 'wont', "won't", 'false'].includes(side)) {
+      return 'no';
+    }
+
+    return '';
+  };
+
+  const poolSideLabel = (side) => side === 'no' ? 'No' : 'Yes';
+
+  const activePoolPositions = (wager) => wager.positions.filter((position) => {
+    const side = normalizePoolSide(position.claim);
+    return side && position.state !== 'withdrawn' && position.state !== 'countered';
+  });
+
+  const calculatePool = (wager) => {
+    const positions = activePoolPositions(wager);
+    const totals = positions.reduce((acc, position) => {
+      const side = normalizePoolSide(position.claim);
+      acc[side] += toNumber(position.stakeAmount);
+      acc.total += toNumber(position.stakeAmount);
+      return acc;
+    }, { yes: 0, no: 0, total: 0 });
+
+    return { positions, ...totals };
+  };
+
+  const projectedPoolReturn = (position, pool) => {
+    const side = normalizePoolSide(position.claim);
+    const stake = toNumber(position.stakeAmount);
+    const sameSidePool = pool[side] || 0;
+    const oppositePool = side === 'yes' ? pool.no : pool.yes;
+
+    if (!stake || !sameSidePool) {
+      return 0;
+    }
+
+    return stake + (oppositePool * (stake / sameSidePool));
   };
 
   const makeId = () => {
@@ -416,6 +465,11 @@
   const effectiveStatus = (wager) => {
     if (wager.status === 'settled' || wager.status === 'voided') {
       return wager.status;
+    }
+
+    if (isPoolTemplate(wager.templateType)) {
+      const pool = calculatePool(wager);
+      return pool.yes > 0 && pool.no > 0 ? 'agreed' : wager.status || 'open';
     }
 
     if (wager.positions.some((position) => position.state === 'accepted')) {
@@ -826,22 +880,65 @@
     render();
   };
 
+  const updatePoolFields = (form, templateType) => {
+    const pooled = isPoolTemplate(templateType);
+    const claimField = form.querySelector('[data-claim-field]');
+    const poolSideField = form.querySelector('[data-pool-side-field]');
+    const oddsField = form.querySelector('[data-odds-field]');
+    const counterpartyField = form.querySelector('[data-counterparty-field]');
+    const modeField = form.querySelector('[data-mode-field]');
+    const claimInput = form.elements.claim;
+    const stakeInput = form.elements.stakeAmount;
+
+    if (claimField) {
+      claimField.hidden = pooled;
+    }
+
+    if (poolSideField) {
+      poolSideField.hidden = !pooled;
+    }
+
+    if (oddsField) {
+      oddsField.hidden = pooled;
+    }
+
+    if (counterpartyField) {
+      counterpartyField.hidden = pooled;
+    }
+
+    if (modeField) {
+      modeField.hidden = pooled;
+    }
+
+    if (claimInput) {
+      claimInput.required = !pooled && form === forms.position;
+      claimInput.placeholder = pooled ? '' : 'It drops 20% before the close date';
+    }
+
+    if (stakeInput) {
+      stakeInput.required = pooled;
+      stakeInput.min = pooled ? '0.01' : '0';
+    }
+  };
+
   const collectWagerPayload = (form) => {
     const formData = new FormData(form);
-    const claim = normalizeText(formData.get('claim'));
-    const mode = formData.get('positionMode') === 'proposal' ? 'proposed' : 'open';
+    const templateType = formData.get('templateType');
+    const pooled = isPoolTemplate(templateType);
+    const claim = pooled ? poolSideLabel(formData.get('poolSide')) : normalizeText(formData.get('claim'));
+    const mode = pooled ? 'accepted' : formData.get('positionMode') === 'proposal' ? 'proposed' : 'open';
     const initialPosition = claim ? {
       claim,
       stake_amount: toNumber(formData.get('stakeAmount')),
-      odds_text: normalizeText(formData.get('oddsText')),
-      counterparty: normalizeText(formData.get('counterparty')),
+      odds_text: pooled ? 'Proportional pool' : normalizeText(formData.get('oddsText')),
+      counterparty: pooled ? 'Pool' : normalizeText(formData.get('counterparty')),
       state: mode,
       notes: normalizeText(formData.get('positionNotes'))
     } : null;
 
     return {
       title: normalizeText(formData.get('title')),
-      template_type: formData.get('templateType'),
+      template_type: templateType,
       terms: normalizeText(formData.get('terms')),
       source_of_truth: normalizeText(formData.get('sourceOfTruth')),
       close_date: formData.get('closeDate') || null,
@@ -852,12 +949,13 @@
 
   const collectPositionPayload = (form) => {
     const formData = new FormData(form);
+    const pooled = isPoolTemplate(formData.get('templateType'));
     return {
-      claim: normalizeText(formData.get('claim')),
+      claim: pooled ? poolSideLabel(formData.get('poolSide')) : normalizeText(formData.get('claim')),
       stake_amount: toNumber(formData.get('stakeAmount')),
-      odds_text: normalizeText(formData.get('oddsText')),
-      counterparty: normalizeText(formData.get('counterparty')),
-      state: formData.get('state') || 'open',
+      odds_text: pooled ? 'Proportional pool' : normalizeText(formData.get('oddsText')),
+      counterparty: pooled ? 'Pool' : normalizeText(formData.get('counterparty')),
+      state: pooled ? 'accepted' : formData.get('state') || 'open',
       notes: normalizeText(formData.get('notes'))
     };
   };
@@ -932,6 +1030,30 @@
       return '<tr><td colspan="7">No positions yet.</td></tr>';
     }
 
+    if (isPoolTemplate(wager.templateType)) {
+      const pool = calculatePool(wager);
+      return wager.positions.map((position) => {
+        const side = normalizePoolSide(position.claim);
+        const projectedReturn = side ? projectedPoolReturn(position, pool) : 0;
+        const projectedNet = projectedReturn - toNumber(position.stakeAmount);
+        return `
+          <tr>
+            <td><strong>${escapeHtml(position.displayName)}</strong></td>
+            <td>${escapeHtml(side ? poolSideLabel(side) : position.claim)}</td>
+            <td>${escapeHtml(formatMoney(position.stakeAmount))}</td>
+            <td>${escapeHtml(side ? `${formatMoney(projectedReturn)} total / ${formatMoney(projectedNet)} net` : 'Unspecified')}</td>
+            <td>${escapeHtml(side ? `${poolSideLabel(side)} pool` : 'Pool')}</td>
+            <td><span class="ledger-pill ledger-pill--${escapeHtml(position.state)}">${escapeHtml(labels[position.state] || position.state)}</span></td>
+            <td>
+              <div class="ledger-table__actions">
+                ${position.state !== 'withdrawn' ? `<button type="button" data-action="withdraw-position" data-position-id="${escapeHtml(position.id)}">Withdraw</button>` : ''}
+              </div>
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
     return wager.positions.map((position) => `
       <tr>
         <td><strong>${escapeHtml(position.displayName)}</strong></td>
@@ -949,6 +1071,31 @@
         </td>
       </tr>
     `).join('');
+  };
+
+  const renderPoolSummary = (wager) => {
+    if (!isPoolTemplate(wager.templateType)) {
+      return '';
+    }
+
+    const pool = calculatePool(wager);
+    return `
+      <section class="ledger-pool-summary" aria-label="Pool summary">
+        <div>
+          <span>Yes pool</span>
+          <strong>${escapeHtml(formatMoney(pool.yes))}</strong>
+        </div>
+        <div>
+          <span>No pool</span>
+          <strong>${escapeHtml(formatMoney(pool.no))}</strong>
+        </div>
+        <div>
+          <span>Total pool</span>
+          <strong>${escapeHtml(formatMoney(pool.total))}</strong>
+        </div>
+        <p>Winning side splits the losing pool in proportion to each winner's stake. Projected payouts include returned stake.</p>
+      </section>
+    `;
   };
 
   const renderEvents = (wager) => {
@@ -1021,20 +1168,34 @@
             ${settlement}
           </div>
 
+          ${renderPoolSummary(wager)}
+
           <section>
             <h3 class="ledger-section-title">Positions</h3>
             <div class="ledger-table-wrap">
               <table class="ledger-table">
                 <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>Claim</th>
-                    <th>Stake</th>
-                    <th>Odds</th>
-                    <th>Counterparty</th>
-                    <th>State</th>
-                    <th>Actions</th>
-                  </tr>
+                  ${isPoolTemplate(wager.templateType) ? `
+                    <tr>
+                      <th>Name</th>
+                      <th>Side</th>
+                      <th>Stake</th>
+                      <th>If side wins</th>
+                      <th>Pool</th>
+                      <th>State</th>
+                      <th>Actions</th>
+                    </tr>
+                  ` : `
+                    <tr>
+                      <th>Name</th>
+                      <th>Claim</th>
+                      <th>Stake</th>
+                      <th>Odds</th>
+                      <th>Counterparty</th>
+                      <th>State</th>
+                      <th>Actions</th>
+                    </tr>
+                  `}
                 </thead>
                 <tbody>${renderPositionRows(wager)}</tbody>
               </table>
@@ -1141,6 +1302,10 @@
         throw new Error('Title and terms are required.');
       }
 
+      if (isPoolTemplate(payload.template_type) && (!payload.initial_position || toNumber(payload.initial_position.stake_amount) <= 0)) {
+        throw new Error('Pooled wagers need your side and a stake greater than $0.');
+      }
+
       await state.client.createWager(state.inviteCode, state.displayName, payload);
       forms.wager.reset();
       updateTemplateHelp();
@@ -1164,6 +1329,10 @@
     try {
       if (!payload.claim) {
         throw new Error('Claim is required.');
+      }
+
+      if (isPoolTemplate(positionData.get('templateType')) && toNumber(payload.stake_amount) <= 0) {
+        throw new Error('Pooled positions need a stake greater than $0.');
       }
 
       await state.client.addPosition(state.inviteCode, wagerId, state.displayName, payload);
@@ -1243,8 +1412,11 @@
     }
 
     if (action === 'open-position') {
+      const wager = state.wagers.find((entry) => entry.id === button.dataset.wagerId);
       forms.position.reset();
       forms.position.elements.wagerId.value = button.dataset.wagerId;
+      forms.position.elements.templateType.value = wager?.templateType || '';
+      updatePoolFields(forms.position, wager?.templateType || '');
       setMessage('position', '');
       openDialog(positionDialog);
       return;
@@ -1304,6 +1476,9 @@
   const updateTemplateHelp = () => {
     if (templateTerms && templateSelect) {
       templateTerms.placeholder = templateHelp[templateSelect.value] || templateHelp.custom;
+    }
+    if (forms.wager && templateSelect) {
+      updatePoolFields(forms.wager, templateSelect.value);
     }
   };
 

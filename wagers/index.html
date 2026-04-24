@@ -97,6 +97,7 @@ permalink: /wagers/
             <span>Template</span>
             <select name="templateType" data-template-select required>
               <option value="binary">Binary event</option>
+              <option value="pooled_binary">Pooled yes/no</option>
               <option value="multiple_choice">Multiple choice</option>
               <option value="metric">Metric threshold or range</option>
               <option value="date">Date or duration condition</option>
@@ -127,7 +128,7 @@ permalink: /wagers/
               <span>Resolution date</span>
               <input type="date" name="resolutionDate">
             </label>
-            <label>
+            <label data-mode-field>
               <span>Mode</span>
               <select name="positionMode">
                 <option value="open">Open position</option>
@@ -138,7 +139,14 @@ permalink: /wagers/
 
           <fieldset>
             <legend>Initial position</legend>
-            <label>
+            <label data-pool-side-field hidden>
+              <span>Side</span>
+              <select name="poolSide">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </label>
+            <label data-claim-field>
               <span>Claim or side</span>
               <input type="text" name="claim" placeholder="It drops 20% before the close date">
             </label>
@@ -147,11 +155,11 @@ permalink: /wagers/
                 <span>Stake</span>
                 <input type="number" name="stakeAmount" min="0" step="0.01" placeholder="10">
               </label>
-              <label>
+              <label data-odds-field>
                 <span>Odds / payout text</span>
                 <input type="text" name="oddsText" placeholder="Even money, 2:1, dinner, etc.">
               </label>
-              <label>
+              <label data-counterparty-field>
                 <span>Counterparty</span>
                 <input type="text" name="counterparty" placeholder="Open, Danny, Drummond">
               </label>
@@ -184,6 +192,7 @@ permalink: /wagers/
             <select data-filter="template">
               <option value="all">All</option>
               <option value="binary">Binary</option>
+              <option value="pooled_binary">Pooled yes/no</option>
               <option value="multiple_choice">Multiple choice</option>
               <option value="metric">Metric</option>
               <option value="date">Date</option>
@@ -213,7 +222,15 @@ permalink: /wagers/
     <form class="ledger-form ledger-form--stacked" data-form="position">
       <h2>Add position</h2>
       <input type="hidden" name="wagerId">
-      <label>
+      <input type="hidden" name="templateType">
+      <label data-pool-side-field hidden>
+        <span>Side</span>
+        <select name="poolSide">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </label>
+      <label data-claim-field>
         <span>Claim or side</span>
         <input type="text" name="claim" required>
       </label>
@@ -222,15 +239,15 @@ permalink: /wagers/
           <span>Stake</span>
           <input type="number" name="stakeAmount" min="0" step="0.01">
         </label>
-        <label>
+        <label data-odds-field>
           <span>Odds / payout text</span>
           <input type="text" name="oddsText">
         </label>
-        <label>
+        <label data-counterparty-field>
           <span>Counterparty</span>
           <input type="text" name="counterparty">
         </label>
-        <label>
+        <label data-mode-field>
           <span>State</span>
           <select name="state">
             <option value="open">Open position</option>
