@@ -1,5 +1,6 @@
 {% assign profile = site.data.site %}
-{% assign canonical_url = page.url | replace: 'index.html', '' | absolute_url %}
+{% assign canonical_path = page.url | replace: 'index.html', '' | replace: '.html', '' %}
+{% assign canonical_url = canonical_path | absolute_url %}
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
