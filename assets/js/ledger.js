@@ -316,6 +316,24 @@
     state.displayName = '';
   };
 
+  const inviteCodeFromHash = () => {
+    const hash = window.location.hash.replace(/^#/, '');
+    if (!hash) {
+      return '';
+    }
+
+    const params = new URLSearchParams(hash);
+    return normalizeText(params.get('invite'));
+  };
+
+  const clearInviteHash = () => {
+    if (!window.location.hash) {
+      return;
+    }
+
+    window.history.replaceState(null, document.title, `${window.location.pathname}${window.location.search}`);
+  };
+
   const showView = (name) => {
     Object.entries(views).forEach(([viewName, el]) => {
       el.hidden = viewName !== name;
@@ -1237,6 +1255,37 @@
     writeSession();
   };
 
+  const enterWithInviteCode = async (inviteCode, options = {}) => {
+    const cleanInviteCode = normalizeText(inviteCode);
+    if (!cleanInviteCode) {
+      throw new Error('Invite code is required.');
+    }
+
+    state.inviteCode = cleanInviteCode;
+    const ok = await state.client.checkInvite(state.inviteCode);
+    if (!ok) {
+      throw new Error(options.fromLink ? 'That invite link did not work.' : 'That invite code did not work.');
+    }
+
+    const session = readSession();
+    const sameInviteSession = normalizeText(session.inviteCode) === state.inviteCode;
+    if (sameInviteSession) {
+      applyIdentity(session);
+    } else {
+      state.identityId = '';
+      state.displayName = '';
+    }
+
+    const storedIdentity = await state.client.getIdentity(state.inviteCode);
+    applyIdentity(storedIdentity);
+
+    if (state.displayName) {
+      await enterApp();
+    } else {
+      showView('identity');
+    }
+  };
+
   forms.access.addEventListener('submit', async (event) => {
     event.preventDefault();
     setMessage('gate', '');
@@ -1244,26 +1293,7 @@
     setBusy(forms.access, true);
 
     try {
-      state.inviteCode = inviteCode;
-      const ok = await state.client.checkInvite(state.inviteCode);
-      if (!ok) {
-        throw new Error('That invite code did not work.');
-      }
-
-      const session = readSession();
-      const sameInviteSession = normalizeText(session.inviteCode) === state.inviteCode;
-      if (sameInviteSession) {
-        applyIdentity(session);
-      }
-
-      const storedIdentity = await state.client.getIdentity(state.inviteCode);
-      applyIdentity(storedIdentity);
-
-      if (state.displayName) {
-        await enterApp();
-      } else {
-        showView('identity');
-      }
+      await enterWithInviteCode(inviteCode);
     } catch (error) {
       setMessage('gate', error.message || 'Could not enter The Ledger.');
     } finally {
@@ -1494,6 +1524,19 @@
     }
 
     updateTemplateHelp();
+
+    const hashInviteCode = inviteCodeFromHash();
+    if (hashInviteCode) {
+      clearInviteHash();
+      try {
+        await enterWithInviteCode(hashInviteCode, { fromLink: true });
+      } catch (error) {
+        clearSession();
+        showView('gate');
+        setMessage('gate', error.message || 'Could not use that invite link.');
+      }
+      return;
+    }
 
     const session = readSession();
     state.inviteCode = normalizeText(session.inviteCode);
