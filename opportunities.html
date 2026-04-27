@@ -3,25 +3,11 @@ layout: page
 title: Opportunities
 description: Open roles, fellowship guidance, and research opportunities for prospective students and postdocs.
 section: group
+redirect_to: /group
+sitemap: false
+robots: noindex,nofollow
 ---
 
-{% assign opportunities = site.data.opportunities %}
-
 <section class="section">
-    <div class="card">
-        <h3>{{ opportunities.intro.title }}</h3>
-        <div class="rich-copy">{{ opportunities.intro.body_html }}</div>
-    </div>
+    <p>This page has moved to <a href="{{ '/group' | relative_url }}">Research Group</a>.</p>
 </section>
-
-{% for section in opportunities.sections %}
-    <section class="section">
-        <h2 class="section-title">{{ section.title }}</h2>
-        {% for card in section.cards %}
-            <div class="card">
-                <h3>{{ card.title }}</h3>
-                <div class="rich-copy">{{ card.body_html }}</div>
-            </div>
-        {% endfor %}
-    </section>
-{% endfor %}

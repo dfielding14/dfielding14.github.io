@@ -7,19 +7,9 @@
 - label: Talks
   url: /talks
   section: talks
-- label: Teaching
-  url: /teaching
-  section: teaching
 - label: Group
   url: /group
   section: group
-  children:
-    - label: Members
-      url: /group
-    - label: Opportunities
-      url: /opportunities
-    - label: Group Policies
-      url: /group-policies
 - label: CV
   url: /cv
   section: cv
