@@ -4,7 +4,9 @@
   {% include head.html %}
 </head>
 <body class="site-body{% if page.section %} site-body--{{ page.section }}{% endif %}">
-  {% include nav.html %}
+  {% unless page.hide_nav %}
+    {% include nav.html %}
+  {% endunless %}
   {{ content }}
   {% include footer.html %}
 </body>

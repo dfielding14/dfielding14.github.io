@@ -1,0 +1,212 @@
+---
+layout: page
+title: Geometry of Flows at NYU
+description: Geometry of Flows meeting at NYU, June 15-19, 2026, with a conference and collaboration workshop.
+section: gof-event
+permalink: /GoF2026NYU/
+sitemap: false
+robots: noindex,nofollow
+hide_page_title: true
+hide_nav: true
+---
+
+{% assign event = site.data.gof2026nyu %}
+
+<div class="event-page">
+  <section class="event-hero" aria-labelledby="event-title">
+    <div class="event-hero__content">
+      <p class="event-kicker">{{ event.initiative }}</p>
+      <h1 id="event-title">{{ event.title }}</h1>
+      <p class="event-subtitle">{{ event.subtitle }}</p>
+      <p class="event-intro">{{ event.description }}</p>
+
+      <dl class="event-facts">
+        <div>
+          <dt>Dates</dt>
+          <dd>{{ event.dates }}</dd>
+        </div>
+        <div>
+          <dt>Venue</dt>
+          <dd>{{ event.venue.room }}<br>{{ event.venue.building }}<br><span class="event-facts__note">Photo ID required</span></dd>
+        </div>
+        <div>
+          <dt>Location</dt>
+          <dd>{{ event.venue.address }}</dd>
+        </div>
+      </dl>
+
+      <aside class="event-callout" aria-label="Registration and arrival information">
+        <div>
+          <p class="event-callout__label">Registration</p>
+          <p>Please <a href="{{ event.registration.url }}" target="_blank" rel="noopener noreferrer">complete the registration form</a> <strong>{{ event.registration.deadline | downcase }}</strong>. Please indicate whether you will attend the conference dinner on Monday evening.</p>
+        </div>
+        <div>
+          <p class="event-callout__label">Arriving at NYU</p>
+          <p><strong>{{ event.venue.note }}</strong> {{ event.venue.entry }}</p>
+        </div>
+        <div>
+          <p class="event-callout__label">Need Help?</p>
+          <p>For questions about registration or logistics, please contact:</p>
+          <div class="event-contact-list">
+            {% for contact in event.contacts %}
+              <p class="event-contact">
+                <strong>{{ contact.name }}</strong>
+                {% if contact.role %}<span>{{ contact.role }}</span>{% endif %}
+                <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
+                {% if contact.phone %}<a href="tel:{{ contact.phone_href }}">{{ contact.phone }}</a>{% endif %}
+              </p>
+            {% endfor %}
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <figure class="event-poster">
+      <img src="{{ event.poster.src | relative_url }}" alt="{{ event.poster.alt }}" loading="eager">
+    </figure>
+  </section>
+
+  <section class="event-section" id="format">
+    <div class="event-section__heading">
+      <p class="event-kicker">Meeting Format</p>
+      <h2>Conference followed by workshop</h2>
+    </div>
+    <div class="event-phases">
+      <article class="event-phase event-phase--conference">
+        <p class="event-phase__dates">{{ event.conference.dates }}</p>
+        <h3>GoF Conference</h3>
+        <p>{{ event.conference.description }}</p>
+      </article>
+      <article class="event-phase event-phase--workshop">
+        <p class="event-phase__dates">{{ event.workshop.dates }}</p>
+        <h3>Collaboration Workshop</h3>
+        <p>{{ event.workshop.description }}</p>
+      </article>
+      <article class="event-phase event-phase--hospitality">
+        <p class="event-phase__dates">Hospitality</p>
+        <h3>Meals and Refreshments</h3>
+        <p>Continental breakfast will be provided each morning, with coffee and snacks available throughout the day. Attendees are responsible for lunch and dinner each day, with one exception: a special conference dinner is planned for Monday evening.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="event-section" id="program">
+    <div class="event-section__heading">
+      <p class="event-kicker">Program</p>
+      <h2>Conference Schedule</h2>
+      <p class="event-section__intro">Speakers should aim for 25-30 minutes, followed by 15-20 minutes of discussion.</p>
+    </div>
+    <div class="event-days event-days--conference">
+      {% for day in event.conference_schedule %}
+        <article class="event-day">
+          <header class="event-day__header">
+            <h3>{{ day.day }}</h3>
+            <p>{{ day.theme }}</p>
+          </header>
+          <div class="event-schedule">
+            {% for entry in day.items %}
+              <div class="event-schedule__row{% if entry.kind %} event-schedule__row--{{ entry.kind }}{% endif %}">
+                <time>{{ entry.time }}</time>
+                <p>
+                  {% if entry.speaker %}
+                    {{ entry.speaker }} - {% if entry.tentative %}<em>{{ entry.title }} (?)</em>{% else %}{{ entry.title }}{% endif %}
+                  {% else %}
+                    {{ entry.item }}
+                  {% endif %}
+                </p>
+              </div>
+            {% endfor %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="event-section" id="workshop">
+    <div class="event-section__heading">
+      <p class="event-kicker">Workshop</p>
+      <h2>Workshop Program</h2>
+      <p class="event-section__intro">Interested conference visitors are welcome to participate in the workshop. Each day includes one-hour morning and afternoon talk blocks in <strong>Room 940</strong>, organized around <strong>(Astro)physics</strong>, <strong>fluids</strong>, and <strong>math</strong>. Small-group discussions will use breakout Rooms <strong>901</strong> and <strong>TBD</strong>, as well as available visitor offices.</p>
+    </div>
+    <div class="event-days event-days--workshop">
+      {% for day in event.workshop_schedule %}
+        <article class="event-day">
+          <header class="event-day__header">
+            <h3>{{ day.day }}</h3>
+          </header>
+          <div class="event-schedule">
+            {% for entry in day.items %}
+              <div class="event-schedule__row{% if entry.kind %} event-schedule__row--{{ entry.kind }}{% endif %}">
+                <time>{{ entry.time }}</time>
+                <p>{{ entry.item }}</p>
+              </div>
+            {% endfor %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="event-section" id="speakers">
+    <div class="event-section__heading">
+      <p class="event-kicker">Conference</p>
+      <h2>Invited Speakers</h2>
+    </div>
+    <ul class="event-speakers">
+      {% for speaker in event.invited_speakers %}
+        <li>
+          <span class="event-speakers__name">{{ speaker.name }}</span>
+          {% if speaker.affiliation %}
+            <span class="event-speakers__affiliation">{{ speaker.affiliation }}</span>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+    <div class="event-participants-panel">
+      <h3>Internal Participants</h3>
+      <ul class="event-participants">
+        {% for participant in event.internal_participants %}
+          <li>{{ participant }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+
+  <section class="event-section" id="logistics">
+    <div class="event-section__heading">
+      <p class="event-kicker">Logistics</p>
+      <h2>Plan Your Visit</h2>
+    </div>
+    <div class="event-logistics">
+      <article>
+        <h3>Venue and Entry</h3>
+        <p>{{ event.venue.room }}<br>{{ event.venue.building }}<br>{{ event.venue.address }}</p>
+        <p>{{ event.venue.entry }}</p>
+        <p class="event-location-note">{{ event.venue.note }}</p>
+      </article>
+      <article>
+        <h3>Workshop Rooms</h3>
+        <p>Talks and plenary discussions will be held in <strong>Room 940</strong>. Breakout conference rooms <strong>901</strong> and <strong>TBD</strong>, together with the visitor offices, will be available for small-group work.</p>
+      </article>
+      <article>
+        <h3>Registration and Dinner</h3>
+        <p>Please register as soon as possible and indicate which days you expect to attend.</p>
+        <p>A conference dinner is planned for Monday evening. Please indicate whether you will attend on the registration form.</p>
+        <a class="event-text-link" href="{{ event.registration.url }}" target="_blank" rel="noopener noreferrer">Open registration form</a>
+      </article>
+      <article>
+        <h3>Visitor Offices</h3>
+        <p>A few visitor offices will be set aside for meeting participants throughout the week. Visitor office room numbers are <strong>TBD</strong>.</p>
+        <p>If you need office space, or would like to reserve a room for a call or meeting, please contact <a href="mailto:tmj222@nyu.edu">Tim Johnston</a>. Otherwise, available offices will be first come, first served.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="event-footer-note">
+    <p>
+      This meeting is part of the
+      <a href="https://www.ias.edu/simonsgeometry" target="_blank" rel="noopener noreferrer">Simons Initiative on the Geometry of Flows</a>
+      and is supported by the Simons Foundation.
+    </p>
+  </section>
+</div>

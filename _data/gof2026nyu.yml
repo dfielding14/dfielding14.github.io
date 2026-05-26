@@ -1,0 +1,249 @@
+title: Geometry of Flows
+subtitle: A Meeting on Geometry, Dynamics, and Turbulence
+initiative: Simons Initiative on the Geometry of Flows
+dates: June 15-19, 2026
+description: >-
+  An interdisciplinary meeting on how physical flows shape mesoscale structures,
+  with particular emphasis on boundaries, surfaces, interfaces, and turbulence.
+registration:
+  url: https://forms.gle/SeWzs8KCBzzWSVi5A
+  deadline: As soon as possible
+contacts:
+  - name: Drummond Fielding
+    email: drummondfielding@nyu.edu
+    phone: 973-634-2354
+    phone_href: "+19736342354"
+  - name: Tim Johnston
+    role: CCPP administrator
+    email: tmj222@nyu.edu
+venue:
+  room: Room 940
+  building: NYU Department of Physics
+  address: 726 Broadway, Manhattan, New York, NY 10003
+  note: This is the NYU Physics building in Manhattan, not 726 Broadway in Brooklyn.
+  entry: Visitors must bring photo ID for building entry.
+poster:
+  src: /images/GoF2026NYU/GOF_JuneNYU.webp
+  download: /images/GoF2026NYU/GOF_JuneNYU.png
+  alt: Poster for Geometry of Flows, a meeting on geometry, dynamics, and turbulence at NYU on June 15-16, 2026.
+conference:
+  dates: Monday-Tuesday, June 15-16
+  description: >-
+    The first two days are an invited-speaker conference with a kickoff talk,
+    eleven contributed talks, and substantial time for discussion. Speakers
+    should aim for 25-30 minutes, followed by 15-20 minutes of discussion.
+workshop:
+  dates: Wednesday-Friday, June 17-19
+  description: >-
+    The conference is followed by a smaller working session for collaboration
+    members and interested visitors. Conference participants are welcome to join
+    for any portion of the workshop. Talks will take place in Room 940, with
+    breakout discussions in Rooms 901 and TBD and available visitor offices.
+conference_schedule:
+  - day: Monday, June 15
+    theme: Foundations, theory, and reacting flows
+    items:
+      - time: 8:00-9:00 AM
+        item: Continental breakfast, coffee, and building check-in
+        kind: break
+      - time: 9:00-9:45 AM
+        item: "TBD (Drummond, Svitlana, Spergel) - Kickoff: scientific questions and goals for the Geometry of Flows initiative"
+        kind: highlight
+      - time: 9:45-10:30 AM
+        speaker: Gregory Eyink
+        title: "Spontaneous Stochasticity: Concepts and Consequences"
+      - time: 10:30-11:00 AM
+        item: Coffee break
+        kind: break
+      - time: 11:00-11:45 AM
+        speaker: Keaton Burns
+        title: Numerical methods for log-lattice spectral simulations
+        tentative: true
+      - time: 11:45 AM-12:30 PM
+        speaker: Vlad Vicol
+        title: Mathematical perspectives on turbulent transport and mixing
+        tentative: true
+      - time: 12:30-2:00 PM
+        item: Lunch break
+        kind: break
+      - time: 2:00-2:45 PM
+        speaker: Michael Mueller
+        title: Topological Effects in Turbulent Premixed Flames
+      - time: 2:45-3:30 PM
+        speaker: Alexei Poludnenko
+        title: Turbulence in reacting flows and combustion
+        tentative: true
+      - time: 3:30-4:00 PM
+        item: Coffee break
+        kind: break
+      - time: 4:00 PM onward
+        item: Discussion and informal interactions
+        kind: discussion
+      - time: Evening
+        item: Conference dinner - please indicate attendance when registering
+        kind: social
+  - day: Tuesday, June 16
+    theme: Kinetic, geo, and astro perspectives
+    items:
+      - time: 8:00-9:00 AM
+        item: Continental breakfast and coffee
+        kind: break
+      - time: 9:00-9:45 AM
+        speaker: Daniel Lecoanet
+        title: Radiative-convective interfaces in stars and the mixing that occurs there
+        tentative: true
+      - time: 9:45-10:30 AM
+        speaker: Laure Zanna
+        title: Ocean dynamics, transport, and interfaces
+        tentative: true
+      - time: 10:30-11:00 AM
+        item: Coffee break
+        kind: break
+      - time: 11:00-11:45 AM
+        speaker: S. Peng Oh
+        title: Flows in Turbulent Multi-Phase Gas
+      - time: 11:45 AM-12:30 PM
+        speaker: Philipp Kempski
+        title: Cosmic-ray transport in magnetized turbulence
+        tentative: true
+      - time: 12:30-2:00 PM
+        item: Lunch break
+        kind: break
+      - time: 2:00-2:45 PM
+        speaker: Eliot Quataert
+        title: Plasma astrophysics and turbulent transport
+        tentative: true
+      - time: 2:45-3:30 PM
+        speaker: Alexander Schekochihin
+        title: Phase-space turbulence and collisionless universality in kinetic systems
+      - time: 3:30-4:00 PM
+        item: Coffee break
+        kind: break
+      - time: 4:00-5:00 PM
+        item: Conference synthesis and workshop launch - themes, questions, and working groups
+        kind: highlight
+workshop_schedule:
+  - day: Wednesday, June 17
+    theme: Establishing questions
+    items:
+      - time: 9:30-10:30 AM
+        item: Morning talk block - (Astro)physics - Room 940 - speakers TBD
+        kind: highlight
+      - time: 10:30-11:00 AM
+        item: Coffee break
+        kind: break
+      - time: 11:00 AM-12:30 PM
+        item: Small-group discussions - Rooms 901, TBD, and visitor offices
+        kind: discussion
+      - time: 12:30-2:00 PM
+        item: Lunch break
+        kind: break
+      - time: 2:00-3:00 PM
+        item: Afternoon talk block - Fluids - Room 940 - speakers TBD
+        kind: highlight
+      - time: 3:00-3:30 PM
+        item: Coffee break
+        kind: break
+      - time: 3:30-5:00 PM
+        item: Small-group discussions - Rooms 901, TBD, and visitor offices
+        kind: discussion
+  - day: Thursday, June 18
+    theme: Developing connections
+    items:
+      - time: 9:30-10:30 AM
+        item: Morning talk block - Math - Room 940 - speakers TBD
+        kind: highlight
+      - time: 10:30-11:00 AM
+        item: Coffee break
+        kind: break
+      - time: 11:00 AM-12:30 PM
+        item: Small-group discussions - Rooms 901, TBD, and visitor offices
+        kind: discussion
+      - time: 12:30-2:00 PM
+        item: Lunch break
+        kind: break
+      - time: 2:00-3:00 PM
+        item: Afternoon talk block - (Astro)physics - Room 940 - speakers TBD
+        kind: highlight
+      - time: 3:00-3:30 PM
+        item: Coffee break
+        kind: break
+      - time: 3:30-5:00 PM
+        item: Small-group discussions - Rooms 901, TBD, and visitor offices
+        kind: discussion
+      - time: Evening
+        item: Wine and cheese reception
+        kind: social
+  - day: Friday, June 19
+    theme: Synthesis and next steps
+    items:
+      - time: 9:30-10:30 AM
+        item: Morning talk block - Fluids - Room 940 - speakers TBD
+        kind: highlight
+      - time: 10:30-11:00 AM
+        item: Coffee break
+        kind: break
+      - time: 11:00 AM-12:30 PM
+        item: Small-group discussions - Rooms 901, TBD, and visitor offices
+        kind: discussion
+      - time: 12:30-2:00 PM
+        item: Lunch break
+        kind: break
+      - time: 2:00-3:00 PM
+        item: Afternoon talk block - Math - Room 940 - speakers TBD
+        kind: highlight
+      - time: 3:00-3:30 PM
+        item: Final coffee break
+        kind: break
+      - time: 3:30-5:00 PM
+        item: Synthesis, report-backs, and workshop wrap-up - Room 940
+        kind: highlight
+invited_speakers:
+  - name: Keaton Burns
+    affiliation: MIT
+  - name: Gregory Eyink
+    affiliation: Johns Hopkins University
+  - name: Philipp Kempski
+    affiliation: IST Lisbon
+  - name: Daniel Lecoanet
+    affiliation: CCA
+  - name: Michael Mueller
+    affiliation: Princeton
+  - name: S. Peng Oh
+    affiliation: UCSB
+  - name: Alexei Poludnenko
+    affiliation: UConn
+  - name: Eliot Quataert
+    affiliation: Princeton
+  - name: Alexander Schekochihin
+    affiliation: University of Oxford
+  - name: Vlad Vicol
+    affiliation: NYU
+  - name: Laure Zanna
+    affiliation: NYU
+  - name: To be confirmed
+internal_participants:
+  - Jim Stone
+  - Camillo de Lellis
+  - Max Engelstein
+  - Raul Jimenez
+  - Marco Bagnara
+  - Blakesley Burkhart
+  - David Spergel
+  - Yash Rajesh Bhora
+  - Alberto Pacati
+  - Ali AlHadi Kalout
+  - Pau Solé Vilaró
+  - Emily Casey
+  - Pedro Tarancón Álvarez
+  - Konstantin Karchev
+  - Tori Williamson
+  - Lachlan Lancaster
+  - Guy David
+  - Hitesh Kishore Das
+  - Brent Tan
+  - Hedong Hou
+  - Alon Gurman
+  - Alex Pendris
+  - Leela Elliott
+  - Ming-Yuan Chang
