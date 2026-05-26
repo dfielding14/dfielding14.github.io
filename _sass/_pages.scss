@@ -193,9 +193,17 @@
 
 .event-hero {
   display: grid;
+  grid-template-areas:
+    "content poster"
+    "callout poster";
   grid-template-columns: minmax(340px, 1fr) minmax(300px, 0.66fr);
   align-items: start;
-  gap: clamp(2.25rem, 6vw, 5.5rem);
+  column-gap: clamp(2.25rem, 6vw, 5.5rem);
+  row-gap: var(--space-lg);
+}
+
+.event-hero__content {
+  grid-area: content;
 }
 
 .event-kicker {
@@ -238,7 +246,7 @@
   display: grid;
   gap: 1.2rem;
   grid-template-columns: repeat(3, 1fr);
-  margin: var(--space-lg) 0;
+  margin: var(--space-lg) 0 0;
   padding: 1.2rem 0;
 }
 
@@ -272,6 +280,10 @@
   width: 100%;
 }
 
+.event-poster {
+  grid-area: poster;
+}
+
 .event-poster figcaption {
   color: var(--color-text-light);
   font-size: 0.85rem;
@@ -284,8 +296,9 @@
   border: 1px solid #efdfb9;
   display: grid;
   gap: 1.35rem;
+  grid-area: callout;
   grid-template-columns: 1fr;
-  margin-top: var(--space-lg);
+  margin-top: 0;
   padding: clamp(1.25rem, 3vw, 1.6rem);
 }
 
@@ -613,6 +626,13 @@
 
   .event-poster {
     max-width: 32rem;
+  }
+
+  .event-hero {
+    grid-template-areas:
+      "content"
+      "poster"
+      "callout";
   }
 
   .event-speakers {

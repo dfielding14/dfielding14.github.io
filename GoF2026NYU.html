@@ -34,36 +34,36 @@ hide_nav: true
           <dd>{{ event.venue.address }}</dd>
         </div>
       </dl>
-
-      <aside class="event-callout" aria-label="Registration and arrival information">
-        <div>
-          <p class="event-callout__label">Registration</p>
-          <p>Please <a href="{{ event.registration.url }}" target="_blank" rel="noopener noreferrer">complete the registration form</a> <strong>{{ event.registration.deadline | downcase }}</strong>. Please indicate whether you will attend the conference dinner on Monday evening.</p>
-        </div>
-        <div>
-          <p class="event-callout__label">Arriving at NYU</p>
-          <p><strong>{{ event.venue.note }}</strong> {{ event.venue.entry }}</p>
-        </div>
-        <div>
-          <p class="event-callout__label">Need Help?</p>
-          <p>For questions about registration or logistics, please contact:</p>
-          <div class="event-contact-list">
-            {% for contact in event.contacts %}
-              <p class="event-contact">
-                <strong>{{ contact.name }}</strong>
-                {% if contact.role %}<span>{{ contact.role }}</span>{% endif %}
-                <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
-                {% if contact.phone %}<a href="tel:{{ contact.phone_href }}">{{ contact.phone }}</a>{% endif %}
-              </p>
-            {% endfor %}
-          </div>
-        </div>
-      </aside>
     </div>
 
     <figure class="event-poster">
       <img src="{{ event.poster.src | relative_url }}" alt="{{ event.poster.alt }}" loading="eager">
     </figure>
+
+    <aside class="event-callout" aria-label="Registration and arrival information">
+      <div>
+        <p class="event-callout__label">Registration</p>
+        <p>Please <a href="{{ event.registration.url }}" target="_blank" rel="noopener noreferrer">complete the registration form</a> <strong>{{ event.registration.deadline | downcase }}</strong>. Please indicate whether you will attend the conference dinner on Monday evening.</p>
+      </div>
+      <div>
+        <p class="event-callout__label">Arriving at NYU</p>
+        <p><strong>{{ event.venue.note }}</strong> {{ event.venue.entry }}</p>
+      </div>
+      <div>
+        <p class="event-callout__label">Need Help?</p>
+        <p>For questions about registration or logistics, please contact:</p>
+        <div class="event-contact-list">
+          {% for contact in event.contacts %}
+            <p class="event-contact">
+              <strong>{{ contact.name }}</strong>
+              {% if contact.role %}<span>{{ contact.role }}</span>{% endif %}
+              <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
+              {% if contact.phone %}<a href="tel:{{ contact.phone_href }}">{{ contact.phone }}</a>{% endif %}
+            </p>
+          {% endfor %}
+        </div>
+      </div>
+    </aside>
   </section>
 
   <section class="event-section" id="format">
