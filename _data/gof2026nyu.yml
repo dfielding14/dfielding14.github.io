@@ -54,8 +54,7 @@ conference_schedule:
         title: Introduction to the Geometry of Flows collaboration
       - time: 10:00-10:45 AM
         speaker: Keaton Burns
-        title: Numerical methods for log-lattice spectral simulations
-        tentative: true
+        title: Multiscale simulations with logarithmic Fourier lattices
       - time: 10:45-11:00 AM
         item: Coffee & Snacks
         kind: break
@@ -92,8 +91,7 @@ conference_schedule:
         kind: break
       - time: 9:00-9:45 AM
         speaker: Daniel Lecoanet
-        title: Radiative-convective interfaces in stars and the mixing that occurs there
-        tentative: true
+        title: The Geometry of Stellar Radiative-Convection Interfaces
       - time: 9:45-10:30 AM
         speaker: Laure Zanna
         title: Ocean dynamics, transport, and interfaces
