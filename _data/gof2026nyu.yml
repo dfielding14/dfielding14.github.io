@@ -29,9 +29,10 @@ poster:
 conference:
   dates: Monday-Tuesday, June 15-16
   description: >-
-    The first two days are an invited-speaker conference with a kickoff talk,
-    eleven contributed talks, and substantial time for discussion. Speakers
-    should aim for 25-30 minutes, followed by 15-20 minutes of discussion.
+    The first two days are an invited-speaker conference with opening remarks,
+    an introduction to the collaboration, eleven contributed talks, and
+    substantial time for discussion. Speakers should aim for 25-30 minutes,
+    followed by 15-20 minutes of discussion.
 workshop:
   dates: Wednesday-Friday, June 17-19
   description: >-
@@ -41,27 +42,30 @@ workshop:
     breakout discussions in Rooms 901 and TBD and available visitor offices.
 conference_schedule:
   - day: Monday, June 15
-    theme: Foundations, theory, and reacting flows
+    theme: Methods, multiphase flows, and reacting flows
     items:
       - time: 8:00-9:00 AM
         item: Continental breakfast, coffee, and building check-in
         kind: break
-      - time: 9:00-9:45 AM
-        item: "TBD (Drummond, Svitlana, Spergel) - Kickoff: scientific questions and goals for the Geometry of Flows initiative"
+      - time: 9:00-9:10 AM
+        item: Drummond Fielding - Welcome
         kind: highlight
-      - time: 9:45-10:30 AM
-        speaker: Gregory Eyink
-        title: "Spontaneous Stochasticity: Concepts and Consequences"
-      - time: 10:30-11:00 AM
-        item: Coffee break
-        kind: break
-      - time: 11:00-11:45 AM
+      - time: 9:10-9:55 AM
+        item: Svitlana Mayboroda - Introduction to the Geometry of Flows collaboration
+        kind: highlight
+      - time: 9:55-10:40 AM
         speaker: Keaton Burns
         title: Numerical methods for log-lattice spectral simulations
         tentative: true
+      - time: 10:40-11:00 AM
+        item: Coffee break
+        kind: break
+      - time: 11:00-11:45 AM
+        speaker: S. Peng Oh
+        title: Flows in Turbulent Multi-Phase Gas
       - time: 11:45 AM-12:30 PM
-        speaker: Vlad Vicol
-        title: Mathematical perspectives on turbulent transport and mixing
+        speaker: Philipp Kempski
+        title: Cosmic-ray transport in magnetized turbulence
         tentative: true
       - time: 12:30-2:00 PM
         item: Lunch break
@@ -83,7 +87,7 @@ conference_schedule:
         item: Conference dinner - please indicate attendance when registering
         kind: social
   - day: Tuesday, June 16
-    theme: Kinetic, geo, and astro perspectives
+    theme: Interfaces, mathematical fluids, and kinetic systems
     items:
       - time: 8:00-9:00 AM
         item: Continental breakfast and coffee
@@ -100,11 +104,11 @@ conference_schedule:
         item: Coffee break
         kind: break
       - time: 11:00-11:45 AM
-        speaker: S. Peng Oh
-        title: Flows in Turbulent Multi-Phase Gas
+        speaker: Gregory Eyink
+        title: "Spontaneous Stochasticity: Concepts and Consequences"
       - time: 11:45 AM-12:30 PM
-        speaker: Philipp Kempski
-        title: Cosmic-ray transport in magnetized turbulence
+        speaker: Vlad Vicol
+        title: Mathematical perspectives on turbulent transport and mixing
         tentative: true
       - time: 12:30-2:00 PM
         item: Lunch break
