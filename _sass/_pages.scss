@@ -528,6 +528,35 @@
   font-weight: 600;
 }
 
+@media (min-width: 981px) {
+  .event-days--conference .event-day {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .event-days--conference .event-schedule {
+    --event-quarter-hour: 1.65rem;
+    display: grid;
+    grid-template-rows:
+      repeat(4, 0.7rem)
+      repeat(7, var(--event-quarter-hour))
+      2rem
+      repeat(6, var(--event-quarter-hour))
+      repeat(6, 0.45rem)
+      repeat(6, var(--event-quarter-hour))
+      repeat(2, 0.8rem)
+      repeat(4, 0.9rem)
+      auto;
+  }
+
+  .event-days--conference .event-schedule__row {
+    align-content: start;
+    grid-row: var(--event-grid-row) / span var(--event-grid-span);
+    grid-template-columns: 6.6rem minmax(0, 1fr);
+    padding: 0.24rem 0;
+  }
+}
+
 .event-speakers {
   display: grid;
   gap: 0;

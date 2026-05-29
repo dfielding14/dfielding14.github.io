@@ -105,7 +105,7 @@ hide_nav: true
           </header>
           <div class="event-schedule">
             {% for entry in day.items %}
-              <div class="event-schedule__row{% if entry.kind %} event-schedule__row--{{ entry.kind }}{% endif %}">
+              <div class="event-schedule__row{% if entry.kind %} event-schedule__row--{{ entry.kind }}{% endif %}"{% if entry.layout_row %} style="--event-grid-row: {{ entry.layout_row }}; --event-grid-span: {{ entry.layout_span }};"{% endif %}>
                 <time>{{ entry.time }}</time>
                 <p>
                   {% if entry.speaker %}

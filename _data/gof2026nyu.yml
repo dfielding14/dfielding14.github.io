@@ -46,83 +46,133 @@ conference_schedule:
       - time: 8:00-9:00 AM
         item: Breakfast & Coffee
         kind: break
+        layout_row: 1
+        layout_span: 4
       - time: 9:00-9:15 AM
         speaker: Drummond Fielding
         title: Welcome
+        layout_row: 5
+        layout_span: 1
       - time: 9:15-10:00 AM
         speaker: Svitlana Mayboroda
         title: Introduction to the Geometry of Flows collaboration
+        layout_row: 6
+        layout_span: 3
       - time: 10:00-10:45 AM
         speaker: Keaton Burns
         title: Multiscale simulations with logarithmic Fourier lattices
+        layout_row: 9
+        layout_span: 3
       - time: 10:45-11:00 AM
         item: Coffee & Snacks
         kind: break
+        layout_row: 12
+        layout_span: 1
       - time: 11:00-11:45 AM
         speaker: S. Peng Oh
         title: Flows in Turbulent Multi-Phase Gas
+        layout_row: 13
+        layout_span: 3
       - time: 11:45 AM-12:30 PM
         speaker: Philipp Kempski
         title: "Reversals on All Scales: Cosmic Rays as Probes of the Fractality of Astrophysical Magnetic Fields"
+        layout_row: 16
+        layout_span: 3
       - time: 12:30-2:00 PM
         item: Lunch
         kind: break
+        layout_row: 19
+        layout_span: 6
       - time: 2:00-2:45 PM
         speaker: Michael Mueller
         title: Topological Effects in Turbulent Premixed Flames
+        layout_row: 25
+        layout_span: 3
       - time: 2:45-3:30 PM
         speaker: Alexei Poludnenko
         title: Turbulent Flame Structure in Chemical Mixtures and Thermonuclear Plasmas
+        layout_row: 28
+        layout_span: 3
       - time: 3:30-4:00 PM
         item: Coffee & Snacks
         kind: break
+        layout_row: 31
+        layout_span: 2
       - time: 4:00 PM onward
         item: Discussion and informal interactions
         kind: discussion
+        layout_row: 33
+        layout_span: 4
       - time: Evening
         item: Conference dinner - please indicate attendance when registering
         kind: social
+        layout_row: 37
+        layout_span: 1
   - day: Tuesday, June 16
     items:
       - time: 8:00-9:00 AM
         item: Breakfast & Coffee
         kind: break
+        layout_row: 1
+        layout_span: 4
       - time: 9:00-9:45 AM
         speaker: Daniel Lecoanet
         title: The Geometry of Stellar Radiative-Convection Interfaces
+        layout_row: 5
+        layout_span: 3
       - time: 9:45-10:30 AM
         speaker: Laure Zanna
         title: Ocean dynamics, transport, and interfaces
         tentative: true
+        layout_row: 8
+        layout_span: 3
       - time: 10:30-11:00 AM
         item: Coffee & Snacks
         kind: break
+        layout_row: 11
+        layout_span: 2
       - time: 11:00-11:45 AM
         speaker: Gregory Eyink
         title: "Spontaneous Stochasticity: Concepts and Consequences"
+        layout_row: 13
+        layout_span: 3
       - time: 11:45 AM-12:30 PM
         speaker: Vlad Vicol
         title: Mathematical perspectives on turbulent transport and mixing
         tentative: true
+        layout_row: 16
+        layout_span: 3
       - time: 12:30-2:00 PM
         item: Lunch
         kind: break
+        layout_row: 19
+        layout_span: 6
       - time: 2:00-2:45 PM
         speaker: Eliot Quataert
         title: Plasma astrophysics and turbulent transport
         tentative: true
+        layout_row: 25
+        layout_span: 3
       - time: 2:45-3:30 PM
         speaker: Alexander Schekochihin
         title: Phase-space turbulence and collisionless universality in kinetic systems
+        layout_row: 28
+        layout_span: 3
       - time: 3:30-4:00 PM
         item: Coffee & Snacks
         kind: break
+        layout_row: 31
+        layout_span: 2
       - time: 4:00-5:00 PM
         item: Conference wrap-up and group discussion
         kind: discussion
+        layout_row: 33
+        layout_span: 4
       - time: Evening
         item: Wine and cheese reception
         kind: social
+        layout_row: 37
+        layout_span: 1
 workshop_schedule:
   - day: Wednesday, June 17
     theme: Establishing questions
