@@ -85,7 +85,7 @@ hide_nav: true
       <article class="event-phase event-phase--hospitality">
         <p class="event-phase__dates">Hospitality</p>
         <h3>Meals and Refreshments</h3>
-        <p>Continental breakfast will be provided each morning, with coffee and snacks available throughout the day. Attendees are responsible for lunch and dinner each day, with one exception: a special conference dinner is planned for Monday evening.</p>
+        <p>Breakfast will be provided each morning, with coffee and snacks available throughout the day. Attendees are responsible for lunch and dinner each day, with one exception: a special conference dinner is planned for Monday evening.</p>
       </article>
     </div>
   </section>
@@ -101,7 +101,7 @@ hide_nav: true
         <article class="event-day">
           <header class="event-day__header">
             <h3>{{ day.day }}</h3>
-            <p>{{ day.theme }}</p>
+            {% if day.theme %}<p>{{ day.theme }}</p>{% endif %}
           </header>
           <div class="event-schedule">
             {% for entry in day.items %}
@@ -109,7 +109,7 @@ hide_nav: true
                 <time>{{ entry.time }}</time>
                 <p>
                   {% if entry.speaker %}
-                    {{ entry.speaker }} - {% if entry.tentative %}<em>{{ entry.title }} (?)</em>{% else %}{{ entry.title }}{% endif %}
+                    <span class="event-speaker-name">{{ entry.speaker }}</span> - <em class="event-talk-title">{{ entry.title }}{% if entry.tentative %} (?){% endif %}</em>
                   {% else %}
                     {{ entry.item }}
                   {% endif %}

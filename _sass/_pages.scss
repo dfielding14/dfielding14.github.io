@@ -491,11 +491,25 @@
 }
 
 .event-schedule__row--discussion p {
-  color: #006b8d;
+  color: #855e00;
 }
 
 .event-schedule__row--social p {
   color: #855e00;
+}
+
+.event-days--conference .event-speaker-name {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.event-days--conference .event-talk-title {
+  color: #006b8d;
+}
+
+.event-days--conference .event-schedule__row--social p {
+  color: var(--color-text-light);
+  font-weight: 400;
 }
 
 .event-days--workshop .event-schedule__row {
@@ -507,6 +521,11 @@
 
 .event-days--workshop .event-schedule__row:last-child {
   border-bottom: 0;
+}
+
+.event-days--workshop .event-schedule__row--talk p {
+  color: #006b8d;
+  font-weight: 600;
 }
 
 .event-speakers {
