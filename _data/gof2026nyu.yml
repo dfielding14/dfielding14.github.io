@@ -63,8 +63,7 @@ conference_schedule:
         title: Flows in Turbulent Multi-Phase Gas
       - time: 11:45 AM-12:30 PM
         speaker: Philipp Kempski
-        title: Cosmic-ray transport in magnetized turbulence
-        tentative: true
+        title: "Reversals on All Scales: Cosmic Rays as Probes of the Fractality of Astrophysical Magnetic Fields"
       - time: 12:30-2:00 PM
         item: Lunch
         kind: break
@@ -73,8 +72,7 @@ conference_schedule:
         title: Topological Effects in Turbulent Premixed Flames
       - time: 2:45-3:30 PM
         speaker: Alexei Poludnenko
-        title: Turbulence in reacting flows and combustion
-        tentative: true
+        title: Turbulent Flame Structure in Chemical Mixtures and Thermonuclear Plasmas
       - time: 3:30-4:00 PM
         item: Coffee & Snacks
         kind: break
