@@ -481,8 +481,14 @@
   text-decoration: none;
 }
 
+.event-schedule__link::after {
+  display: none;
+}
+
 .event-schedule__link:hover,
 .event-schedule__link:focus-visible {
+  color: inherit;
+  font-variation-settings: "wght" 400;
   text-decoration: underline;
 }
 
