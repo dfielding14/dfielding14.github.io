@@ -168,6 +168,7 @@ conference_schedule:
       - time: Evening
         item: Wine and cheese reception
         kind: social
+        url: /images/GoF2026NYU/Camillo_Reception.png
         layout_row: 37
         layout_span: 1
 workshop_schedule:

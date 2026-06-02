@@ -110,6 +110,8 @@ hide_nav: true
                 <p>
                   {% if entry.speaker %}
                     <span class="event-speaker-name">{{ entry.speaker }}</span> - <em class="event-talk-title">{{ entry.title }}{% if entry.tentative %} (?){% endif %}</em>
+                  {% elsif entry.url %}
+                    <a class="event-schedule__link" href="{{ entry.url | relative_url }}">{{ entry.item }}</a>
                   {% else %}
                     {{ entry.item }}
                   {% endif %}
@@ -126,7 +128,7 @@ hide_nav: true
     <div class="event-section__heading">
       <p class="event-kicker">Workshop</p>
       <h2>Workshop Program</h2>
-      <p class="event-section__intro">Interested conference visitors are welcome to participate in the workshop. Each day includes one-hour morning and afternoon talk blocks in <strong>Room 940</strong>, organized around <strong>(Astro)physics</strong>, <strong>fluids</strong>, and <strong>math</strong>. Small-group discussions will use breakout Rooms <strong>901</strong> and <strong>TBD</strong>, as well as available visitor offices.</p>
+      <p class="event-section__intro">Interested conference visitors are welcome to participate in the workshop. Each day includes one-hour morning and afternoon talk blocks in <strong>Room 940</strong>. Small-group discussions will use breakout Rooms <strong>901</strong> and <strong>TBD</strong>, as well as available visitor offices.</p>
     </div>
     <div class="event-days event-days--workshop">
       {% for day in event.workshop_schedule %}
