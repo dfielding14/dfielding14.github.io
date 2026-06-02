@@ -175,7 +175,7 @@ workshop_schedule:
     theme: Establishing questions
     items:
       - time: 9:30-10:30 AM
-        item: Morning talk block - Room 940 - speakers TBD
+        item: Morning talk block - Room 940 - led by Svitlana, Max, Camillo, and Guy
         kind: talk
       - time: 10:30-11:00 AM
         item: Coffee & Snacks
@@ -187,7 +187,7 @@ workshop_schedule:
         item: Lunch
         kind: break
       - time: 2:00-3:00 PM
-        item: Afternoon talk block - Room 940 - speakers TBD
+        item: Afternoon talk block - Room 940 - led by Raul and David
         kind: talk
       - time: 3:00-3:30 PM
         item: Coffee & Snacks
@@ -199,7 +199,7 @@ workshop_schedule:
     theme: Developing connections
     items:
       - time: 9:30-10:30 AM
-        item: Morning talk block - Room 940 - speakers TBD
+        item: Morning talk block - Room 940 - led by Blakesley and Jim
         kind: talk
       - time: 10:30-11:00 AM
         item: Coffee & Snacks
@@ -211,7 +211,7 @@ workshop_schedule:
         item: Lunch
         kind: break
       - time: 2:00-3:00 PM
-        item: Afternoon talk block - Room 940 - speakers TBD
+        item: Afternoon talk block - Room 940 - led by Svitlana, Max, Camillo, and Guy
         kind: talk
       - time: 3:00-3:30 PM
         item: Coffee & Snacks
@@ -223,7 +223,7 @@ workshop_schedule:
     theme: Synthesis and next steps
     items:
       - time: 9:30-10:30 AM
-        item: Morning talk block - Room 940 - speakers TBD
+        item: Morning talk block - Room 940 - led by Raul and David
         kind: talk
       - time: 10:30-11:00 AM
         item: Coffee & Snacks
@@ -235,7 +235,7 @@ workshop_schedule:
         item: Lunch
         kind: break
       - time: 2:00-3:00 PM
-        item: Afternoon talk block - Room 940 - speakers TBD
+        item: Afternoon talk block - Room 940 - led by Blakesley and Jim
         kind: talk
       - time: 3:00-3:30 PM
         item: Coffee & Snacks
