@@ -122,8 +122,7 @@ conference_schedule:
         layout_span: 3
       - time: 9:45-10:30 AM
         speaker: Laure Zanna
-        title: Ocean dynamics, transport, and interfaces
-        tentative: true
+        title: "[TBD]"
         layout_row: 8
         layout_span: 3
       - time: 10:30-11:00 AM
@@ -138,8 +137,7 @@ conference_schedule:
         layout_span: 3
       - time: 11:45 AM-12:30 PM
         speaker: Vlad Vicol
-        title: Mathematical perspectives on turbulent transport and mixing
-        tentative: true
+        title: "[TBD]"
         layout_row: 16
         layout_span: 3
       - time: 12:30-2:00 PM
@@ -149,8 +147,7 @@ conference_schedule:
         layout_span: 6
       - time: 2:00-2:45 PM
         speaker: Eliot Quataert
-        title: Plasma astrophysics and turbulent transport
-        tentative: true
+        title: "[TBD]"
         layout_row: 25
         layout_span: 3
       - time: 2:45-3:30 PM
