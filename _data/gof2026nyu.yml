@@ -122,7 +122,7 @@ conference_schedule:
         layout_span: 3
       - time: 9:45-10:30 AM
         speaker: Laure Zanna
-        title: "[TBD]"
+        title: Learning the Structure of Ocean Turbulence
         layout_row: 8
         layout_span: 3
       - time: 10:30-11:00 AM
@@ -137,7 +137,7 @@ conference_schedule:
         layout_span: 3
       - time: 11:45 AM-12:30 PM
         speaker: Vlad Vicol
-        title: "[TBD]"
+        title: Implosions in compressible Euler
         layout_row: 16
         layout_span: 3
       - time: 12:30-2:00 PM
@@ -286,9 +286,11 @@ internal_participants:
   - Lachlan Lancaster
   - Alberto Pacati
   - Alex Pendris
+  - Tiegan Powell
   - Pau Solé Vilaró
   - David Spergel
   - Jim Stone
   - Brent Tan
   - Pedro Tarancón Álvarez
+  - Sohum Udani
   - Tori Williamson
