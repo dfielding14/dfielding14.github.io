@@ -116,8 +116,8 @@ conference_schedule:
         layout_row: 1
         layout_span: 4
       - time: 9:00-9:45 AM
-        speaker: Daniel Lecoanet
-        title: The Geometry of Stellar Radiative-Convection Interfaces
+        speaker: Eliot Quataert
+        title: "[TBD]"
         layout_row: 5
         layout_span: 3
       - time: 9:45-10:30 AM
@@ -146,13 +146,13 @@ conference_schedule:
         layout_row: 19
         layout_span: 6
       - time: 2:00-2:45 PM
-        speaker: Eliot Quataert
-        title: "[TBD]"
+        speaker: Alexander Schekochihin
+        title: Phase-space turbulence and collisionless universality in kinetic systems
         layout_row: 25
         layout_span: 3
       - time: 2:45-3:30 PM
-        speaker: Alexander Schekochihin
-        title: Phase-space turbulence and collisionless universality in kinetic systems
+        speaker: Daniel Lecoanet
+        title: The Geometry of Stellar Radiative-Convection Interfaces
         layout_row: 28
         layout_span: 3
       - time: 3:30-4:00 PM
