@@ -43,31 +43,31 @@ workshop:
 conference_schedule:
   - day: Monday, June 15
     items:
-      - time: 8:00-9:00 AM
+      - time: 8:00-9:15 AM
         item: Breakfast & Coffee
         kind: break
         layout_row: 1
-        layout_span: 4
-      - time: 9:00-9:15 AM
+        layout_span: 5
+      - time: 9:15-9:30 AM
         speaker: Drummond Fielding
         title: Welcome
-        layout_row: 5
-        layout_span: 1
-      - time: 9:15-9:30 AM
-        speaker: Svitlana Mayboroda
-        title: Introduction
         layout_row: 6
         layout_span: 1
-      - time: 9:30-10:15 AM
+      - time: 9:30-9:45 AM
+        speaker: Svitlana Mayboroda
+        title: Introduction
+        layout_row: 7
+        layout_span: 1
+      - time: 9:45-10:30 AM
         speaker: Keaton Burns
         title: Multiscale simulations with logarithmic Fourier lattices
-        layout_row: 7
+        layout_row: 8
         layout_span: 3
-      - time: 10:15-11:00 AM
+      - time: 10:30-11:00 AM
         item: Coffee & Snacks
         kind: break
-        layout_row: 10
-        layout_span: 3
+        layout_row: 11
+        layout_span: 2
       - time: 11:00-11:45 AM
         speaker: S. Peng Oh
         title: Flows in Turbulent Multi-Phase Gas
