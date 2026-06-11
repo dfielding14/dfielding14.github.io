@@ -1,0 +1,177 @@
+---
+layout: page
+title: Circumgalactic Medium Meeting at NYU
+description: CGMM collaboration workshop at NYU, June 23-24, 2026.
+section: gof-event
+permalink: /CGMM2026NYU/
+sitemap: false
+robots: noindex,nofollow
+hide_page_title: true
+hide_nav: true
+---
+
+{% assign event = site.data.cgmm2026nyu %}
+
+<div class="event-page event-page--cgmm">
+  <section class="event-hero" aria-labelledby="event-title">
+    <div class="event-hero__content">
+      <p class="event-kicker">{{ event.initiative }}</p>
+      <h1 id="event-title">{{ event.title }}</h1>
+      <p class="event-subtitle">{{ event.subtitle }}</p>
+      <p class="event-intro">{{ event.description }}</p>
+
+      <dl class="event-facts">
+        <div>
+          <dt>Dates</dt>
+          <dd>{{ event.dates }}</dd>
+        </div>
+        <div>
+          <dt>Hours</dt>
+          <dd>{{ event.hours.tuesday }}<br>{{ event.hours.wednesday }}</dd>
+        </div>
+        <div>
+          <dt>Venue</dt>
+          <dd>{{ event.venue.room }}<br>{{ event.venue.building }}</dd>
+        </div>
+      </dl>
+    </div>
+
+    <figure class="event-poster">
+      {% if event.poster.src %}
+        <img src="{{ event.poster.src | relative_url }}" alt="{{ event.poster.alt }}" loading="eager">
+      {% else %}
+        <div class="event-poster-placeholder" role="img" aria-label="{{ event.poster.alt }}">
+          <span>Poster forthcoming</span>
+        </div>
+      {% endif %}
+    </figure>
+
+    <aside class="event-callout" aria-label="Workshop focus and organizers">
+      <div>
+        <p class="event-callout__label">Workshop Focus</p>
+        <p>Tuesday is devoted primarily to ongoing projects. The final hour will refine the plan for Wednesday's breakout sessions and identify shared priorities.</p>
+      </div>
+      <div>
+        <p class="event-callout__label">Organizers</p>
+        <div class="event-contact-list event-contact-list--three">
+          {% for organizer in event.organizers %}
+            <p class="event-contact">
+              <strong>{{ organizer.name }}</strong>
+              <span>{{ organizer.affiliation }}</span>
+              {% if organizer.email %}<a href="mailto:{{ organizer.email }}">{{ organizer.email }}</a>{% endif %}
+            </p>
+          {% endfor %}
+        </div>
+      </div>
+      <div>
+        <p class="event-callout__label">Arriving at NYU</p>
+        <p><strong>{{ event.venue.note }}</strong> {{ event.venue.entry }}</p>
+      </div>
+    </aside>
+  </section>
+
+  <section class="event-section" id="format">
+    <div class="event-section__heading">
+      <p class="event-kicker">Meeting Format</p>
+      <h2>Projects, planning, and collaboration</h2>
+    </div>
+    <div class="event-phases">
+      <article class="event-phase event-phase--conference">
+        <p class="event-phase__dates">Tuesday, June 23</p>
+        <h3>Ongoing Projects</h3>
+        <p>Eight project presentations anchor the day. Each 30-minute slot includes 15 minutes of presentation and 15 minutes of discussion, with substantial breaks and a long lunch for continued conversation.</p>
+      </article>
+      <article class="event-phase event-phase--workshop">
+        <p class="event-phase__dates">Wednesday, June 24</p>
+        <h3>Future Projects</h3>
+        <p>The three PIs will open with near-future plans and collaborative opportunities across the groups. The rest of the day is reserved for focused breakouts and working together.</p>
+      </article>
+      <article class="event-phase event-phase--hospitality">
+        <p class="event-phase__dates">Hospitality</p>
+        <h3>Time to Continue the Conversation</h3>
+        <p>Both days include long lunches, and the group will have dinner together on Tuesday evening.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="event-section" id="program">
+    <div class="event-section__heading">
+      <p class="event-kicker">Program</p>
+      <h2>Workshop Schedule</h2>
+      <p class="event-section__intro">Tuesday presentation slots are evenly divided between a 15-minute presentation and 15 minutes of discussion. Speaker names and project titles will be added as they are confirmed.</p>
+    </div>
+    <div class="event-days event-days--cgmm">
+      {% for day in event.schedule %}
+        <article class="event-day">
+          <header class="event-day__header">
+            <h3>{{ day.day }}</h3>
+            {% if day.theme %}<p>{{ day.theme }}</p>{% endif %}
+          </header>
+          <div class="event-schedule">
+            {% for entry in day.items %}
+              <div class="event-schedule__row{% if entry.kind %} event-schedule__row--{{ entry.kind }}{% endif %}">
+                <time>{{ entry.time }}</time>
+                <p>
+                  {% if entry.speaker %}
+                    <span class="event-speaker-name">{{ entry.speaker }}</span>{% if entry.title %} - <em class="event-talk-title">{{ entry.title }}</em>{% endif %}
+                  {% else %}
+                    {{ entry.item }}
+                  {% endif %}
+                </p>
+              </div>
+            {% endfor %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="event-section" id="organizers">
+    <div class="event-section__heading">
+      <p class="event-kicker">Collaboration</p>
+      <h2>Workshop Leads</h2>
+    </div>
+    <ul class="event-speakers">
+      {% for organizer in event.organizers %}
+        <li>
+          <span class="event-speakers__name">{{ organizer.name }}</span>
+          <span class="event-speakers__affiliation">{{ organizer.affiliation }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="event-section" id="logistics">
+    <div class="event-section__heading">
+      <p class="event-kicker">Logistics</p>
+      <h2>Plan for the Workshop</h2>
+    </div>
+    <div class="event-logistics">
+      <article>
+        <h3>Venue and Entry</h3>
+        <p>{{ event.venue.room }}<br>{{ event.venue.building }}<br>{{ event.venue.address }}</p>
+        <p>{{ event.venue.entry }}</p>
+        <p class="event-location-note">{{ event.venue.note }}</p>
+      </article>
+      <article>
+        <h3>Tuesday Dinner</h3>
+        <p>The group will have dinner together after Tuesday's program. Time and location will be shared with participants.</p>
+      </article>
+      <article>
+        <h3>Long Lunches</h3>
+        <p>A 90-minute lunch is built into both days to leave room for informal scientific discussion and project coordination.</p>
+      </article>
+      <article>
+        <h3>Wednesday Breakouts</h3>
+        <p>Breakout topics and groupings will be finalized during Tuesday's planning session, with time reserved Wednesday afternoon for reports and next steps.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="event-footer-note">
+    <p>
+      CGMM is a collaboration workshop bringing together researchers from
+      Northwestern University, Tel Aviv University, and New York University.
+    </p>
+  </section>
+</div>

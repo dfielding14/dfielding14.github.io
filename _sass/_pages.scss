@@ -766,3 +766,120 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* Circumgalactic Medium Meeting */
+.event-page--cgmm {
+  --event-gold: #d95f02;
+  --event-gold-soft: #faeee6;
+  --event-blue: #1b9e77;
+  --event-blue-soft: #e8f5f1;
+  --event-purple: #7570b3;
+  --event-purple-soft: #efedf6;
+  --event-border: #dcd7e6;
+}
+
+.event-page--cgmm .event-kicker,
+.event-page--cgmm .event-callout__label,
+.event-page--cgmm .event-facts__note {
+  color: #944100;
+}
+
+.event-page--cgmm .event-callout {
+  background: linear-gradient(112deg, var(--event-blue-soft), #fff 48%, var(--event-purple-soft));
+  border-color: #cfe5de;
+}
+
+.event-page--cgmm .event-phase--conference {
+  background: var(--event-blue-soft);
+  border-top-color: var(--event-blue);
+}
+
+.event-page--cgmm .event-phase--workshop {
+  background: var(--event-purple-soft);
+  border-top-color: var(--event-purple);
+}
+
+.event-page--cgmm .event-phase--hospitality {
+  background: var(--event-gold-soft);
+  border-top-color: var(--event-gold);
+}
+
+.event-page--cgmm .event-poster-placeholder {
+  aspect-ratio: 8.5 / 11;
+  background:
+    linear-gradient(135deg, transparent 0 62%, rgba(117, 112, 179, 0.14) 62% 72%, transparent 72%),
+    linear-gradient(45deg, transparent 0 72%, rgba(27, 158, 119, 0.14) 72% 82%, transparent 82%),
+    #fff;
+  border: 1px solid var(--event-border);
+  border-top: 0.7rem solid var(--event-blue);
+  box-shadow: 0 14px 42px rgba(16, 18, 20, 0.1);
+  display: grid;
+  place-items: end start;
+  position: relative;
+}
+
+.event-page--cgmm .event-poster-placeholder::after {
+  background: var(--event-gold);
+  content: "";
+  height: 0.7rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 42%;
+}
+
+.event-page--cgmm .event-poster-placeholder span {
+  color: var(--color-text-light);
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.14em;
+  padding: 1.35rem;
+  text-transform: uppercase;
+}
+
+.event-page--cgmm .event-contact-list--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.event-page--cgmm .event-days--cgmm {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.event-page--cgmm .event-days--cgmm .event-schedule__row {
+  border-bottom: 1px solid #eeeaf3;
+  grid-template-columns: 8.4rem minmax(0, 1fr);
+  padding: 0.68rem 0;
+}
+
+.event-page--cgmm .event-days--cgmm .event-schedule__row:last-child {
+  border-bottom: 0;
+}
+
+.event-page--cgmm .event-schedule__row--talk p,
+.event-page--cgmm .event-talk-title {
+  color: #57518f;
+  font-weight: 600;
+}
+
+.event-page--cgmm .event-schedule__row--highlight p {
+  color: #944100;
+}
+
+.event-page--cgmm .event-schedule__row--discussion p,
+.event-page--cgmm .event-schedule__row--social p {
+  color: #116f55;
+}
+
+@media (max-width: 980px) {
+  .event-page--cgmm .event-contact-list--three,
+  .event-page--cgmm .event-days--cgmm {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .event-page--cgmm .event-days--cgmm .event-schedule__row {
+    gap: 0.25rem;
+    grid-template-columns: 1fr;
+  }
+}
