@@ -71,7 +71,7 @@ schedule:
         item: Coffee break
         kind: break
       - time: 3:00-3:30 PM
-        speaker: Jason Sun
+        speaker: Guochao (Jason) Sun
         title: High-z star formation
         kind: talk
       - time: 3:30-4:00 PM
