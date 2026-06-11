@@ -1,6 +1,12 @@
 title: CGMM
 subtitle: Circumgalactic Medium Meeting
-initiative: Northwestern University · Tel Aviv University · New York University
+institutions:
+  - name: Northwestern University
+    key: northwestern
+  - name: Tel Aviv University
+    key: tel-aviv
+  - name: New York University
+    key: nyu
 dates: June 23-24, 2026
 description: >-
   A two-day collaboration workshop centered on ongoing circumgalactic medium

@@ -15,7 +15,11 @@ hide_nav: true
 <div class="event-page event-page--cgmm">
   <section class="event-hero" aria-labelledby="event-title">
     <div class="event-hero__content">
-      <p class="event-kicker">{{ event.initiative }}</p>
+      <p class="event-kicker event-institutions">
+        {% for institution in event.institutions %}
+          <span class="event-institutions__{{ institution.key }}">{{ institution.name }}</span>{% unless forloop.last %}<span aria-hidden="true"> · </span>{% endunless %}
+        {% endfor %}
+      </p>
       <h1 id="event-title">{{ event.title }}</h1>
       <p class="event-subtitle">{{ event.subtitle }}</p>
       <p class="event-intro">{{ event.description }}</p>
