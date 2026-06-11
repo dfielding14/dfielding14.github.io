@@ -849,8 +849,8 @@
   text-transform: uppercase;
 }
 
-.event-page--cgmm .event-contact-list--three {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.event-page--cgmm .event-contact-list--stacked {
+  grid-template-columns: 1fr;
 }
 
 .event-page--cgmm .event-days--cgmm {
@@ -883,7 +883,6 @@
 }
 
 @media (max-width: 980px) {
-  .event-page--cgmm .event-contact-list--three,
   .event-page--cgmm .event-days--cgmm {
     grid-template-columns: 1fr;
   }

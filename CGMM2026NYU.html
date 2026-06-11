@@ -57,7 +57,7 @@ hide_nav: true
       </div>
       <div>
         <p class="event-callout__label">Organizers</p>
-        <div class="event-contact-list event-contact-list--three">
+        <div class="event-contact-list event-contact-list--stacked">
           {% for organizer in event.organizers %}
             <p class="event-contact">
               <strong>{{ organizer.name }}</strong>
@@ -102,7 +102,7 @@ hide_nav: true
     <div class="event-section__heading">
       <p class="event-kicker">Program</p>
       <h2>Workshop Schedule</h2>
-      <p class="event-section__intro">Tuesday presentation slots are evenly divided between a 15-minute presentation and 15 minutes of discussion. Speaker names and project titles will be added as they are confirmed.</p>
+      <p class="event-section__intro">The Tuesday presentation order and topics are tentative, and we will adjust them as plans develop. Each 30-minute slot is evenly divided between a 15-minute presentation and 15 minutes of discussion.</p>
     </div>
     <div class="event-days event-days--cgmm">
       {% for day in event.schedule %}
@@ -130,21 +130,6 @@ hide_nav: true
     </div>
   </section>
 
-  <section class="event-section" id="organizers">
-    <div class="event-section__heading">
-      <p class="event-kicker">Collaboration</p>
-      <h2>Workshop Leads</h2>
-    </div>
-    <ul class="event-speakers">
-      {% for organizer in event.organizers %}
-        <li>
-          <span class="event-speakers__name">{{ organizer.name }}</span>
-          <span class="event-speakers__affiliation">{{ organizer.affiliation }}</span>
-        </li>
-      {% endfor %}
-    </ul>
-  </section>
-
   <section class="event-section" id="logistics">
     <div class="event-section__heading">
       <p class="event-kicker">Logistics</p>
@@ -160,14 +145,6 @@ hide_nav: true
       <article>
         <h3>Tuesday Dinner</h3>
         <p>The group will have dinner together after Tuesday's program. Time and location will be shared with participants.</p>
-      </article>
-      <article>
-        <h3>Long Lunches</h3>
-        <p>A 90-minute lunch is built into both days to leave room for informal scientific discussion and project coordination.</p>
-      </article>
-      <article>
-        <h3>Wednesday Breakouts</h3>
-        <p>Breakout topics and groupings will be finalized during Tuesday's planning session, with time reserved Wednesday afternoon for reports and next steps.</p>
       </article>
     </div>
   </section>

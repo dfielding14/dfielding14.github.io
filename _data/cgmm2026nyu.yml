@@ -20,52 +20,63 @@ organizers:
     email: drummondfielding@nyu.edu
   - name: Jonathan Stern
     affiliation: Tel Aviv University
+    email: sternjon@tauex.tau.ac.il
   - name: Claude-André Faucher-Giguère
     affiliation: Northwestern University
+    email: cgiguere@northwestern.edu
 venue:
   room: Room 940
   building: NYU Department of Physics
   address: 726 Broadway, Manhattan, New York, NY 10003
-  note: This is the NYU Physics building in Manhattan, not 726 Broadway in Brooklyn.
+  note: NYU Physics department, 726 Broadway, New York, NY 10003, 9th floor.
   entry: Visitors must bring photo ID for building entry.
 poster:
-  alt: Reserved space for the forthcoming CGMM workshop poster.
+  src: /assets/images/cgmm2026nyu-poster.png
+  alt: CGMM 2026 workshop poster featuring a blue spiral galaxy in an orange turbulent circumgalactic medium.
 schedule:
   - day: Tuesday, June 23
     theme: Ongoing projects
     items:
       - time: 9:30-10:00 AM
-        item: "Presentation 1: speaker and project title TBD"
+        speaker: Jonathan Stern
+        title: CGM absorption (on Aharon's behalf)
         kind: talk
       - time: 10:00-10:30 AM
-        item: "Presentation 2: speaker and project title TBD"
+        speaker: Drummond Fielding
+        title: GOTHAM (on Brent's behalf)
         kind: talk
       - time: 10:30-11:00 AM
         item: Coffee break
         kind: break
       - time: 11:00-11:30 AM
-        item: "Presentation 3: speaker and project title TBD"
+        speaker: Yakov Faerman
+        title: Rapidly cooling turbulent media
         kind: talk
       - time: 11:30 AM-12:00 PM
-        item: "Presentation 4: speaker and project title TBD"
+        speaker: Elizabeth Mone
+        title: CGM energy flows
         kind: talk
       - time: 12:00-1:30 PM
-        item: Long lunch
+        item: Lunch
         kind: break
       - time: 1:30-2:00 PM
-        item: "Presentation 5: speaker and project title TBD"
+        speaker: Omry Ginzburg
+        title: Rotating Cooling Flows
         kind: talk
       - time: 2:00-2:30 PM
-        item: "Presentation 6: speaker and project title TBD"
+        speaker: Hitesh Das
+        title: Dusty winds and multiphase turbulence
         kind: talk
       - time: 2:30-3:00 PM
         item: Coffee break
         kind: break
       - time: 3:00-3:30 PM
-        item: "Presentation 7: speaker and project title TBD"
+        speaker: Jason Sun
+        title: High-z star formation
         kind: talk
       - time: 3:30-4:00 PM
-        item: "Presentation 8: speaker and project title TBD"
+        speaker: Alex Pendris
+        title: Turbulent Radiative Mixing Layers
         kind: talk
       - time: 4:00-5:00 PM
         item: Plan Wednesday breakouts, shared priorities, and collaborative opportunities
@@ -78,15 +89,15 @@ schedule:
     items:
       - time: 9:30-10:00 AM
         speaker: Drummond Fielding
-        title: Future plans at NYU and opportunities for collaboration
+        title: Future plans at NYU
         kind: talk
       - time: 10:00-10:30 AM
         speaker: Jonathan Stern
-        title: Future plans at TAU and opportunities for collaboration
+        title: Future plans at TAU
         kind: talk
       - time: 10:30-11:00 AM
         speaker: Claude-André Faucher-Giguère
-        title: Future plans at Northwestern and opportunities for collaboration
+        title: Future plans at Northwestern
         kind: talk
       - time: 11:00-11:30 AM
         item: Coffee break and breakout setup
@@ -95,7 +106,7 @@ schedule:
         item: Breakout session I
         kind: discussion
       - time: 12:30-2:00 PM
-        item: Long lunch
+        item: Lunch
         kind: break
       - time: 2:00-3:30 PM
         item: Breakout session II and collaborative work
