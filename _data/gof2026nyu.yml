@@ -182,7 +182,7 @@ workshop_schedule:
         item: Coffee & Snacks
         kind: break
       - time: 11:00 AM-12:30 PM
-        item: Small-group discussions - Rooms 901, TBD, and visitor offices
+        item: Small-group discussions - Rooms 940, 901, and visitor offices
         kind: discussion
       - time: 12:30-2:00 PM
         item: Lunch
@@ -194,7 +194,7 @@ workshop_schedule:
         item: Coffee & Snacks
         kind: break
       - time: 3:30-5:00 PM
-        item: Small-group discussions - Rooms 901, TBD, and visitor offices
+        item: Small-group discussions - Rooms 940, 901, and visitor offices
         kind: discussion
   - day: Thursday, June 18
     theme: Developing connections
@@ -206,7 +206,7 @@ workshop_schedule:
         item: Coffee & Snacks
         kind: break
       - time: 11:00 AM-12:30 PM
-        item: Small-group discussions - Rooms 901, TBD, and visitor offices
+        item: Small-group discussions - Rooms 940, 901, and visitor offices
         kind: discussion
       - time: 12:30-2:00 PM
         item: Lunch
@@ -218,7 +218,7 @@ workshop_schedule:
         item: Coffee & Snacks
         kind: break
       - time: 3:30-5:00 PM
-        item: Small-group discussions - Rooms 901, TBD, and visitor offices
+        item: Small-group discussions - Rooms 940, 901, and visitor offices
         kind: discussion
   - day: Friday, June 19
     theme: Synthesis and next steps
@@ -230,7 +230,7 @@ workshop_schedule:
         item: Coffee & Snacks
         kind: break
       - time: 11:00 AM-12:30 PM
-        item: Small-group discussions - Rooms 901, TBD, and visitor offices
+        item: Small-group discussions - Rooms 940, 901, and visitor offices
         kind: discussion
       - time: 12:30-2:00 PM
         item: Lunch
