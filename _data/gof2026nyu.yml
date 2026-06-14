@@ -117,7 +117,7 @@ conference_schedule:
         layout_span: 4
       - time: 9:00-9:45 AM
         speaker: Eliot Quataert
-        title: "[TBD]"
+        title: Turbulence in Weakly Collisional Magnetized Plasmas
         layout_row: 5
         layout_span: 3
       - time: 9:45-10:30 AM
