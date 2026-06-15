@@ -397,6 +397,13 @@
   min-height: 0;
 }
 
+.event-phase--lunch {
+  background: var(--event-blue-soft);
+  border-top-color: var(--event-blue);
+  grid-column: 1 / -1;
+  min-height: 0;
+}
+
 .event-phase__dates {
   color: var(--color-text-light);
   font-family: var(--font-mono);
@@ -707,7 +714,8 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .event-phase--hospitality {
+  .event-phase--hospitality,
+  .event-phase--lunch {
     grid-column: auto;
   }
 }
