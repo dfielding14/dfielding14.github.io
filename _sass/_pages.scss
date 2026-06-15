@@ -177,11 +177,11 @@
 
 .content-page--gof-event {
   --event-ink: #101214;
-  --event-gold: #f7b91e;
-  --event-gold-soft: #fff4d2;
-  --event-blue: #35acd1;
-  --event-blue-soft: #e7f7fb;
-  --event-border: #dce4e8;
+  --event-gold: #f58426;
+  --event-gold-soft: #feefe4;
+  --event-blue: #1d428a;
+  --event-blue-soft: #e9edf3;
+  --event-border: #d4dce8;
   color: var(--event-ink);
 }
 
@@ -207,7 +207,7 @@
 }
 
 .event-kicker {
-  color: #916600;
+  color: #a44700;
   font-family: var(--font-mono);
   font-size: 0.78rem;
   font-weight: 600;
@@ -266,7 +266,7 @@
 }
 
 .event-facts__note {
-  color: #916600;
+  color: #a44700;
   font-size: 0.88rem;
 }
 
@@ -293,7 +293,7 @@
 
 .event-callout {
   background: linear-gradient(112deg, var(--event-gold-soft), #fff 47%, var(--event-blue-soft));
-  border: 1px solid #efdfb9;
+  border: 1px solid #f3c9a7;
   display: grid;
   gap: 1.35rem;
   grid-area: callout;
@@ -309,7 +309,7 @@
 }
 
 .event-callout__label {
-  color: #916600;
+  color: #a44700;
   font-family: var(--font-mono);
   font-size: 0.72rem !important;
   font-weight: 600;
@@ -510,15 +510,15 @@
 }
 
 .event-schedule__row--highlight p {
-  color: #7c5900;
+  color: #a44700;
 }
 
 .event-schedule__row--discussion p {
-  color: #855e00;
+  color: #a44700;
 }
 
 .event-schedule__row--social p {
-  color: #855e00;
+  color: #a44700;
 }
 
 .event-days--conference .event-speaker-name {
@@ -527,7 +527,7 @@
 }
 
 .event-days--conference .event-talk-title {
-  color: #006b8d;
+  color: var(--event-blue);
 }
 
 .event-days--conference .event-schedule__row--social p {
@@ -547,7 +547,7 @@
 }
 
 .event-days--workshop .event-schedule__row--talk p {
-  color: #006b8d;
+  color: var(--event-blue);
   font-weight: 600;
 }
 
@@ -671,7 +671,7 @@
 }
 
 .event-text-link:hover {
-  color: #8b6200;
+  color: #843900;
 }
 
 .event-footer-note {
