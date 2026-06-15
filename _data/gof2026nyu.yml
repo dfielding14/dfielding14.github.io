@@ -104,9 +104,10 @@ conference_schedule:
         kind: discussion
         layout_row: 33
         layout_span: 4
-      - time: Evening
-        item: Conference dinner - please indicate attendance when registering
+      - time: 6:00 PM
+        item: Conference dinner at Vic's - 31 Great Jones Street
         kind: social
+        external_url: https://maps.app.goo.gl/cAv4hEKNynhPJ2tR8
         layout_row: 37
         layout_span: 1
   - day: Tuesday, June 16

@@ -115,6 +115,8 @@ hide_nav: true
                 <p>
                   {% if entry.speaker %}
                     <span class="event-speaker-name">{{ entry.speaker }}</span> - <em class="event-talk-title">{{ entry.title }}{% if entry.tentative %} (?){% endif %}</em>
+                  {% elsif entry.external_url %}
+                    <a class="event-schedule__link" href="{{ entry.external_url }}" target="_blank" rel="noopener noreferrer">{{ entry.item }}</a>
                   {% elsif entry.url %}
                     <a class="event-schedule__link" href="{{ entry.url | relative_url }}">{{ entry.item }}</a>
                   {% else %}
