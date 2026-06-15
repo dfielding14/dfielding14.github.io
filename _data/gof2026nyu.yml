@@ -20,7 +20,8 @@ venue:
   room: Room 940
   building: NYU Department of Physics
   address: 726 Broadway, Manhattan, New York, NY 10003
-  note: This is the NYU Physics building in Manhattan, not 726 Broadway in Brooklyn.
+  note: This is the NYU Physics building in Manhattan.
+  map_url: https://maps.app.goo.gl/qYTZahsi3P4X5kLp6
   entry: Visitors must bring photo ID for building entry.
 poster:
   src: /images/GoF2026NYU/GOF_JuneNYU.webp

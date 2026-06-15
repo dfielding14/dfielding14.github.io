@@ -47,7 +47,7 @@ hide_nav: true
       </div>
       <div>
         <p class="event-callout__label">Arriving at NYU</p>
-        <p><strong>{{ event.venue.note }}</strong> {{ event.venue.entry }}</p>
+        <p><strong>{{ event.venue.note }}</strong> <a href="{{ event.venue.map_url }}" target="_blank" rel="noopener noreferrer">View the location on Google Maps</a>. {{ event.venue.entry }}</p>
       </div>
       <div>
         <p class="event-callout__label">Need Help?</p>
