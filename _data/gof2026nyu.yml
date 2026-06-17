@@ -177,20 +177,20 @@ workshop_schedule:
   - day: Wednesday, June 17
     theme: Establishing questions
     items:
-      - time: 9:30-10:30 AM
-        item: Morning talk block - Room 940 - led by Svitlana, Max, Camillo, and Guy
+      - time: 10:00-11:00 AM
+        item: Morning talk block - Room 940 - led by Raul and David
         kind: talk
-      - time: 10:30-11:00 AM
+      - time: 11:00-11:30 AM
         item: Coffee & Snacks
         kind: break
-      - time: 11:00 AM-12:30 PM
+      - time: 11:30 AM-12:30 PM
         item: Small-group discussions - Rooms 940, 901, and visitor offices
         kind: discussion
       - time: 12:30-2:00 PM
         item: Lunch
         kind: break
       - time: 2:00-3:00 PM
-        item: Afternoon talk block - Room 940 - led by Raul and David
+        item: Afternoon talk block - Room 940 - led by Svitlana, Max, Camillo, and Guy
         kind: talk
       - time: 3:00-3:30 PM
         item: Coffee & Snacks
@@ -201,13 +201,13 @@ workshop_schedule:
   - day: Thursday, June 18
     theme: Developing connections
     items:
-      - time: 9:30-10:30 AM
+      - time: 10:00-11:00 AM
         item: Morning talk block - Room 940 - led by Blakesley and Jim
         kind: talk
-      - time: 10:30-11:00 AM
+      - time: 11:00-11:30 AM
         item: Coffee & Snacks
         kind: break
-      - time: 11:00 AM-12:30 PM
+      - time: 11:30 AM-12:30 PM
         item: Small-group discussions - Rooms 940, 901, and visitor offices
         kind: discussion
       - time: 12:30-2:00 PM
@@ -225,13 +225,13 @@ workshop_schedule:
   - day: Friday, June 19
     theme: Synthesis and next steps
     items:
-      - time: 9:30-10:30 AM
+      - time: 10:00-11:00 AM
         item: Morning talk block - Room 940 - led by Raul and David
         kind: talk
-      - time: 10:30-11:00 AM
+      - time: 11:00-11:30 AM
         item: Coffee & Snacks
         kind: break
-      - time: 11:00 AM-12:30 PM
+      - time: 11:30 AM-12:30 PM
         item: Small-group discussions - Rooms 940, 901, and visitor offices
         kind: discussion
       - time: 12:30-2:00 PM
