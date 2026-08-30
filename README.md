@@ -31,3 +31,6 @@ bundle exec ruby scripts/validate_site.rb
 - `assets/js/site.js` - Navigation and dropdown behavior
 - `scripts/validate_site.rb` - Local asset and publication sanity checks
 - `solfege-flight/` - Standalone mini-app with its own assets, CSS, and JS
+- `speedread/` - Unlinked speed reader at `/speedread/`; clipboard, text, Markdown, and PDF processing stay in the browser. Excluded from the sitemap and marked `noindex,nofollow`, but publicly accessible by URL.
+
+Validate SpeedReader after building with `node scripts/check_speedread.mjs`. PDF import lazy-loads the bundled Mozilla PDF.js; its version, upstream source, and license are recorded in `speedread/vendor/pdfjs/`. No Python server is deployed.

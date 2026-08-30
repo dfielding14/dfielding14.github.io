@@ -1,0 +1,124 @@
+---
+layout: null
+sitemap: false
+permalink: /speedread/
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+  <title>SpeedReader — Your words, your pace</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="masthead">
+      <a class="brand" href="./" aria-label="SpeedReader home"><span class="brand-mark" aria-hidden="true">r<span>r</span></span>SpeedReader</a>
+      <span class="local-badge"><span aria-hidden="true"></span>ON-DEVICE READING</span>
+    </header>
+
+    <main>
+      <div class="intro">
+        <p class="eyebrow">LESS SCROLLING. MORE READING.</p>
+        <h1>Your words.<br class="mobile-break"> Your pace.</h1>
+        <p>Copy an answer from Codex or ChatGPT. Read it one word at a time.</p>
+      </div>
+
+      <div class="workspace">
+        <section class="reader-panel" aria-label="Speed reader">
+          <div class="reading-card">
+            <div class="card-heading">
+              <span class="eyebrow">THE READER</span>
+              <span id="reader-state" class="reader-state">Ready when you are</span>
+            </div>
+
+            <div id="stage" class="stage" tabindex="0" aria-label="Reading display. Space to play or pause. Arrow keys to step through words.">
+              <span class="guide guide-top" aria-hidden="true"></span>
+              <div id="word" class="word" aria-label="Ready" aria-live="off">
+                <span id="word-before" class="word-before">R</span><span id="word-focus" class="word-focus">e</span><span id="word-after" class="word-after">ady.</span>
+              </div>
+              <span class="guide guide-bottom" aria-hidden="true"></span>
+            </div>
+
+            <p id="context" class="context" aria-live="off">Paste a response, or try the sample below.</p>
+
+            <div class="transport" aria-label="Playback controls">
+              <button id="restart" class="icon-button restart-button" type="button" aria-label="Restart reading" title="Restart" disabled>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10a8 8 0 1 1 1 7M4 4v6h6"/></svg>
+              </button>
+              <button id="previous" class="icon-button" type="button" aria-label="Previous word" title="Previous word (←)" disabled>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg>
+              </button>
+              <button id="play" class="play-button" type="button" aria-label="Play" disabled>
+                <svg id="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5 11 7-11 7Z"/></svg>
+                <svg id="pause-icon" viewBox="0 0 24 24" aria-hidden="true" hidden><path d="M8 5v14M16 5v14"/></svg>
+                <span id="play-label">Play</span>
+              </button>
+              <button id="next" class="icon-button" type="button" aria-label="Next word" title="Next word (→)" disabled>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+              </button>
+              <span class="transport-spacer" aria-hidden="true"></span>
+            </div>
+
+            <div class="progress-area">
+              <label class="sr-only" for="progress">Reading position</label>
+              <input id="progress" type="range" min="0" max="1" value="0" step="1" disabled>
+              <div class="progress-meta"><span id="position">0 / 0 words</span><span id="remaining">0:00 remaining</span></div>
+            </div>
+          </div>
+
+          <div class="speed-card">
+            <div class="speed-heading">
+              <label for="speed">Reading speed</label>
+              <div class="wpm-value"><input id="wpm" type="number" min="100" max="1000" step="25" value="300" aria-label="Words per minute"><span>WPM</span></div>
+            </div>
+            <input id="speed" type="range" min="100" max="1000" step="25" value="300">
+            <div class="speed-scale"><span>100 · TAKE YOUR TIME</span><span>1,000 · FIND YOUR FLOW</span></div>
+          </div>
+          <p class="keyboard-hint"><kbd>space</kbd> play / pause <span>·</span> <kbd>←</kbd> <kbd>→</kbd> one word <span>·</span> <kbd>esc</kbd> pause</p>
+        </section>
+
+        <aside id="source-panel" class="source-panel" aria-label="Text and reading options">
+          <div class="source-heading"><h2>Your text</h2><span id="source-count">0 words</span></div>
+          <p class="source-description">A long answer. A good article. Anything you want to get through.</p>
+          <button id="paste" class="paste-button" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5H6a2 2 0 0 0-2 2v13h16V7a2 2 0 0 0-2-2h-3M9 3h6v5H9Z"/></svg>
+            Paste &amp; read
+            <span aria-hidden="true">↗</span>
+          </button>
+          <div class="text-input-wrap">
+            <label for="source" class="sr-only">Response text</label>
+            <textarea id="source" maxlength="2000000" spellcheck="false" placeholder="Paste your response here…&#10;&#10;Headings, lists, and Markdown are welcome. Your original text stays intact."></textarea>
+            <div class="input-footer"><button id="sample" type="button" class="text-button">Try a sample</button><span><kbd>⌘ / ctrl</kbd> <kbd>↵</kbd> to read</span></div>
+          </div>
+          <div class="file-row">
+            <button id="open-file" type="button" class="text-button">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V3m-5 5 5-5 5 5M4 15v6h16v-6"/></svg>Open a file
+            </button>
+            <span id="file-types">TXT, MD, PDF</span>
+            <input id="file" type="file" accept=".txt,.md,.markdown,.pdf,text/plain,text/markdown,application/pdf" hidden>
+          </div>
+
+          <fieldset class="options">
+            <legend>MAKE IT COMFORTABLE</legend>
+            <label class="option-row" for="clean-markdown"><span>Clean up Markdown<span class="option-description">Keep the words, lose the formatting.</span></span><input id="clean-markdown" type="checkbox" checked></label>
+            <label class="option-row" for="pauses"><span>Pause at punctuation<span class="option-description">A little room between thoughts.</span></span><input id="pauses" type="checkbox" checked></label>
+            <label class="option-row" for="text-size"><span>Word size</span><select id="text-size"><option value="56">Small</option><option value="72" selected>Medium</option><option value="92">Large</option></select></label>
+          </fieldset>
+          <p id="status" class="status" role="status">Copy a response from either app to get started.</p>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="page-footer"><span class="privacy-mark" aria-hidden="true">◈</span><p>No uploads. No account. Your text is never saved.<br>Only reading preferences are remembered on this device.</p><span class="footer-note">ONE WORD AT A TIME.</span></footer>
+    <noscript>SpeedReader needs JavaScript enabled to display words.</noscript>
+  </div>
+</body>
+</html>
