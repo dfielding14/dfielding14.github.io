@@ -197,7 +197,7 @@ const root = fileURLToPath(new URL("../", import.meta.url));
 const built = join(root, "_site");
 const app = join(built, "speedread");
 assert.ok(existsSync(app), "Build the Jekyll site before checking SpeedReader.");
-for (const name of ["index.html", "styles.css", "app.js", "reader.mjs", "math.mjs", "pdf.mjs", "vendor/katex/katex.mjs", "vendor/katex/katex.min.css"]) {
+for (const name of ["index.html", "styles.css", "app.js", "reader.mjs", "math.mjs", "pdf.mjs", "fonts/Manrope-Variable.ttf", "fonts/Syne-Variable.ttf", "vendor/katex/katex.mjs", "vendor/katex/katex.min.css"]) {
   assert.ok(existsSync(join(app, name)), `Missing published SpeedReader asset: ${name}`);
 }
 const html = readFileSync(join(app, "index.html"), "utf8");

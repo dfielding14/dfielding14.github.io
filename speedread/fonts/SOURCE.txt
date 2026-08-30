@@ -1,0 +1,22 @@
+Unmodified variable fonts from the Google Fonts repository.
+Repository: https://github.com/google/fonts
+Commit: ade3d1533e06b2b1462ffcde8e08b129627ca360
+License: SIL Open Font License 1.1 (one upstream license per family).
+
+Manrope-Variable.ttf
+Source: https://raw.githubusercontent.com/google/fonts/ade3d1533e06b2b1462ffcde8e08b129627ca360/ofl/manrope/Manrope%5Bwght%5D.ttf
+SHA256: d0639be45d0af36e798172419d7bd173c4bd4f29e2b76cbb69db1d11bf8b0a40
+Weight axis: 200-800; normal style.
+
+Manrope-OFL.txt
+Source: https://raw.githubusercontent.com/google/fonts/ade3d1533e06b2b1462ffcde8e08b129627ca360/ofl/manrope/OFL.txt
+SHA256: e01b637272e0cbdfb240184dd98ea5cc671556d9894dae2668d92ab2c906787c
+
+Syne-Variable.ttf
+Source: https://raw.githubusercontent.com/google/fonts/ade3d1533e06b2b1462ffcde8e08b129627ca360/ofl/syne/Syne%5Bwght%5D.ttf
+SHA256: ce5ac77142a65cab2248a1a2ebb740b1d4d9c20b52488877d3ff664d1356104a
+Weight axis: 400-800; normal style.
+
+Syne-OFL.txt
+Source: https://raw.githubusercontent.com/google/fonts/ade3d1533e06b2b1462ffcde8e08b129627ca360/ofl/syne/OFL.txt
+SHA256: cc43cdce6f91c57989af8459341c276655e34224e954fa69c2ad700831a742d8
