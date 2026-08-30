@@ -1,0 +1,20 @@
+KaTeX 0.18.4
+
+Upstream: https://github.com/KaTeX/KaTeX
+Distribution: https://registry.npmjs.org/katex/-/katex-0.18.4.tgz
+Package SHA512 (verified before extraction):
+sha512-IMPntbRLOU+eu88XDiFKqQ8Akhr9Tv7jDMXqPhjG9SI1JMA4DIgXk4x9k4skJz2NZJXBRbC+2pYBLj9olqcZow==
+
+Original, unmodified package files copied:
+  package/dist/katex.mjs -> katex.mjs
+  package/dist/katex.min.css -> katex.min.css
+  package/dist/fonts/* -> fonts/* (all 60 CSS-referenced font files)
+  package/LICENSE -> LICENSE (the distribution's only license file)
+
+No CDN, package installation, runtime download, or auto-render extension.
+The stylesheet's original fonts/ URLs resolve beside the stylesheet.
+
+Public renderer API and security options:
+  https://katex.org/docs/api
+  https://katex.org/docs/options
+  https://katex.org/docs/security

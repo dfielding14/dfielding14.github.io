@@ -14,6 +14,7 @@ permalink: /speedread/
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
   <title>SpeedReader — Your words, your pace</title>
   <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./vendor/katex/katex.min.css">
   <link rel="stylesheet" href="./styles.css">
   <script type="module" src="./app.js"></script>
 </head>
@@ -39,21 +40,25 @@ permalink: /speedread/
               <span id="reader-state" class="reader-state">Ready when you are</span>
             </div>
 
-            <div id="stage" class="stage" tabindex="0" aria-label="Reading display. Space to play or pause. Arrow keys to step through words.">
+            <div id="stage" class="stage" tabindex="0" aria-label="Reading display. Space to play, pause, or continue after an equation. Arrow keys to step through words and equations.">
               <span class="guide guide-top" aria-hidden="true"></span>
               <div id="word" class="word" aria-label="Ready" aria-live="off">
                 <span id="word-before" class="word-before">R</span><span id="word-focus" class="word-focus">e</span><span id="word-after" class="word-after">ady.</span>
               </div>
+              <div id="math-display" class="math-display" role="group" aria-label="Equation" hidden>
+                <div id="math-scroll" class="math-scroll" tabindex="0" role="region" aria-label="Equation. Arrow keys scroll inside this box; Space continues reading."><span id="math-output" class="math-output"></span></div>
+              </div>
               <span class="guide guide-bottom" aria-hidden="true"></span>
             </div>
 
+            <p id="math-hint" class="math-hint" hidden></p>
             <p id="context" class="context" aria-live="off">Paste a response, or try the sample below.</p>
 
             <div class="transport" aria-label="Playback controls">
               <button id="restart" class="icon-button restart-button" type="button" aria-label="Restart reading" title="Restart" disabled>
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10a8 8 0 1 1 1 7M4 4v6h6"/></svg>
               </button>
-              <button id="previous" class="icon-button" type="button" aria-label="Previous word" title="Previous word (←)" disabled>
+              <button id="previous" class="icon-button" type="button" aria-label="Previous word or equation" title="Previous word or equation (←)" disabled>
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg>
               </button>
               <button id="play" class="play-button" type="button" aria-label="Play" disabled>
@@ -61,7 +66,7 @@ permalink: /speedread/
                 <svg id="pause-icon" viewBox="0 0 24 24" aria-hidden="true" hidden><path d="M8 5v14M16 5v14"/></svg>
                 <span id="play-label">Play</span>
               </button>
-              <button id="next" class="icon-button" type="button" aria-label="Next word" title="Next word (→)" disabled>
+              <button id="next" class="icon-button" type="button" aria-label="Next word or equation" title="Next word or equation (→)" disabled>
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
               </button>
               <span class="transport-spacer" aria-hidden="true"></span>
@@ -82,7 +87,7 @@ permalink: /speedread/
             <input id="speed" type="range" min="100" max="1000" step="25" value="300">
             <div class="speed-scale"><span>100 · TAKE YOUR TIME</span><span>1,000 · FIND YOUR FLOW</span></div>
           </div>
-          <p class="keyboard-hint"><kbd>space</kbd> play / pause <span>·</span> <kbd>←</kbd> <kbd>→</kbd> one word <span>·</span> <kbd>esc</kbd> pause</p>
+          <p class="keyboard-hint"><kbd>space</kbd> play / pause / continue <span>·</span> <kbd>←</kbd> <kbd>→</kbd> one step <span>·</span> <kbd>esc</kbd> pause</p>
         </section>
 
         <aside id="source-panel" class="source-panel" aria-label="Text and reading options">
@@ -96,7 +101,7 @@ permalink: /speedread/
           <div class="text-input-wrap">
             <label for="source" class="sr-only">Response text</label>
             <textarea id="source" maxlength="2000000" spellcheck="false" placeholder="Paste your response here…&#10;&#10;Headings, lists, and Markdown are welcome. Your original text stays intact."></textarea>
-            <div class="input-footer"><button id="sample" type="button" class="text-button">Try a sample</button><span><kbd>⌘ / ctrl</kbd> <kbd>↵</kbd> to read</span></div>
+            <div class="input-footer"><div class="sample-actions"><button id="sample" type="button" class="text-button">Try a sample</button><button id="math-sample" type="button" class="text-button">Try math</button></div><span><kbd>⌘ / ctrl</kbd> <kbd>↵</kbd> to read</span></div>
           </div>
           <div class="file-row">
             <button id="open-file" type="button" class="text-button">
@@ -110,6 +115,7 @@ permalink: /speedread/
             <legend>MAKE IT COMFORTABLE</legend>
             <label class="option-row" for="clean-markdown"><span>Clean up Markdown<span class="option-description">Keep the words, lose the formatting.</span></span><input id="clean-markdown" type="checkbox" checked></label>
             <label class="option-row" for="pauses"><span>Pause at punctuation<span class="option-description">A little room between thoughts.</span></span><input id="pauses" type="checkbox" checked></label>
+            <label class="option-row" for="hold-math"><span>Hold display equations<span class="option-description">Press Space when you are ready to continue.</span></span><input id="hold-math" type="checkbox" checked></label>
             <label class="option-row" for="text-size"><span>Word size</span><select id="text-size"><option value="56">Small</option><option value="72" selected>Medium</option><option value="92">Large</option></select></label>
           </fieldset>
           <p id="status" class="status" role="status">Copy a response from either app to get started.</p>

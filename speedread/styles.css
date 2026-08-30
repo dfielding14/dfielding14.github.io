@@ -24,7 +24,7 @@ button:disabled { cursor: default; opacity: .4; }
 button, a, input, select, textarea, [tabindex] { -webkit-tap-highlight-color: transparent; }
 :focus-visible { outline: 3px solid #a4473270; outline-offset: 4px; }
 button { transition: background .15s, color .15s; }
-svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+button svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
 [hidden] { display: none !important; }
 .shell { max-width: 1256px; margin: auto; padding: 0 48px; }
 .masthead { height: 96px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--line); }
@@ -48,6 +48,17 @@ svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width:
 .word-before { justify-self: end; }
 .word-after { justify-self: start; }
 .word-focus { color: var(--accent); }
+.stage.math-mode { padding: 22px 0; }
+.math-mode .guide { display: none; }
+.math-display { min-width: 0; width: 100%; }
+.math-scroll { width: 100%; max-height: min(60vh, 520px); overflow: auto; padding: 12px; text-align: center; }
+.math-output { display: inline-block; vertical-align: middle; }
+.math-output .katex-display { margin: .25em 0; }
+.math-output .katex-display > .katex > .katex-html > .katex-tag { position: static; margin-left: 1em; }
+.math-scroll.wide { text-align: left; }
+.math-error .math-output { display: block; max-width: 100%; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 16px; line-height: 1.65; text-align: left; white-space: pre-wrap; overflow-wrap: anywhere; color: #923b2b; }
+.math-hint { margin: 0 0 14px; padding: 9px 12px; color: var(--green); background: #edf0e8; border-radius: 6px; font-size: 11px; line-height: 1.6; text-align: center; overflow-wrap: anywhere; }
+.math-hint.error { color: #923b2b; background: var(--accent-soft); }
 .guide { position: absolute; left: 50%; transform: translateX(-50%); height: 18px; width: 1px; background: #c0b4a2; }
 .guide-top { top: 27px; }
 .guide-bottom { bottom: 27px; }
@@ -68,7 +79,7 @@ svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width:
 .progress-area input { width: 100%; margin: 0; height: 15px; }
 input[type="range"] { display: block; accent-color: var(--green); cursor: pointer; }
 input[type="range"]:disabled { cursor: default; opacity: .4; }
-.progress-meta { display: flex; justify-content: space-between; font-size: 10px; font-variant-numeric: tabular-nums; color: var(--muted); margin-top: 7px; }
+.progress-meta { display: flex; justify-content: space-between; gap: 6px; flex-wrap: wrap; font-size: 10px; font-variant-numeric: tabular-nums; color: var(--muted); margin-top: 7px; }
 .speed-card { padding: 22px 26px 21px; border: 1px solid var(--line); border-radius: 12px; margin-top: 14px; }
 .speed-heading { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
 .speed-heading > label { font-size: 13px; font-weight: 550; }
@@ -98,6 +109,7 @@ textarea:focus { outline: 0; }
 .input-footer { display: flex; justify-content: space-between; align-items: center; padding: 11px 13px; gap: 10px; background: #faf9f5; border-top: 1px solid #efefe8; }
 .input-footer > span { color: var(--muted); font-size: 9px; white-space: nowrap; }
 .input-footer kbd { border: 0; background: none; padding: 0; font-size: 9px; }
+.sample-actions { display: flex; gap: 13px; }
 .text-button { padding: 0; background: none; border: none; color: var(--green); font-size: 11px; font-weight: 550; display: inline-flex; align-items: center; gap: 7px; border-radius: 2px; }
 .text-button:not(:disabled):hover { color: var(--accent); }
 .file-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 15px 1px 23px; }
