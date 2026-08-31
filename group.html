@@ -2,7 +2,7 @@
 layout: page
 title: Group
 heading: Research Group
-description: Current group members, collaboration opportunities, and core research themes.
+description: Current and former group members, collaboration opportunities, and core research themes.
 section: group
 ---
 
@@ -22,9 +22,29 @@ section: group
                         {{ member.name }}
                     {% endif %}
                 </h3>
-                <p class="member-role">{{ member.role }}</p>
+                {% if member.role %}
+                    <p class="member-role">{{ member.role }}</p>
+                {% endif %}
             </div>
         {% endfor %}
+    </div>
+</section>
+
+<section class="section">
+    <h2 class="section-title">Former Members</h2>
+    <div class="card">
+        <ul>
+            {% for member in group.former_members %}
+                <li>
+                    {% if member.url %}
+                        <a href="{{ member.url }}" target="_blank" rel="noopener noreferrer">{{ member.name }}</a>
+                    {% else %}
+                        {{ member.name }}
+                    {% endif %}
+                    ({{ member.role }})
+                </li>
+            {% endfor %}
+        </ul>
     </div>
 </section>
 

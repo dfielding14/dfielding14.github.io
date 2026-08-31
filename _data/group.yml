@@ -1,17 +1,21 @@
 members:
-  - name: Brent Tan
-    role: Postdoctoral Researcher
-    url: https://zunyibrt.github.io/
   - name: Hitesh Das
     role: Postdoctoral Researcher
     url: https://hiteshdas.org/
   - name: Alex Pendris
     role: PhD Student
+  - name: Maëlle Magnan
+  - name: Sohum Udani
+  - name: Tiegan Powell
+former_members:
+  - name: Brent Tan
+    role: Postdoctoral Researcher
+    url: https://zunyibrt.github.io/
   - name: Nana Ama Darpaah
     role: MS Student
-  - name: Lillion Shi
+  - name: Lillian Shi
     role: Undergrad Student
-join_copy: There are open positions for undergraduate students, graduate students, and postdocs to join my group. If you are interested in working together, please send me your CV and a short description of your research interests.
+join_copy: I am not currently recruiting new graduate students or funding new postdoctoral positions. I would be happy to host prize postdoctoral fellows with their own fellowship funding. Undergraduate students interested in research are welcome to get in touch.
 research_areas:
   - Multiphase gas dynamics in galaxies
   - Magnetized turbulence and cosmic ray transport

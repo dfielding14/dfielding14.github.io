@@ -1,8 +1,8 @@
 intro:
-  title: Open Positions
+  title: Joining the Group
   body_html: |
     <p>
-      I am actively recruiting graduate students and postdocs to join my research group at NYU. There are also several routes for NYU undergraduates and external students to get involved in research.
+      I am not currently recruiting new graduate students or funding new postdoctoral positions. I would be happy to host prize postdoctoral fellows with their own fellowship funding. There are also several routes for NYU undergraduates and external students to get involved in research.
     </p>
     <p>
       Fellowship names, eligibility rules, and deadlines change regularly, so always check the current call on the official program page before applying.
@@ -10,10 +10,10 @@ intro:
 sections:
   - title: Graduate Students
     cards:
-      - title: Ph.D. Positions and Fellowships
+      - title: Graduate Study and Fellowships
         body_html: |
           <p>
-            Prospective Ph.D. students should apply through the <a href="https://physics.nyu.edu/department/PHD.html" target="_blank" rel="noopener noreferrer">NYU Physics Ph.D. program</a>. If your interests overlap with theoretical astrophysics, galaxy formation, plasma astrophysics, or related topics, feel free to get in touch.
+            I am not currently recruiting any new graduate students. For general information about graduate study at NYU, see the <a href="https://physics.nyu.edu/department/PHD.html" target="_blank" rel="noopener noreferrer">NYU Physics Ph.D. program</a>.
           </p>
           <p>
             External funding opportunities worth checking include the <a href="https://www.nyspacegrant.org/student-support-fellowship" target="_blank" rel="noopener noreferrer">NY Space Grant Student Support Fellowship</a>, the <a href="https://www.nsf.gov/funding/opportunities/grfp-nsf-graduate-research-fellowship-program" target="_blank" rel="noopener noreferrer">NSF Graduate Research Fellowship Program</a>, NASA graduate opportunities such as <a href="https://science.nasa.gov/learn/learner-opportunities/" target="_blank" rel="noopener noreferrer">FINESST</a>, and the <a href="https://www.krellinst.org/csgf/" target="_blank" rel="noopener noreferrer">DOE Computational Science Graduate Fellowship</a>.
@@ -23,7 +23,7 @@ sections:
       - title: Postdoctoral Fellowships
         body_html: |
           <p>
-            If you are interested in a postdoctoral position with me, feel free to get in touch. In addition to positions posted directly by departments or institutes, relevant fellowship routes include:
+            I am not currently funding new postdoctoral positions, but I would be happy to host prize postdoctoral fellows with their own fellowship funding. Please get in touch if you are interested in applying for a fellowship to work with me. Fellowship programs and broader postdoctoral opportunities include:
           </p>
           <ul>
             <li><a href="https://www.stsci.edu/stsci-research/fellowships/nasa-hubble-fellowship-program/announcement-of-opportunity" target="_blank" rel="noopener noreferrer">NASA Hubble Fellowship Program</a> (the umbrella program for the Einstein, Hubble, and Sagan Fellowships)</li>
