@@ -5,8 +5,13 @@ members:
   - name: Alex Pendris
     role: PhD Student
   - name: Maëlle Magnan
+    role: PhD Student
+  - name: Leela Elliott
+    role: Post-bac Researcher
   - name: Sohum Udani
+    role: Undergrad Student
   - name: Tiegan Powell
+    role: Undergrad Student
 former_members:
   - name: Brent Tan
     role: Postdoctoral Researcher
